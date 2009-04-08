@@ -5,7 +5,7 @@
 	<key>command</key>
 	<string>if [[ ! -f "$TM_NEW_FILE" ]]; then
    perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' \
-      &lt; plugin &gt; "$TM_NEW_FILE"
+      &lt; plugin.php &gt; "$TM_NEW_FILE"
 fi</string>
 	<key>extension</key>
 	<string>php</string>
