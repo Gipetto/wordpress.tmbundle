@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>bloginfo('${0:name/description/url/wpurl/template_url/template_directory/stylesheet_url/rdf_url/rss_url/rss2_url/atom_url/comments_rss2_url/comments_atom_url/pingback_url/admin_email/charset/html_type/language/text_direction/version/}');</string>
+	<key>name</key>
+	<string>bloginfo</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>bloginfo</string>
+	<key>uuid</key>
+	<string>92D7357A-7F28-4C2A-8587-140FAD45C24A</string>
+</dict>
+</plist>

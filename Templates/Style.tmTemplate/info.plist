@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>[ -f "$TM_NEW_FILE" ] ||  perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &lt;style.css &gt;"$TM_NEW_FILE"</string>
+	<key>extension</key>
+	<string>css</string>
+	<key>name</key>
+	<string>Style</string>
+	<key>scope</key>
+	<string>source.css, text</string>
+	<key>uuid</key>
+	<string>1013106C-2B17-4FB0-83FE-246B9C9EBAF8</string>
+</dict>
+</plist>

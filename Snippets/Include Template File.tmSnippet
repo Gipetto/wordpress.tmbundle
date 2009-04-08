@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?${TM_PHP_OPEN_TAG:php} include(TEMPLATEPATH . '/$0'); ?&gt;</string>
+	<key>name</key>
+	<string>Include Template File</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>templatepath</string>
+	<key>uuid</key>
+	<string>93FA23BF-75CD-449B-A2E6-FDA4408A048A</string>
+</dict>
+</plist>

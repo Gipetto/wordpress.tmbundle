@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>[ -f "$TM_NEW_FILE" ] ||  perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' &lt;header.php &gt;"$TM_NEW_FILE"</string>
+	<key>extension</key>
+	<string>php</string>
+	<key>name</key>
+	<string>Header</string>
+	<key>scope</key>
+	<string>text.html, text</string>
+	<key>uuid</key>
+	<string>D351B614-AB48-46DF-88C7-775D448520AB</string>
+</dict>
+</plist>

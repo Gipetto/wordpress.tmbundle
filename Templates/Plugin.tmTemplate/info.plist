@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>command</key>
+	<string>if [[ ! -f "$TM_NEW_FILE" ]]; then
+   perl -pe 's/\$\{([^}]*)\}/$ENV{$1}/g' \
+      &lt; plugin &gt; "$TM_NEW_FILE"
+fi</string>
+	<key>extension</key>
+	<string>php</string>
+	<key>name</key>
+	<string>Plugin</string>
+	<key>scope</key>
+	<string>source.php, text</string>
+	<key>tabTrigger</key>
+	<string>wp_plugin</string>
+	<key>uuid</key>
+	<string>3E14F56C-C7CF-4F9F-8F69-6FBEC6EC6AD5</string>
+</dict>
+</plist>

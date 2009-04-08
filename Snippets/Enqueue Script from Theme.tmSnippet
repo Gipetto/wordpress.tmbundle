@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>wp_enqueue_script('$1', get_bloginfo('template_directory') . '/js/${1:myscript}.js'${2:, '${3:dependant}', '${0:version}'});</string>
+	<key>name</key>
+	<string>Enqueue Script from Theme</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>enqueue</string>
+	<key>uuid</key>
+	<string>F9D2F294-C8D0-42FF-BDFB-BCEAD649B258</string>
+</dict>
+</plist>

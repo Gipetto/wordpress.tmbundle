@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?${TM_PHP_OPEN_TAG:php} if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
+	${1:&lt;!-- post -- &gt;}
+&lt;?${TM_PHP_OPEN_TAG:php} endwhile; ?&gt;
+	${2:&lt;!-- post navigation --&gt;}
+&lt;?${TM_PHP_OPEN_TAG:php} else: ?&gt;
+	${0:&lt;!-- no posts found --&gt;}
+&lt;?${TM_PHP_OPEN_TAG:php} endif; ?&gt;</string>
+	<key>name</key>
+	<string>The Loop</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>theloop</string>
+	<key>uuid</key>
+	<string>7EA482BD-2F99-4939-9B72-B51781D54E28</string>
+</dict>
+</plist>
