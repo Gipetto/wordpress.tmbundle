@@ -7,25 +7,23 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 
-bloginfo_get = false
+bloginfo_get = true
 
 path = ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
 require path
 
 WordPress.bloginfo(bloginfo_get)</string>
-	<key>fallbackInput</key>
-	<string>character</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
-	<string>bloginfo</string>
+	<string>get_bloginfo</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>text.html, source.php</string>
 	<key>tabTrigger</key>
-	<string>bloginfo</string>
+	<string>get_bloginfo</string>
 	<key>uuid</key>
-	<string>E2C66F05-BA7E-483F-8E64-15B6B75E3EA9</string>
+	<string>58C73630-E28A-430D-8B8A-55CBB5B9354B</string>
 </dict>
 </plist>

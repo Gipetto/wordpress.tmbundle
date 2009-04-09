@@ -40,6 +40,21 @@
 	</dict>
 	<key>name</key>
 	<string>WordPress</string>
+	<key>ordering</key>
+	<array>
+		<string>2543E52B-D5CF-4BBE-B793-51F1574EA05F</string>
+		<string>F9D2F294-C8D0-42FF-BDFB-BCEAD649B258</string>
+		<string>93FA23BF-75CD-449B-A2E6-FDA4408A048A</string>
+		<string>DCE230B9-5C5B-4C1A-AC93-7B3770BAC265</string>
+		<string>7EA482BD-2F99-4939-9B72-B51781D54E28</string>
+		<string>70C9B7FA-81EC-4CB6-A560-08E4EE72CE9F</string>
+		<string>D351B614-AB48-46DF-88C7-775D448520AB</string>
+		<string>3E14F56C-C7CF-4F9F-8F69-6FBEC6EC6AD5</string>
+		<string>1013106C-2B17-4FB0-83FE-246B9C9EBAF8</string>
+		<string>E2C66F05-BA7E-483F-8E64-15B6B75E3EA9</string>
+		<string>58C73630-E28A-430D-8B8A-55CBB5B9354B</string>
+		<string>22F74062-F46E-4574-BFCA-16A3AF8D1D3D</string>
+	</array>
 	<key>uuid</key>
 	<string>F4EA978F-C21D-485A-8E86-117D82FF60C9</string>
 </dict>
