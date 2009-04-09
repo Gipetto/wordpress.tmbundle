@@ -1,5 +1,6 @@
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+include TextMate
 
 module WordPress
   
@@ -32,7 +33,7 @@ module WordPress
       { 'display' => 'version' },
       { 'display' => 'wpurl' }
     ]
-    TextMate::UI.complete(choices)
+    UI.complete(choices)
     
     bloginfo = bloginfo_command + "('${0}');"
     
