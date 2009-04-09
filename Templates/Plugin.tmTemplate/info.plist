@@ -8,13 +8,11 @@
       &lt; plugin.php &gt; "$TM_NEW_FILE"
 fi</string>
 	<key>extension</key>
-	<string>plugin.php</string>
+	<string>php</string>
 	<key>name</key>
 	<string>Plugin</string>
 	<key>scope</key>
 	<string>source.php, text</string>
-	<key>tabTrigger</key>
-	<string>wp_plugin</string>
 	<key>uuid</key>
 	<string>3E14F56C-C7CF-4F9F-8F69-6FBEC6EC6AD5</string>
 </dict>
