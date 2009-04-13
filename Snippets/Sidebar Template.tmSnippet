@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php // Dynamic Sidebar
+if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('${1:Sidebar Name}') ) : ?&gt;
+
+	${0:&lt;!-- Sidebar fallback content --&gt;}
+
+&lt;?php endif; // End Dynamic Sidebar $1 ?&gt;</string>
+	<key>name</key>
+	<string>Sidebar Template</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>sidebar</string>
+	<key>uuid</key>
+	<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
+</dict>
+</plist>
