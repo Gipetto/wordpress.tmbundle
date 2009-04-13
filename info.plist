@@ -26,6 +26,8 @@
 				<key>items</key>
 				<array>
 					<string>9D593F50-70DB-49C3-9BA5-4AC8338BECE7</string>
+					<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
+					<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
 				</array>
 				<key>name</key>
 				<string>Templates</string>
@@ -82,6 +84,8 @@
 		<string>9FAA1D54-692E-4B80-A70A-63F5F1F3071A</string>
 		<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
 		<string>9D593F50-70DB-49C3-9BA5-4AC8338BECE7</string>
+		<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
+		<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
 	</array>
 	<key>uuid</key>
 	<string>F4EA978F-C21D-485A-8E86-117D82FF60C9</string>
