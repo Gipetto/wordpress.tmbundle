@@ -78,7 +78,7 @@ module WordPress
   
  # enqueue a script from a plugin
  def self.enqueue_from_plugin()
-   script = "wp_enqueue_script('\${1:string script_id}','/index.php&\${2:my_action}=\${3:action_handler}',${4:array('\${5:string dependency}')},\${6:float version});\$0"
+   script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',${4:array('\${5:string dependency}')},\${6:float version});\$0"
    return script
  end
   
