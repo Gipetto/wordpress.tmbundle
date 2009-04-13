@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;?php if ('open' == $post-&gt;comment_status) : ?&gt;
+
+	&lt;div id="respond"&gt;
+
+		&lt;h3&gt;&lt;?php comment_form_title(); ?&gt;&lt;/h3&gt;
+
+		&lt;?php cancel_comment_reply_link(); ?&gt;
+
+		&lt;?php if ( get_option('comment_registration') &amp;&amp; !$user_ID ) : ?&gt;
+			
+			&lt;p&gt;You must be &lt;a href="&lt;?php echo wp_login_url(get_permalink()); ?&gt;"&gt;logged in&lt;/a&gt; to post a comment.&lt;/p&gt;
+			
+		&lt;?php else : ?&gt;
+
+			&lt;form action="&lt;?php echo get_option('siteurl'); ?&gt;/wp-comments-post.php" method="post" id="commentform"&gt;
+
+			&lt;?php if ( $user_ID ) : ?&gt;
+
+				&lt;p&gt;Logged in as &lt;a href="&lt;?php echo get_option('siteurl'); ?&gt;/wp-admin/profile.php"&gt;&lt;?php echo $user_identity; ?&gt;&lt;/a&gt;. &lt;a href="&lt;?php echo wp_logout_url(get_permalink()); ?&gt;" title="Log out of this account"&gt;Log out &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+
+			&lt;?php else : ?&gt;
+
+				&lt;p&gt;
+					&lt;input type="text" name="author" id="author" value="&lt;?php echo $comment_author; ?&gt;" size="22" tabindex="1" &lt;?php if ($req) echo "aria-required='true'"; ?&gt; /&gt;
+					&lt;label for="author"&gt;Name &lt;?php if ($req) echo "(required)"; ?&gt;&lt;/label&gt;
+				&lt;/p&gt;
+
+				&lt;p&gt;
+					&lt;input type="text" name="email" id="email" value="&lt;?php echo $comment_author_email; ?&gt;" size="22" tabindex="2" &lt;?php if ($req) echo "aria-required='true'"; ?&gt; /&gt;
+					&lt;label for="email"&gt;Email (&lt;?php if ($req) echo "required, "; ?&gt;never shared)&lt;/label&gt;
+				&lt;/p&gt;
+
+				&lt;p&gt;
+					&lt;input type="text" name="url" id="url" value="&lt;?php echo $comment_author_url; ?&gt;" size="22" tabindex="3" /&gt;
+					&lt;label for="url"&gt;Website&lt;/label&gt;
+				&lt;/p&gt;
+
+			&lt;?php endif; ?&gt;
+
+			&lt;p&gt;&lt;textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"&gt;&lt;/textarea&gt;&lt;/p&gt;
+
+			&lt;p&gt;Some HTML is ok: &lt;code&gt;&lt;?php echo allowed_tags(); ?&gt;&lt;/code&gt;&lt;/p&gt;
+
+			&lt;p&gt;&lt;input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /&gt;&lt;/p&gt;
+			&lt;?php do_action('comment_form', $post-&gt;ID); comment_id_fields(); ?&gt;
+
+		&lt;/form&gt;
+
+	&lt;?php endif; // If registration required and not logged in ?&gt;
+&lt;/div&gt;
+
+&lt;?php endif; // If comments are open: delete this and the sky will fall on your head ?&gt;</string>
+	<key>name</key>
+	<string>Comment Form Template</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>commentform</string>
+	<key>uuid</key>
+	<string>76ACE4D0-A91A-454E-92BA-6FDC00234D74</string>
+</dict>
+</plist>
