@@ -1,11 +1,11 @@
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
-include TextMate
 
 module WordPress
   
+  # bloginfo/get_bloginfo handler
   def self.bloginfo(get_bloginfo = false)
-    
     bloginfo_command = get_bloginfo == true ? 'get_bloginfo' : 'bloginfo' 
     
     choices = [
@@ -33,10 +33,9 @@ module WordPress
       { 'display' => 'version' },
       { 'display' => 'wpurl' }
     ]
-    UI.complete(choices)
+    TextMate::UI.complete(choices)
     
     bloginfo = bloginfo_command + "('${0}');"
-    
     scope = ENV['TM_SCOPE']
     if scope.include? 'source.php.embedded.html'
       puts bloginfo
@@ -44,5 +43,12 @@ module WordPress
       puts '<?php ' + bloginfo + ' ?>'
     end
   end
+  
+  # add_action handler
+  #def self.add_action()
+  #  choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/actions.plist'))
+  #  TextMate::UI.complete(choices)
+  #  TextMate::exit_insert_snippet("add_action('${0}');");
+  #end
 
 end
