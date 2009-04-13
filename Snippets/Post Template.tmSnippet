@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>&lt;div id="post-&lt;?php the_ID(); ?&gt;" &lt;?php post_class(); ?&gt;&gt;
+
+	&lt;h1 class="entry-title"&gt;&lt;a title="Permanent link to &lt;?php the_title_attribute(); ?&gt;" rel="bookmark" href="&lt;?php the_permalink(); ?&gt;"&gt;&lt;?php the_title(); ?&gt;&lt;/a&gt;&lt;/h1&gt;
+	
+	&lt;div class="entry-content"&gt;
+		&lt;?php
+			the_content(__('Continued&amp;hellip;'));
+			wp_link_pages();
+		?&gt;
+	&lt;/div&gt;
+	
+	&lt;?php the_tags(); ?&gt;
+	
+	&lt;?php the_category(); ?&gt;
+	
+	&lt;address class="vcard author"&gt;
+		&lt;span class="n"&gt;&lt;?php the_author(); ?&gt;&lt;/span&gt;
+	&lt;/address&gt;
+	
+	&lt;abbr class="published" title="&lt;?php the_time('Y-m-d\TH:i'); ?&gt;"&gt;&lt;?php the_date(); ?&gt; @ &lt;?php the_time(); ?&gt;&lt;/abbr&gt;
+	
+	&lt;a href="&lt;?php trackback_url(); ?&gt;"&gt;&lt;?php _e('Trackback URL'); ?&gt;&lt;/a&gt;
+
+	&lt;?php comments_popup_link(); ?&gt;
+	
+	&lt;?php edit_post_link(); ?&gt;
+&lt;/div&gt;</string>
+	<key>name</key>
+	<string>Post Template</string>
+	<key>scope</key>
+	<string>text.html</string>
+	<key>tabTrigger</key>
+	<string>post</string>
+	<key>uuid</key>
+	<string>9D593F50-70DB-49C3-9BA5-4AC8338BECE7</string>
+</dict>
+</plist>

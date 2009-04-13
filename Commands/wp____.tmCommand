@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+
+choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/functions.plist'))
+TextMate::UI.complete(choices, :initial_filter =&gt; 'wp_')
+TextMate.exit_insert_snippet('wp_')</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>wp_...</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>tabTrigger</key>
+	<string>wp_</string>
+	<key>uuid</key>
+	<string>D38AD939-915A-4EC9-9D61-5B3817DC281E</string>
+</dict>
+</plist>
