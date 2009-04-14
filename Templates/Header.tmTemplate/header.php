@@ -4,22 +4,15 @@
 <head profile="http://gmpg.org/xfn/11">
 	<meta http-equiv="Content-Type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
 
-	<title><?php wp_title('&laquo;', true, 'right'); bloginfo('name'); ?></title>
+	<title><?php wp_title( '&mdash;', true, 'right' ); echo wp_specialchars( get_bloginfo('name'), 1 ); ?></title>
 
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> RSS Feed" href="<?php bloginfo('rss2_url'); ?>" />
-		<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
+	<link rel="alternate" type="application/atom+xml" title="<?php bloginfo('name'); ?> Atom Feed" href="<?php bloginfo('atom_url'); ?>" />
 	<link rel="alternate" type="application/rss+xml" title="<?php bloginfo('name'); ?> Comments RSS" href="<?php bloginfo('comments_rss2_url'); ?>" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
-	<?php wp_get_archives('format=link'); ?>
+	<?php wp_get_archives('type=monthly&format=link'); ?>
 
 	<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('stylesheet_url'); ?>" />
-	
-	<!--[if lte IE 8]>
-		<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/style/ie.css" />
-	<![endif]-->
-	<!--[if lte IE 7]>
-		<link rel="stylesheet" type="text/css" media="screen" href="<?php bloginfo('template_directory'); ?>/style/ie6.css"/>
-	<![endif]-->
 
 	<?php if ( is_singular() ) { wp_enqueue_script( 'comment-reply' ); } ?>
 

@@ -7,6 +7,4 @@ Version: ${WP_PLUGIN_VERSION}
 Author: ${WP_PLUGIN_AUTHOR}
 Author URI: ${WP_PLUGIN_AUTHOR_URI}
 */
-
-
 ?>
