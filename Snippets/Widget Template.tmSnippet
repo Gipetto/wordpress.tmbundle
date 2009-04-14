@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function my_widgets_init() {
+	wp_register_sidebar_widget('my-widget',__('Widget Title'),'my_widget');
+	wp_register_widget_control('widget-control',__('Widget Control Title'),'my_widget_control');
+}
+add_action('widgets_init','my_widgets_init');
+
+function my_widget($args) {
+	extract($args);
+
+	// $widget_opts = get_option('my_widget_opts');
+
+	echo $before_widget;
+	// echo $before_title.$title.$after_title;
+	// widget body...
+	echo $after_widget;
+}
+
+function my_widget_control() {
+	if(strtolower($_SERVER['REQUEST_METHOD']) == 'post') {
+		// process widget params
+		// update_option('my_widget_opts',$widget_opts);
+	}
+	// $widget_opts = get_option('my_widget_opts',array('default1','default2'));
+	// widget options inputs...
+}</string>
+	<key>name</key>
+	<string>Widget Template</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>widget</string>
+	<key>uuid</key>
+	<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
+</dict>
+</plist>
