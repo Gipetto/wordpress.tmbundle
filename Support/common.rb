@@ -4,6 +4,70 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 module WordPress
   
+  def self.query_var
+    choices = [
+      { 'title' => 'attachment' },
+      { 'title' => 'attachment_id' },
+      { 'title' => 'author' },
+      { 'title' => 'author_name' },
+      { 'title' => 'cat' },
+      { 'title' => 'category_name' },
+      { 'title' => 'category__in' },
+      { 'title' => 'category__not_in' },
+      { 'title' => 'comments_popup' },
+      { 'title' => 'day' },
+      { 'title' => 'error' },
+      { 'title' => 'feed' },
+      { 'title' => 'hour' },
+      { 'title' => 'm' },
+      { 'title' => 'minute' },
+      { 'title' => 'monthnum' },
+      { 'title' => 'name' },
+      { 'title' => 'p' },
+      { 'title' => 'paged' },
+      { 'title' => 'pagename' },
+      { 'title' => 'page_id' },
+      { 'title' => 'post_status' },
+      { 'title' => 'post_type' },
+      { 'title' => 'preview' },
+      { 'title' => 'second' },
+      { 'title' => 'tag' },
+      { 'title' => 'tag_id' },
+      { 'title' => 'tag__and' },
+      { 'title' => 'tag__in' },
+      { 'title' => 'tag__not_in' },
+      { 'title' => 'tag__slug_and' },
+      { 'title' => 'tag__slug_in' },
+      { 'title' => 'taxonomy' },
+      { 'title' => 'tb' },
+      { 'title' => 'term' },
+      { 'title' => 'w' },
+      { 'title' => 'withcomments' },
+      { 'title' => 'year' },  
+    ]
+    t = TextMate::UI.menu(choices)
+    TextMate.exit_insert_snippet("'" + t['title'] + "' => ${1:'${2}'},$0")
+  end
+  
+  def self.add_submenu
+    choices = [
+      { 'title' => 'comments', 'insert' => 'edit-comments.php' },
+      { 'title' => 'dashboard', 'insert' => 'index.php' },
+      { 'title' => 'links', 'insert' => 'link-manager.php' },
+      { 'title' => 'media', 'insert' => 'upload.php' },
+      { 'title' => 'options', 'insert' => 'options-general.php' },
+      { 'title' => 'pages', 'insert' => 'edit-pages.php' },
+      { 'title' => 'posts', 'insert' => 'edit.php' },
+      { 'title' => 'profile', 'insert' => 'profile.php' },
+      { 'title' => 'tools', 'insert' => 'tools.php' },
+      { 'title' => 'theme', 'insert' => 'themes.php' },
+      { 'title' => 'users', 'insert' => 'users.php' }    
+    ]
+    t = TextMate::UI.menu(choices)
+    add_menu = "add_submenu_page('" + t['insert'] + "',__('${1:page_title}'),__('${2:menu_title}'),${3:access_level},${4:basename(__FILE__)},'${5:function}');"
+    TextMate.exit_insert_snippet(add_menu)
+  end
+  
   # bloginfo/get_bloginfo handler
   def self.bloginfo(get_bloginfo = false)
     bloginfo_command = get_bloginfo == true ? 'get_bloginfo' : 'bloginfo' 

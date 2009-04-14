@@ -13,11 +13,11 @@
 			<string>32E7ECF7-1231-4B12-9734-1BBF0FD86A76</string>
 			<string>------------------------------------</string>
 			<string>7F20F3C3-571B-4A78-A02C-1C2FD57439D8</string>
+			<string>ECEBBE1D-83C1-4536-B226-FB0594B60D05</string>
 			<string>53CD44CD-A5EC-43BC-A67A-8D8A3B73C80C</string>
 			<string>------------------------------------</string>
 			<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
-			<string>D38AD939-915A-4EC9-9D61-5B3817DC281E</string>
-			<string>EE8C88B7-9C40-403B-AE1D-B2F8D68A22D9</string>
+			<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -39,6 +39,9 @@
 				<array>
 					<string>E2C66F05-BA7E-483F-8E64-15B6B75E3EA9</string>
 					<string>58C73630-E28A-430D-8B8A-55CBB5B9354B</string>
+					<string>D38AD939-915A-4EC9-9D61-5B3817DC281E</string>
+					<string>EE8C88B7-9C40-403B-AE1D-B2F8D68A22D9</string>
+					<string>5DE5A7AD-3347-4FF4-BA87-1D4965D601FA</string>
 				</array>
 				<key>name</key>
 				<string>General Tags</string>
@@ -49,6 +52,7 @@
 				<array>
 					<string>9FAA1D54-692E-4B80-A70A-63F5F1F3071A</string>
 					<string>7EEC763F-7235-427C-8631-B59CF0182E73</string>
+					<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 				</array>
 				<key>name</key>
 				<string>Plugin API</string>
@@ -62,6 +66,15 @@
 				</array>
 				<key>name</key>
 				<string>Loop</string>
+			</dict>
+			<key>ECEBBE1D-83C1-4536-B226-FB0594B60D05</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>107C0A1E-1E28-4635-ADF4-CE70A0777AD8</string>
+				</array>
+				<key>name</key>
+				<string>Query</string>
 			</dict>
 		</dict>
 	</dict>
@@ -88,6 +101,9 @@
 		<string>9D593F50-70DB-49C3-9BA5-4AC8338BECE7</string>
 		<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
 		<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
+		<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
+		<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
+		<string>76ACE4D0-A91A-454E-92BA-6FDC00234D74</string>
 	</array>
 	<key>uuid</key>
 	<string>F4EA978F-C21D-485A-8E86-117D82FF60C9</string>
