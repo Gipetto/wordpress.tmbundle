@@ -49,6 +49,24 @@ module WordPress
     TextMate.exit_insert_snippet("'" + t['title'] + "' => ${1:'${2}'},$0")
   end
   
+  def self.admin_menu
+    choices = [
+      { 'title' => 'menu' },
+      { 'title' => 'submenu' },
+      { 'title' => 'utility' },
+      { 'title' => 'object' }
+    ]
+    t = TextMate::UI.menu(choices)
+    
+    if t['title'] == 'submenu'
+      self.add_submenu
+    else
+      add_menu = "add_" + t['title'] + "('${1:page_title}','${2:menu_title}',${3:access_level},${4:basename(__FILE__)},'${5:icon_path}');$0"
+      TextMate.exit_insert_snippet(add_menu)
+    end
+    
+  end
+  
   def self.add_submenu
     choices = [
       { 'title' => 'comments', 'insert' => 'edit-comments.php' },
@@ -61,10 +79,11 @@ module WordPress
       { 'title' => 'profile', 'insert' => 'profile.php' },
       { 'title' => 'tools', 'insert' => 'tools.php' },
       { 'title' => 'theme', 'insert' => 'themes.php' },
-      { 'title' => 'users', 'insert' => 'users.php' }    
+      { 'title' => 'users', 'insert' => 'users.php' },
+      { 'title' => 'custom...', 'insert' => '${1:file}' }   
     ]
     t = TextMate::UI.menu(choices)
-    add_menu = "add_submenu_page('" + t['insert'] + "',__('${1:page_title}'),__('${2:menu_title}'),${3:access_level},${4:basename(__FILE__)},'${5:function}');"
+    add_menu = "add_submenu_page('" + t['insert'] + "',__('${2:page_title}'),__('${3:menu_title}'),${4:access_level},${5:basename(__FILE__)},'${6:function}');$0"
     TextMate.exit_insert_snippet(add_menu)
   end
   

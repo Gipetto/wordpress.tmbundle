@@ -16,8 +16,8 @@
 			<string>ECEBBE1D-83C1-4536-B226-FB0594B60D05</string>
 			<string>53CD44CD-A5EC-43BC-A67A-8D8A3B73C80C</string>
 			<string>------------------------------------</string>
-			<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
-			<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
+			<string>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</string>
+			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -29,9 +29,20 @@
 					<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
 					<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
 					<string>76ACE4D0-A91A-454E-92BA-6FDC00234D74</string>
+					<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 				</array>
 				<key>name</key>
 				<string>Templates</string>
+			</dict>
+			<key>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>6C30E9F4-06F8-46FC-BE2F-19325E306A11</string>
+					<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
+				</array>
+				<key>name</key>
+				<string>Admin</string>
 			</dict>
 			<key>53CD44CD-A5EC-43BC-A67A-8D8A3B73C80C</key>
 			<dict>
@@ -52,7 +63,6 @@
 				<array>
 					<string>9FAA1D54-692E-4B80-A70A-63F5F1F3071A</string>
 					<string>7EEC763F-7235-427C-8631-B59CF0182E73</string>
-					<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 				</array>
 				<key>name</key>
 				<string>Plugin API</string>
@@ -67,10 +77,20 @@
 				<key>name</key>
 				<string>Loop</string>
 			</dict>
+			<key>D47A2961-1BFD-4E89-B734-FC05A3135CDE</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
+				</array>
+				<key>name</key>
+				<string>Scripts</string>
+			</dict>
 			<key>ECEBBE1D-83C1-4536-B226-FB0594B60D05</key>
 			<dict>
 				<key>items</key>
 				<array>
+					<string>BB5AC0C8-B1AA-49E0-9B64-2ED927F950AB</string>
 					<string>107C0A1E-1E28-4635-ADF4-CE70A0777AD8</string>
 				</array>
 				<key>name</key>
@@ -103,7 +123,10 @@
 		<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
 		<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 		<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
+		<string>6C30E9F4-06F8-46FC-BE2F-19325E306A11</string>
 		<string>76ACE4D0-A91A-454E-92BA-6FDC00234D74</string>
+		<string>BB5AC0C8-B1AA-49E0-9B64-2ED927F950AB</string>
+		<string>107C0A1E-1E28-4635-ADF4-CE70A0777AD8</string>
 	</array>
 	<key>uuid</key>
 	<string>F4EA978F-C21D-485A-8E86-117D82FF60C9</string>
