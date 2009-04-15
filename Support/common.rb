@@ -3,7 +3,6 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 module WordPress
-  
   def self.wpdb
     # manually built array until I can get proper function/class scraping
     choices = [
@@ -31,7 +30,6 @@ module WordPress
       { 'title' => 'update', 'insert' => '(${1:table},${2:data},${3:where})' },
       { 'title' => 'usermeta' },
       { 'title' => 'users' }
-
     ]
     t = TextMate::UI.menu(choices)
     ret = "\\\$wpdb->" + t['title']
