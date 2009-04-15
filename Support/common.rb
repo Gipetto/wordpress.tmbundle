@@ -4,6 +4,45 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 module WordPress
   
+  def self.post_var
+    choices = [
+      { 'title' => 'ID' }, 
+      { 'title' => 'post_author' }, 
+      { 'title' => 'post_date' }, 
+      { 'title' => 'post_date_gmt' }, 
+      { 'title' => 'post_content' }, 
+      { 'title' => 'post_title' }, 
+      { 'title' => 'post_category' }, 
+      { 'title' => 'post_excerpt' }, 
+      { 'title' => 'post_status' }, 
+      { 'title' => 'comment_status' }, 
+      { 'title' => 'ping_status' }, 
+      { 'title' => 'post_password' }, 
+      { 'title' => 'post_name' }, 
+      { 'title' => 'to_ping' }, 
+      { 'title' => 'pinged' }, 
+      { 'title' => 'post_modified' }, 
+      { 'title' => 'post_modified_gmt' }, 
+      { 'title' => 'post_content_filtered' }, 
+      { 'title' => 'post_parent' }, 
+      { 'title' => 'guid' }, 
+      { 'title' => 'menu_order' }, 
+      { 'title' => 'post_type' }, 
+      { 'title' => 'post_mime_type' }, 
+      { 'title' => 'comment_count' }, 
+      { 'title' => 'view_count' }, 
+      { 'title' => 'ancestors' }  
+    ]
+    t = TextMate::UI.menu(choices)
+    post_var = "\\\$post->" + t['title'] + "$1"
+    
+    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
+      TextMate.exit_insert_snippet(post_var)
+    else
+      TextMate.exit_insert_snippet('<?php echo ' + post_var + "; ?>$0")
+    end
+  end
+  
   def self.query_var
     choices = [
       { 'title' => 'attachment' },
@@ -119,8 +158,7 @@ module WordPress
     TextMate::UI.complete(choices)
     
     bloginfo = bloginfo_command + "('${1}');\$0"
-    scope = ENV['TM_SCOPE']
-    if scope.include? 'source.php.embedded.html'
+    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
       TextMate.exit_insert_snippet(bloginfo)
     else
       TextMate.exit_insert_snippet('<?php ' + bloginfo + ' ?>')
@@ -139,8 +177,7 @@ module WordPress
     t = TextMate::UI.menu(choices)
     ret = eval t['func_to_call']
     
-    scope = ENV['TM_SCOPE']
-    if scope.include? 'source.php.embedded.html'
+    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
       TextMate.exit_insert_snippet(ret)
     else
       TextMate.exit_insert_snippet('<?php ' + ret + ' ?>')
