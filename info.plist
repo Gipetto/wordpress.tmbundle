@@ -18,7 +18,6 @@
 			<string>------------------------------------</string>
 			<string>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</string>
 			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
-			<string>D94B2F0C-06B8-49A9-95DF-79D31F2CFFEB</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -75,6 +74,7 @@
 				<array>
 					<string>70C9B7FA-81EC-4CB6-A560-08E4EE72CE9F</string>
 					<string>7EA482BD-2F99-4939-9B72-B51781D54E28</string>
+					<string>D94B2F0C-06B8-49A9-95DF-79D31F2CFFEB</string>
 				</array>
 				<key>name</key>
 				<string>Loop</string>
@@ -94,6 +94,7 @@
 				<array>
 					<string>BB5AC0C8-B1AA-49E0-9B64-2ED927F950AB</string>
 					<string>107C0A1E-1E28-4635-ADF4-CE70A0777AD8</string>
+					<string>E6A90D0B-0A5D-431E-8C4F-88B279CB7906</string>
 				</array>
 				<key>name</key>
 				<string>Query</string>
