@@ -4,6 +4,44 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 module WordPress
   
+  def self.wpdb
+    # manually built array until I can get proper function/class scraping
+    choices = [
+      { 'title' => 'categories' },
+      { 'title' => 'comments' },
+      { 'title' => 'escape', 'insert' => '(${1:var})' },
+      { 'title' => 'get_col', 'insert' => '(${1:query},${2:x})' },
+      { 'title' => 'get_results', 'insert' => '(${1:query},${2:output})' },
+      { 'title' => 'get_row', 'insert' => '(${1:query},${2:output},${3:y})' },
+      { 'title' => 'get_var', 'insert' => '(${1:query},${2:x},${3:y})' },
+      { 'title' => 'hide_errors', 'insert' => '()' },
+      { 'title' => 'insert', 'insert' => '(${1:table},${2:data})' },
+      { 'title' => 'links' },
+      { 'title' => 'options' },
+      { 'title' => 'postmeta' },
+      { 'title' => 'posts' },
+      { 'title' => 'prefix' },
+      { 'title' => 'prepare', 'insert' => '(${1:args})' },
+      { 'title' => 'query', 'insert' => '(${1:query})' },
+      { 'title' => 'show_errors', 'insert' => '(${1:bool})' },
+      { 'title' => 'suppress_errors', 'insert' => '(${1:bool})' },
+      { 'title' => 'terms' },
+      { 'title' => 'term_relationships' },
+      { 'title' => 'term_taxonomy' },
+      { 'title' => 'update', 'insert' => '(${1:table},${2:data},${3:where})' },
+      { 'title' => 'usermeta' },
+      { 'title' => 'users' }
+
+    ]
+    t = TextMate::UI.menu(choices)
+    ret = "\\\$wpdb->" + t['title']
+    if t['insert']
+       ret += t['insert']
+     end
+     ret += ";$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+  
   def self.post_var
     choices = [
       { 'title' => 'ID' }, 
