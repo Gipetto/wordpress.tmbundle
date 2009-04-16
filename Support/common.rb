@@ -34,9 +34,9 @@ module WordPress
     t = TextMate::UI.menu(choices)
     ret = "\\\$wpdb->" + t['title']
     if t['insert']
-       ret += t['insert']
+       ret += t['insert'] + ';'
      end
-     ret += ";$0"
+     ret += "$0"
     TextMate.exit_insert_snippet(ret)
   end
   
