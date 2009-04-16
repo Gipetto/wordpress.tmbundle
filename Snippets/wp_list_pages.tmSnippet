@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>wp_list_pages(${1:'${2:depth=1&amp;}${7:sort_column=menu_order&amp;}${8:title_li=}'})$0</string>
+	<key>name</key>
+	<string>wp_list_pages</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>wp_list_pages</string>
+	<key>uuid</key>
+	<string>819935E7-6523-4D3A-9220-5E812C650A56</string>
+</dict>
+</plist>
