@@ -42,32 +42,33 @@ module WordPress
   
   def self.post_var
     choices = [
+      { 'title' => 'ancestors' },
+      { 'title' => 'comment_count' }, 
+      { 'title' => 'comment_status' }, 
+      { 'title' => 'guid' }, 
       { 'title' => 'ID' }, 
+      { 'title' => 'menu_order' }, 
+      { 'title' => 'pinged' }, 
+      { 'title' => 'ping_status' }, 
       { 'title' => 'post_author' }, 
+      { 'title' => 'post_category' }, 
+      { 'title' => 'post_content' }, 
+      { 'title' => 'post_content_filtered' }, 
       { 'title' => 'post_date' }, 
       { 'title' => 'post_date_gmt' }, 
-      { 'title' => 'post_content' }, 
-      { 'title' => 'post_title' }, 
-      { 'title' => 'post_category' }, 
       { 'title' => 'post_excerpt' }, 
-      { 'title' => 'post_status' }, 
-      { 'title' => 'comment_status' }, 
-      { 'title' => 'ping_status' }, 
-      { 'title' => 'post_password' }, 
-      { 'title' => 'post_name' }, 
-      { 'title' => 'to_ping' }, 
-      { 'title' => 'pinged' }, 
+      { 'title' => 'post_mime_type' }, 
       { 'title' => 'post_modified' }, 
       { 'title' => 'post_modified_gmt' }, 
-      { 'title' => 'post_content_filtered' }, 
+      { 'title' => 'post_name' }, 
       { 'title' => 'post_parent' }, 
-      { 'title' => 'guid' }, 
-      { 'title' => 'menu_order' }, 
+      { 'title' => 'post_password' }, 
+      { 'title' => 'post_status' }, 
+      { 'title' => 'post_title' }, 
       { 'title' => 'post_type' }, 
-      { 'title' => 'post_mime_type' }, 
-      { 'title' => 'comment_count' }, 
-      { 'title' => 'view_count' }, 
-      { 'title' => 'ancestors' }  
+      { 'title' => 'to_ping' }, 
+      { 'title' => 'view_count' }
+ 
     ]
     t = TextMate::UI.menu(choices)
     post_var = "\\\$post->" + t['title'] + "$1"
