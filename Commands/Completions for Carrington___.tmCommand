@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+
+choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/carrington_functions.plist'))
+TextMate::UI.complete(choices, :initial_filter =&gt; 'cfct_')
+TextMate.exit_insert_snippet('cfct_')</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Completions for Carrington...</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>cfct</string>
+	<key>uuid</key>
+	<string>5F694673-AC7B-4B7A-B749-B6D368640804</string>
+</dict>
+</plist>

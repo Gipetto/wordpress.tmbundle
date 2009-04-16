@@ -18,6 +18,9 @@
 			<string>------------------------------------</string>
 			<string>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</string>
 			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
+			<string>2C4AFAAF-DE2A-4B34-9DB6-10F4C35C42CF</string>
+			<string>------------------------------------</string>
+			<string>64BCD481-DD67-475F-84B1-273A4E742566</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -57,6 +60,15 @@
 				</array>
 				<key>name</key>
 				<string>General Tags</string>
+			</dict>
+			<key>64BCD481-DD67-475F-84B1-273A4E742566</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>5F694673-AC7B-4B7A-B749-B6D368640804</string>
+				</array>
+				<key>name</key>
+				<string>Carrington</string>
 			</dict>
 			<key>7F20F3C3-571B-4A78-A02C-1C2FD57439D8</key>
 			<dict>
