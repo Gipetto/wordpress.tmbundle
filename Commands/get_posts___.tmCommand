@@ -10,8 +10,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 ret = "\\$posts = get_posts($0);"
 
-scope = ENV['TM_SCOPE']
-if scope.include? 'source.php.embedded.html'
+if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
 	TextMate.exit_insert_snippet(ret)
 else
 	TextMate.exit_insert_snippet("&lt;?php \n" + ret + "\n ?&gt;")

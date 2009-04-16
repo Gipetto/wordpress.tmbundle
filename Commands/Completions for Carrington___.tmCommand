@@ -20,7 +20,7 @@ TextMate.exit_insert_snippet('cfct_')</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>source.php</string>
+	<string>source.php,text.html</string>
 	<key>tabTrigger</key>
 	<string>cfct</string>
 	<key>uuid</key>

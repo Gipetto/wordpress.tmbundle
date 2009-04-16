@@ -13,8 +13,10 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/constants.plist'))
 TextMate::UI.complete(choices, :initial_filter =&gt; ENV['TM_CURRENT_WORD'], :extra_chars =&gt; '_')
 TextMate.exit_insert_snippet('$0')</string>
+	<key>fallbackInput</key>
+	<string>word</string>
 	<key>input</key>
-	<string>none</string>
+	<string>selection</string>
 	<key>name</key>
 	<string>Constant...</string>
 	<key>output</key>
