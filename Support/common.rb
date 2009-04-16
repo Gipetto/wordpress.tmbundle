@@ -137,7 +137,7 @@ module WordPress
     if t['title'] == 'submenu'
       self.add_submenu
     else
-      add_menu = "add_" + t['title'] + "('${1:page_title}','${2:menu_title}',${3:access_level},${4:basename(__FILE__)},'${5:icon_path}');$0"
+      add_menu = "add_" + t['title'] + "_page('${1:page_title}','${2:menu_title}',${3:access_level},${4:basename(__FILE__)},'${5:icon_path}');$0"
       TextMate.exit_insert_snippet(add_menu)
     end
     
