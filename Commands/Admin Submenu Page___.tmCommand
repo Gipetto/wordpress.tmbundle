@@ -18,7 +18,7 @@ WordPress.add_submenu()</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>add_submenu</string>
+	<string>adminsubmenu</string>
 	<key>uuid</key>
 	<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
 </dict>

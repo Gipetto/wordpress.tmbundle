@@ -18,7 +18,7 @@ WordPress.admin_menu()</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>admin_menu</string>
+	<string>adminmenu</string>
 	<key>uuid</key>
 	<string>6C30E9F4-06F8-46FC-BE2F-19325E306A11</string>
 </dict>
