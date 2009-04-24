@@ -8,7 +8,7 @@
 	<string>#!/usr/bin/env ruby -wKU
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
-ret = "\\$${1:posts} = get_posts(${2:array($0)});"
+ret = "\\$${1:query} = New WP_Query(${2:array(${0})});"
 
 if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
 	TextMate.exit_insert_snippet(ret)
@@ -18,14 +18,14 @@ end</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
-	<string>get_posts...</string>
+	<string>New QP_Query</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>source.php, text.html</string>
+	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>get_posts</string>
+	<string>nwpq</string>
 	<key>uuid</key>
-	<string>BB5AC0C8-B1AA-49E0-9B64-2ED927F950AB</string>
+	<string>9ACD198C-D8D0-4F15-8779-ADAE5DCD8276</string>
 </dict>
 </plist>

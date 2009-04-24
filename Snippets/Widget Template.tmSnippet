@@ -9,23 +9,23 @@
 }
 add_action('widgets_init','my_widgets_init');
 
-function my_widget($args) {
-	extract($args);
+function my_widget(\$args) {
+	extract(\$args);
 
-	// $widget_opts = get_option('my_widget_opts');
+	// \$widget_opts = get_option('my_widget_opts');
 
 	echo $before_widget;
-	// echo $before_title.$title.$after_title;
+	echo \$before_title.\$title.\$after_title;
 	// widget body...
-	echo $after_widget;
+	echo \$after_widget;
 }
 
 function my_widget_control() {
-	if(strtolower($_SERVER['REQUEST_METHOD']) == 'post') {
+	if(strtolower(\$_SERVER['REQUEST_METHOD']) == 'post') {
 		// process widget params
 		// update_option('my_widget_opts',$widget_opts);
 	}
-	// $widget_opts = get_option('my_widget_opts',array('default1','default2'));
+	// \$widget_opts = get_option('my_widget_opts',array('default1','default2'));
 	// widget options inputs...
 }</string>
 	<key>name</key>

@@ -68,7 +68,6 @@ module WordPress
       { 'title' => 'post_type' }, 
       { 'title' => 'to_ping' }, 
       { 'title' => 'view_count' }
- 
     ]
     t = TextMate::UI.menu(choices)
     post_var = "\\\$post->" + t['title'] + "$1"
@@ -80,7 +79,66 @@ module WordPress
     end
   end
   
-  def self.query_var
+  def self.wp_query
+    choices = [
+      { 'title' => 'comments' },
+      { 'title' => 'comment_count' },
+      { 'title' => 'current_post' },
+      { 'title' => 'fill_query_vars', 'insert' => '(${1:array})' },
+      { 'title' => 'found_posts' },
+      { 'title' => 'get', 'insert' => '(${1:string query_var})' },
+      { 'title' => 'get_posts', 'insert' => '()' },
+      { 'title' => 'get_queried_object', 'insert' => '()' },
+      { 'title' => 'get_queried_object_id', 'insert' => '()' },
+      { 'title' => 'have_comments', 'insert' => '()' },
+      { 'title' => 'have_posts', 'insert' => '()' },
+      { 'title' => 'init', 'insert' => '()' },
+      { 'title' => 'init_query_flags', 'insert' => '()' },
+      { 'title' => 'in_the_loop' },
+      { 'title' => 'max_num_comment_pages' },
+      { 'title' => 'max_num_pages' },
+      { 'title' => 'next_comment', 'insert' => '()' },
+      { 'title' => 'next_post', 'insert' => '()' },
+      { 'title' => 'parse_query', 'insert' => '(${1:string/array})' },
+      { 'title' => 'parse_query_vars', 'insert' => '()' },
+      { 'title' => 'posts' },
+      { 'title' => 'post_count' },
+      { 'title' => 'query', 'insert' => '(${1:string})' },
+      { 'title' => 'query_vars', 'lookup' => 'qv' },
+      { 'title' => 'request' },
+      { 'title' => 'rewind_comments', 'insert' => '()' },
+      { 'title' => 'rewind_posts', 'insert' => '()' },
+      { 'title' => 'set', 'insert' => '(${1:string query_var},${2:mixed value})' },
+      { 'title' => 'set_404', 'insert' => '()' },
+      { 'title' => 'the_comment', 'insert' => '()' },
+      { 'title' => 'the_post', 'insert' => '()' }
+
+    ]
+    
+    t = TextMate::UI.menu(choices)
+    
+    # functions
+    ret = "\\\$wp_query->" + t['title']
+    if t['insert']
+      ret += t['insert'] + ';'
+    end
+    
+    # query vars
+    if t['lookup'] == 'qv'
+      ret += self.query_var(true) + ';'
+    end
+      
+    # is_* left out on purpose to encourage the use of the accessor functions
+    
+    ret += "$0"
+    TextMate.exit_insert_snippet(ret)    
+  end
+  
+  def self.wp_query_is
+    
+  end
+  
+  def self.query_var(format_array = false)
     choices = [
       { 'title' => 'attachment' },
       { 'title' => 'attachment_id' },
@@ -122,7 +180,13 @@ module WordPress
       { 'title' => 'year' },  
     ]
     t = TextMate::UI.menu(choices)
-    TextMate.exit_insert_snippet("'" + t['title'] + "' => ${1:'${2}'},$0")
+    
+    if format_array == true
+      # return a different format for self.wp_query
+      return "['" + t['title'] + "']${1: = '${2:val}'}"
+    else
+      TextMate.exit_insert_snippet("'" + t['title'] + "' => ${1:'${2:val}'},$0")
+    end
   end
   
   def self.admin_menu
@@ -223,19 +287,19 @@ module WordPress
   
   # enqueue a style
   def self.enqueue_style()
-    style = "wp_enqueue_style('\${1:style_id}',get_bloginfo('template_directory').'\${2:/css/mystyle.css}',${3:array('\${4:string dependency}')},\${5:float version},'\${6:string media}');\$0"    
+    style = "wp_enqueue_style('\${1:style_id}',get_bloginfo('template_directory').'\${2:/css/mystyle.css}',\${3:array('\${4:string dependency}')},\${5:float version},'\${6:string media}');\$0"    
     return style
   end
  
  # enqueue a script from the theme
  def self.enqueue_from_theme()
-   script = "wp_enqueue_script('\${1:script_name}',get_bloginfo('template_directory').'\${2:/js/myscript.js}',${3:array('\${4:string dependency}')},\${5:float version});\$0"
+   script = "wp_enqueue_script('\${1:script_name}',get_bloginfo('template_directory').'\${2:/js/myscript.js}',\${3:array('\${4:string dependency}')},\${5:float version});\$0"
    return script
  end
   
  # enqueue a script from a plugin
  def self.enqueue_from_plugin()
-   script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',${4:array('\${5:string dependency}')},\${6:float version});\$0"
+   script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',\${4:array('\${5:string dependency}')},\${6:float version});\$0"
    return script
  end
   
