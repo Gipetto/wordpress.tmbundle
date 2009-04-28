@@ -11,7 +11,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/functions.plist'))
-TextMate::UI.complete(choices, :initial_filter =&gt; 'wp_')
+TextMate::UI.complete(choices, :initial_filter =&gt; 'wp_', :extra_chars =&gt; '_')
 TextMate.exit_insert_snippet('wp_')</string>
 	<key>input</key>
 	<string>none</string>

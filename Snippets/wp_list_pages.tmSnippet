@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>wp_list_pages(${1:array(${2:'depth' =&gt; ${3:1}},${4:'sort_column' =&gt; ${5:'${6:menu_order}'}},${7:'title_li' =&gt; ${8:'${9:}'}})})$0</string>
+	<string>wp_list_pages(${1:array(${2:'depth' =&gt; ${3:1},}${4:'sort_column' =&gt; ${5:'${6:menu_order}'},}${7:'title_li' =&gt; ${8:'${9:}'}})})$0</string>
 	<key>name</key>
 	<string>wp_list_pages</string>
 	<key>scope</key>
