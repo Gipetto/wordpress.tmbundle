@@ -76,6 +76,7 @@
 		<string>edit_user_profile</string>
 		<string>edit_user_profile_update</string>
 		<string>export_wp</string>
+		<string>generate_rewrite_rules</string>
 		<string>import_done</string>
 		<string>import_end</string>
 		<string>import_post_added</string>
@@ -96,6 +97,8 @@
 		<string>manage_media_custom_column</string>
 		<string>manage_pages_custom_column</string>
 		<string>manage_posts_custom_column</string>
+		<string>parse_query</string>
+		<string>parse_request</string>
 		<string>password_reset</string>
 		<string>personal_options</string>
 		<string>personal_options_update</string>
@@ -109,6 +112,8 @@
 		<string>pre-flash-upload-ui</string>
 		<string>pre-html-upload-ui</string>
 		<string>pre-upload-ui</string>
+		<string>pre_get_posts</string>
+		<string>pre_ping</string>
 		<string>private_to_published</string>
 		<string>profile_personal_options</string>
 		<string>profile_update</string>
@@ -130,6 +135,7 @@
 		<string>rss_item</string>
 		<string>sanitize_comment_cookies</string>
 		<string>save_post</string>
+		<string>send_headers</string>
 		<string>setup_theme</string>
 		<string>set_auth_cookie</string>
 		<string>set_current_user</string>
@@ -145,6 +151,8 @@
 		<string>transition_post_status</string>
 		<string>user_register</string>
 		<string>widgets_init</string>
+		<string>wp</string>
+		<string>wp_authenticate</string>
 		<string>wp_blacklist_check</string>
 		<string>wp_create_file_in_uploads</string>
 		<string>wp_footer</string>
