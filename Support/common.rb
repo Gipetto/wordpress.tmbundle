@@ -32,6 +32,11 @@ module WordPress
       { 'title' => 'users' }
     ]
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
     ret = "\\\$wpdb->" + t['title']
     if t['insert']
        ret += t['insert'] + ';'
@@ -70,6 +75,11 @@ module WordPress
       { 'title' => 'view_count' }
     ]
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
     post_var = "\\\$post->" + t['title'] + "$1"
     
     if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
@@ -116,6 +126,10 @@ module WordPress
     ]
     
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
     
     # functions
     ret = "\\\$wp_query->" + t['title']
@@ -181,6 +195,10 @@ module WordPress
     ]
     t = TextMate::UI.menu(choices)
     
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
     if format_array == true
       # return a different format for self.wp_query
       return "['" + t['title'] + "']${1: = '${2:val}'}"
@@ -197,6 +215,10 @@ module WordPress
       { 'title' => 'object' }
     ]
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
     
     if t['title'] == 'submenu'
       self.add_submenu
@@ -223,6 +245,11 @@ module WordPress
       { 'title' => 'custom...', 'insert' => '${1:file}' }   
     ]
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
     add_menu = "add_submenu_page('" + t['insert'] + "',__('${2:page_title}'),__('${3:menu_title}'),${4:access_level},${5:basename(__FILE__)},'${6:function}');$0"
     TextMate.exit_insert_snippet(add_menu)
   end
@@ -276,6 +303,11 @@ module WordPress
     ]
     
     t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
     ret = eval t['func_to_call']
     
     if ENV['TM_SCOPE'].include? 'source.php.embedded.html'

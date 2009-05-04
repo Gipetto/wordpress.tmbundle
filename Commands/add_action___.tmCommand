@@ -8,11 +8,11 @@
 	<string>#!/usr/bin/env ruby -wKU
 require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
-require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes' 
 
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/actions.plist'))
 t = TextMate::UI.menu(choices)
-action = "add_action" + t['insert']
+action = t != nil ? "add_action" + t['insert'] : ''
 TextMate.exit_insert_snippet(action)</string>
 	<key>fallbackInput</key>
 	<string>word</string>

@@ -12,7 +12,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/filters.plist'))
 t = TextMate::UI.menu(choices)
-action = "add_filter" + t['insert']
+action = t != nil ? "add_filter" + t['insert'] : ''
 TextMate.exit_insert_snippet(action)</string>
 	<key>input</key>
 	<string>none</string>
