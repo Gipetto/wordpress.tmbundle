@@ -14,7 +14,7 @@ function my_widget(\$args) {
 
 	// \$widget_opts = get_option('my_widget_opts');
 
-	echo $before_widget;
+	echo \$before_widget;
 	echo \$before_title.\$title.\$after_title;
 	// widget body...
 	echo \$after_widget;
