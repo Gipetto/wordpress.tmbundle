@@ -18,6 +18,9 @@
 		<string>AUTH_COOKIE</string>
 		<string>AUTH_KEY</string>
 		<string>COMMENTS_TEMPLATE</string>
+		<string>COMPRESS_CSS</string>
+		<string>COMPRESS_SCRIPTS</string>
+		<string>CONCATENATE_SCRIPTS</string>
 		<string>COOKIEHASH</string>
 		<string>COOKIEPATH</string>
 		<string>COOKIE_DOMAIN</string>
@@ -31,6 +34,7 @@
 		<string>DB_USER</string>
 		<string>DOING_AJAX</string>
 		<string>DOING_CRON</string>
+		<string>ENFORCE_GZIP</string>
 		<string>EP_ALL</string>
 		<string>EP_ATTACHMENT</string>
 		<string>EP_AUTHORS</string>
@@ -72,10 +76,76 @@
 		<string>OBJECT</string>
 		<string>OBJECT_K</string>
 		<string>PASS_COOKIE</string>
+		<string>PO_MAX_LINE_LEN</string>
 		<string>RSS</string>
+		<string>SCRIPT_DEBUG</string>
 		<string>SECRET_KEY</string>
 		<string>SECURE_AUTH_COOKIE</string>
 		<string>SECURE_AUTH_KEY</string>
+		<string>SIMPLEPIE_BUILD</string>
+		<string>SIMPLEPIE_CONSTRUCT_ALL</string>
+		<string>SIMPLEPIE_CONSTRUCT_BASE64</string>
+		<string>SIMPLEPIE_CONSTRUCT_HTML</string>
+		<string>SIMPLEPIE_CONSTRUCT_IRI</string>
+		<string>SIMPLEPIE_CONSTRUCT_MAYBE_HTML</string>
+		<string>SIMPLEPIE_CONSTRUCT_NONE</string>
+		<string>SIMPLEPIE_CONSTRUCT_TEXT</string>
+		<string>SIMPLEPIE_CONSTRUCT_XHTML</string>
+		<string>SIMPLEPIE_FILE_SOURCE_CURL</string>
+		<string>SIMPLEPIE_FILE_SOURCE_FILE_GET_CONTENTS</string>
+		<string>SIMPLEPIE_FILE_SOURCE_FSOCKOPEN</string>
+		<string>SIMPLEPIE_FILE_SOURCE_LOCAL</string>
+		<string>SIMPLEPIE_FILE_SOURCE_NONE</string>
+		<string>SIMPLEPIE_FILE_SOURCE_REMOTE</string>
+		<string>SIMPLEPIE_IANA_LINK_RELATIONS_REGISTRY</string>
+		<string>SIMPLEPIE_LINKBACK</string>
+		<string>SIMPLEPIE_LOCATOR_ALL</string>
+		<string>SIMPLEPIE_LOCATOR_AUTODISCOVERY</string>
+		<string>SIMPLEPIE_LOCATOR_LOCAL_BODY</string>
+		<string>SIMPLEPIE_LOCATOR_LOCAL_EXTENSION</string>
+		<string>SIMPLEPIE_LOCATOR_NONE</string>
+		<string>SIMPLEPIE_LOCATOR_REMOTE_BODY</string>
+		<string>SIMPLEPIE_LOCATOR_REMOTE_EXTENSION</string>
+		<string>SIMPLEPIE_NAME</string>
+		<string>SIMPLEPIE_NAMESPACE_ATOM_03</string>
+		<string>SIMPLEPIE_NAMESPACE_ATOM_10</string>
+		<string>SIMPLEPIE_NAMESPACE_DC_10</string>
+		<string>SIMPLEPIE_NAMESPACE_DC_11</string>
+		<string>SIMPLEPIE_NAMESPACE_GEORSS</string>
+		<string>SIMPLEPIE_NAMESPACE_ITUNES</string>
+		<string>SIMPLEPIE_NAMESPACE_MEDIARSS</string>
+		<string>SIMPLEPIE_NAMESPACE_MEDIARSS_WRONG</string>
+		<string>SIMPLEPIE_NAMESPACE_RDF</string>
+		<string>SIMPLEPIE_NAMESPACE_RSS_090</string>
+		<string>SIMPLEPIE_NAMESPACE_RSS_10</string>
+		<string>SIMPLEPIE_NAMESPACE_RSS_10_MODULES_CONTENT</string>
+		<string>SIMPLEPIE_NAMESPACE_RSS_20</string>
+		<string>SIMPLEPIE_NAMESPACE_W3C_BASIC_GEO</string>
+		<string>SIMPLEPIE_NAMESPACE_XHTML</string>
+		<string>SIMPLEPIE_NAMESPACE_XML</string>
+		<string>SIMPLEPIE_PCRE_HTML_ATTRIBUTE</string>
+		<string>SIMPLEPIE_PCRE_XML_ATTRIBUTE</string>
+		<string>SIMPLEPIE_PHP5</string>
+		<string>SIMPLEPIE_TYPE_ALL</string>
+		<string>SIMPLEPIE_TYPE_ATOM_03</string>
+		<string>SIMPLEPIE_TYPE_ATOM_10</string>
+		<string>SIMPLEPIE_TYPE_ATOM_ALL</string>
+		<string>SIMPLEPIE_TYPE_NONE</string>
+		<string>SIMPLEPIE_TYPE_RSS_090</string>
+		<string>SIMPLEPIE_TYPE_RSS_091</string>
+		<string>SIMPLEPIE_TYPE_RSS_091_NETSCAPE</string>
+		<string>SIMPLEPIE_TYPE_RSS_091_USERLAND</string>
+		<string>SIMPLEPIE_TYPE_RSS_092</string>
+		<string>SIMPLEPIE_TYPE_RSS_093</string>
+		<string>SIMPLEPIE_TYPE_RSS_094</string>
+		<string>SIMPLEPIE_TYPE_RSS_10</string>
+		<string>SIMPLEPIE_TYPE_RSS_20</string>
+		<string>SIMPLEPIE_TYPE_RSS_ALL</string>
+		<string>SIMPLEPIE_TYPE_RSS_RDF</string>
+		<string>SIMPLEPIE_TYPE_RSS_SYNDICATION</string>
+		<string>SIMPLEPIE_URL</string>
+		<string>SIMPLEPIE_USERAGENT</string>
+		<string>SIMPLEPIE_VERSION</string>
 		<string>SITECOOKIEPATH</string>
 		<string>STYLESHEETPATH</string>
 		<string>TEMPLATEPATH</string>
@@ -83,13 +153,15 @@
 		<string>USER_COOKIE</string>
 		<string>WPINC</string>
 		<string>WP_ADMIN</string>
-		<string>WP_CACHE</string>
 		<string>WP_CONTENT_DIR</string>
 		<string>WP_DEBUG</string>
 		<string>WP_IMPORTING</string>
 		<string>WP_INSTALLING</string>
 		<string>WP_LANG_DIR</string>
 		<string>WP_MEMORY_LIMIT</string>
+		<string>WP_PROXY_BYPASS_HOSTS</string>
+		<string>WP_PROXY_HOST</string>
+		<string>WP_PROXY_PORT</string>
 		<string>WP_UNINSTALL_PLUGIN</string>
 		<string>WP_USE_THEMES</string>
 		<string>WXR_VERSION</string>
