@@ -335,6 +335,58 @@ module WordPress
    return script
  end
   
+  # set a user role
+  def self.user_can()
+    choices = [
+      { 'display' => 'activate_plugins' },
+      { 'display' => 'create_users' },
+      { 'display' => 'delete_others_pages' },
+      { 'display' => 'delete_others_posts' },
+      { 'display' => 'delete_pages' },
+      { 'display' => 'delete_plugins' },
+      { 'display' => 'delete_posts' },
+      { 'display' => 'delete_private_pages' },
+      { 'display' => 'delete_private_posts' },
+      { 'display' => 'delete_published_pages' },
+      { 'display' => 'delete_published_posts' },
+      { 'display' => 'delete_users' },
+      { 'display' => 'edit_dashboard' },
+      { 'display' => 'edit_files' },
+      { 'display' => 'edit_others_pages' },
+      { 'display' => 'edit_others_posts' },
+      { 'display' => 'edit_pages' },
+      { 'display' => 'edit_plugins' },
+      { 'display' => 'edit_posts' },
+      { 'display' => 'edit_private_pages' },
+      { 'display' => 'edit_private_posts' },
+      { 'display' => 'edit_published_pages' },
+      { 'display' => 'edit_published_posts' },
+      { 'display' => 'edit_themes' },
+      { 'display' => 'edit_users' },
+      { 'display' => 'import' },
+      { 'display' => 'install_plugins' },
+      { 'display' => 'install_themes' },
+      { 'display' => 'manage_categories' },
+      { 'display' => 'manage_links' },
+      { 'display' => 'manage_options' },
+      { 'display' => 'moderate_comments' },
+      { 'display' => 'publish_pages' },
+      { 'display' => 'publish_posts' },
+      { 'display' => 'read' },
+      { 'display' => 'read_private_pages' },
+      { 'display' => 'read_private_posts' },
+      { 'display' => 'switch_themes' },
+      { 'display' => 'unfiltered_html' },
+      { 'display' => 'unfiltered_upload' },
+      { 'display' => 'update_plugins' },
+      { 'display' => 'update_themes' },
+      { 'display' => 'upload_files' }
+    ]
+    TextMate::UI.complete(choices)
+    ret = "current_user_can('\${1}')\$0"
+    TextMate.exit_insert_snippet(ret)    
+  end
+  
  # enqueue a predefined script from WordPress
  def self.enqueue_script()
     choices = [

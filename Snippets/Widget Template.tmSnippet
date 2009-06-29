@@ -29,11 +29,11 @@ function my_widget_control() {
 	// widget options inputs...
 }</string>
 	<key>name</key>
-	<string>Widget Template</string>
+	<string>Widget Template, deprecated</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>widget</string>
+	<string>widget-old</string>
 	<key>uuid</key>
 	<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 </dict>
