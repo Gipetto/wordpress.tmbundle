@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ * new WordPress Widget format
+ * Wordpress 2.8 and above
+ * @see http://codex.wordpress.org/Widgets_API#Developing_Widgets
+ */
+class myWidget extends WP_Widget {
+	
+	/**
+	 * Constructor
+	 * Set widget options
+	 *
+	 * @return void
+	 */
+	function myWidget() {
+		$widget_options = array(
+			'description'=&gt;'about my widget',
+			'classname'=&gt;'custom-class'
+		);
+		$control_options = array(
+			'width' =&gt; 350
+		);
+		parent::WP_Widget(false,'My Excellent Widget',$widget_options,$control_options);
+	}
+	
+	/**
+	 * Widget Output
+	 *
+	 * @param array $args - widget args
+	 * @param array $instance - current widget values
+	 * @return void
+	 */
+	function widget($args,$instance) {
+		extract($args);
+		echo $before_widget.
+			$before_title.esc_attr($instance['title']).$after_title.
+			esc_attr($instance['content']).
+			$after_widget;
+	}
+	
+	/**
+	 * Widget Options, optional
+	 *
+	 * @param array $instance 
+	 * @return void
+	 */
+	function form($instance) {
+		echo '
+			&lt;p&gt;
+				&lt;label for="'.$this-&gt;get_field_id('title').'"&gt;'._('Title').'&lt;/label&gt;
+				&lt;input type="text" class="widefat" name="'.$this-&gt;get_field_name('title').'" id="'.$this-&gt;get_field_id('title').'" value="'.esc_attr($instance['title']).'" /&gt;
+			&lt;/p&gt;
+			&lt;p&gt;
+				&lt;label for="'.$this-&gt;get_field_id('content').'"&gt;'._('Content').'&lt;/label&gt;
+				&lt;input type="text" class="widefat" name="'.$this-&gt;get_field_name('content').'" id="'.$this-&gt;get_field_id('content').'" value="'.esc_attr($instance['content']).'" /&gt;
+			&lt;/p&gt;
+			';
+	}
+
+	/**
+	 * Options saving, required if using form method to collect widget options
+	 * Modify values of $new_instance if needed before they're saved
+	 *
+	 * @param array $new_instance - new values as defined by user
+	 * @param array $old_instance - old values
+	 * @return array $new_instance
+	 */
+	function update($new_instance,$old_instance) {
+		return $new_instance;
+	}
+}
+
+/**
+ * Register the widget
+ */
+function myWidget_register() {
+	register_widget('myWidget');
+}
+add_action('widgets_init','myWidget_register');</string>
+	<key>name</key>
+	<string>Widget Template</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>widget</string>
+	<key>uuid</key>
+	<string>F1B67B91-6CBF-4124-A607-C50D7BAA464A</string>
+</dict>
+</plist>
