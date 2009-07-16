@@ -34,6 +34,7 @@
 					<string>CF9E8C66-BE1F-488C-89D2-FAC24CC6F194</string>
 					<string>C0B58ADB-27D5-4FA1-814F-5D0229492FD0</string>
 					<string>4E0F5B11-A2F0-4A93-A48C-B34B5A578E12</string>
+					<string>941032C7-C872-423C-80C0-A0EE209646AD</string>
 				</array>
 				<key>name</key>
 				<string>Templates</string>
@@ -44,6 +45,7 @@
 				<array>
 					<string>6C30E9F4-06F8-46FC-BE2F-19325E306A11</string>
 					<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
+					<string>26B5FAA2-6E07-4885-8E4A-CEBDEA2473CC</string>
 				</array>
 				<key>name</key>
 				<string>Admin</string>
@@ -155,6 +157,7 @@
 		<string>70C9B7FA-81EC-4CB6-A560-08E4EE72CE9F</string>
 		<string>C0B58ADB-27D5-4FA1-814F-5D0229492FD0</string>
 		<string>4E0F5B11-A2F0-4A93-A48C-B34B5A578E12</string>
+		<string>941032C7-C872-423C-80C0-A0EE209646AD</string>
 		<string>9D593F50-70DB-49C3-9BA5-4AC8338BECE7</string>
 		<string>3E2900FF-FADE-4E48-94B5-0A14058A43B8</string>
 		<string>36229588-BA57-40D5-88C7-D20BD57706B6</string>
