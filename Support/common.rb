@@ -82,7 +82,7 @@ module WordPress
     
     post_var = "\\\$post->" + t['title'] + "$1"
     
-    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
+    if ENV['TM_SCOPE'].include? 'source.php'
       TextMate.exit_insert_snippet(post_var)
     else
       TextMate.exit_insert_snippet('<?php echo ' + post_var + "; ?>$0")
@@ -286,10 +286,10 @@ module WordPress
     TextMate::UI.complete(choices)
     
     bloginfo = bloginfo_command + "('${1}');\$0"
-    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
+    if ENV['TM_SCOPE'].include? 'source.php'
       TextMate.exit_insert_snippet(bloginfo)
     else
-      TextMate.exit_insert_snippet('<?php ' + bloginfo + ' ?>')
+      TextMate.exit_insert_snippet('<?php ' + bloginfo + ' ?>')      
     end
   end
   
@@ -310,7 +310,7 @@ module WordPress
     
     ret = eval t['func_to_call']
     
-    if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
+    if ENV['TM_SCOPE'].include? 'source.php'
       TextMate.exit_insert_snippet(ret)
     else
       TextMate.exit_insert_snippet('<?php ' + ret + ' ?>')

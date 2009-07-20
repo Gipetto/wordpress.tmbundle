@@ -21,7 +21,7 @@ WordPress.enqueue()</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>source.php</string>
+	<string>source.php, text.html</string>
 	<key>tabTrigger</key>
 	<string>enqueue</string>
 	<key>uuid</key>
