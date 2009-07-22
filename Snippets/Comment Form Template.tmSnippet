@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>&lt;?php if ('open' == $post-&gt;comment_status) : ?&gt;
+	<string>&lt;?php if ('open' == \$post-&gt;comment_status) : ?&gt;
 
 	&lt;div id="respond"&gt;
 
@@ -11,7 +11,7 @@
 
 		&lt;?php cancel_comment_reply_link(); ?&gt;
 
-		&lt;?php if ( get_option('comment_registration') &amp;&amp; !$user_ID ) : ?&gt;
+		&lt;?php if ( get_option('comment_registration') &amp;&amp; !\$user_ID ) : ?&gt;
 			
 			&lt;p&gt;You must be &lt;a href="&lt;?php echo wp_login_url(get_permalink()); ?&gt;"&gt;logged in&lt;/a&gt; to post a comment.&lt;/p&gt;
 			
@@ -19,24 +19,24 @@
 
 			&lt;form action="&lt;?php echo get_option('siteurl'); ?&gt;/wp-comments-post.php" method="post" id="commentform"&gt;
 
-			&lt;?php if ( $user_ID ) : ?&gt;
+			&lt;?php if ( \$user_ID ) : ?&gt;
 
-				&lt;p&gt;Logged in as &lt;a href="&lt;?php echo get_option('siteurl'); ?&gt;/wp-admin/profile.php"&gt;&lt;?php echo $user_identity; ?&gt;&lt;/a&gt;. &lt;a href="&lt;?php echo wp_logout_url(get_permalink()); ?&gt;" title="Log out of this account"&gt;Log out &amp;raquo;&lt;/a&gt;&lt;/p&gt;
+				&lt;p&gt;Logged in as &lt;a href="&lt;?php echo get_option('siteurl'); ?&gt;/wp-admin/profile.php"&gt;&lt;?php echo \$user_identity; ?&gt;&lt;/a&gt;. &lt;a href="&lt;?php echo wp_logout_url(get_permalink()); ?&gt;" title="Log out of this account"&gt;Log out &amp;raquo;&lt;/a&gt;&lt;/p&gt;
 
 			&lt;?php else : ?&gt;
 
 				&lt;p&gt;
-					&lt;input type="text" name="author" id="author" value="&lt;?php echo $comment_author; ?&gt;" size="22" tabindex="1" &lt;?php if ($req) echo "aria-required='true'"; ?&gt; /&gt;
-					&lt;label for="author"&gt;Name &lt;?php if ($req) echo "(required)"; ?&gt;&lt;/label&gt;
+					&lt;input type="text" name="author" id="author" value="&lt;?php echo \$comment_author; ?&gt;" size="22" tabindex="1" &lt;?php if (\$req) echo "aria-required='true'"; ?&gt; /&gt;
+					&lt;label for="author"&gt;Name &lt;?php if (\$req) echo "(required)"; ?&gt;&lt;/label&gt;
 				&lt;/p&gt;
 
 				&lt;p&gt;
-					&lt;input type="text" name="email" id="email" value="&lt;?php echo $comment_author_email; ?&gt;" size="22" tabindex="2" &lt;?php if ($req) echo "aria-required='true'"; ?&gt; /&gt;
-					&lt;label for="email"&gt;Email (&lt;?php if ($req) echo "required, "; ?&gt;never shared)&lt;/label&gt;
+					&lt;input type="text" name="email" id="email" value="&lt;?php echo \$comment_author_email; ?&gt;" size="22" tabindex="2" &lt;?php if (\$req) echo "aria-required='true'"; ?&gt; /&gt;
+					&lt;label for="email"&gt;Email (&lt;?php if (\$req) echo "required, "; ?&gt;never shared)&lt;/label&gt;
 				&lt;/p&gt;
 
 				&lt;p&gt;
-					&lt;input type="text" name="url" id="url" value="&lt;?php echo $comment_author_url; ?&gt;" size="22" tabindex="3" /&gt;
+					&lt;input type="text" name="url" id="url" value="&lt;?php echo \$comment_author_url; ?&gt;" size="22" tabindex="3" /&gt;
 					&lt;label for="url"&gt;Website&lt;/label&gt;
 				&lt;/p&gt;
 
@@ -47,7 +47,7 @@
 			&lt;p&gt;Some HTML is ok: &lt;code&gt;&lt;?php echo allowed_tags(); ?&gt;&lt;/code&gt;&lt;/p&gt;
 
 			&lt;p&gt;&lt;input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" /&gt;&lt;/p&gt;
-			&lt;?php do_action('comment_form', $post-&gt;ID); comment_id_fields(); ?&gt;
+			&lt;?php do_action('comment_form', \$post-&gt;ID); comment_id_fields(); ?&gt;
 
 		&lt;/form&gt;
 

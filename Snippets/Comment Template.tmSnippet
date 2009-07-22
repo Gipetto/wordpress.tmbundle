@@ -7,7 +7,7 @@
 	
 	&lt;address class="vcard author entry-title"&gt;
 		
-		&lt;?php if (function_exists('get_avatar')) { echo get_avatar($comment, 48); } ?&gt;
+		&lt;?php if (function_exists('get_avatar')) { echo get_avatar(\$comment, 48); } ?&gt;
 		
 		&lt;cite class="n"&gt;&lt;?php comment_author_link(); ?&gt;&lt;/cite&gt;
 		
@@ -15,7 +15,7 @@
 	
 	&lt;div class="entry-content"&gt;
 
-		&lt;?php if ($comment-&gt;comment_approved == '0') : ?&gt;
+		&lt;?php if (\$comment-&gt;comment_approved == '0') : ?&gt;
 		&lt;p class="notification"&gt;&lt;em&gt;&lt;?php _e('Your comment is awaiting moderation'); ?&gt;&lt;/em&gt;&lt;/p&gt;
 		&lt;?php endif; ?&gt;
 		
@@ -23,9 +23,9 @@
 
 	&lt;/div&gt;
 	
-	&lt;a rel="bookmark" href="&lt;?php echo htmlspecialchars(get_comment_link( $comment-&gt;comment_ID )); ?&gt;"&gt;&lt;abbr class="published" title="&lt;?php comment_time('Y-m-d\TH:i'); ?&gt;"&gt;&lt;?php comment_date(); ?&gt; @ &lt;?php comment_time(); ?&gt;&lt;/abbr&gt;&lt;/a&gt;
+	&lt;a rel="bookmark" href="&lt;?php echo htmlspecialchars(get_comment_link( \$comment-&gt;comment_ID )); ?&gt;"&gt;&lt;abbr class="published" title="&lt;?php comment_time('Y-m-d\TH:i'); ?&gt;"&gt;&lt;?php comment_date(); ?&gt; @ &lt;?php comment_time(); ?&gt;&lt;/abbr&gt;&lt;/a&gt;
 	
-	&lt;?php if (function_exists('comment_reply_link')) { comment_reply_link(array_merge( $args, array('respond_id' =&gt; 'respond', 'depth' =&gt; $depth, 'max_depth' =&gt; $args['max_depth'])), $comment, $post); } ?&gt;
+	&lt;?php if (function_exists('comment_reply_link')) { comment_reply_link(array_merge( \$args, array('respond_id' =&gt; 'respond', 'depth' =&gt; \$depth, 'max_depth' =&gt; \$args['max_depth'])), \$comment, \$post); } ?&gt;
 	
 	&lt;?php edit_comment_link(); ?&gt;
 
