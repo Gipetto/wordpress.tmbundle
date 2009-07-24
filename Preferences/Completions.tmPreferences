@@ -179,6 +179,8 @@
 		<string>WP_Widget_Tag_Cloud</string>
 		<string>WP_Widget_Text</string>
 		<string>WrapText</string>
+		<string>__</string>
+		<string>_e</string>
 		<string>a</string>
 		<string>abort</string>
 		<string>absint</string>
@@ -193,6 +195,7 @@
 		<string>add_action</string>
 		<string>add_cap</string>
 		<string>add_clean_index</string>
+		<string>add_comment_to_entry</string>
 		<string>add_comments_page</string>
 		<string>add_contextual_help</string>
 		<string>add_cssclass</string>
@@ -552,7 +555,9 @@
 		<string>export_entries</string>
 		<string>export_entry</string>
 		<string>export_headers</string>
+		<string>export_original</string>
 		<string>export_to_file</string>
+		<string>export_translations</string>
 		<string>export_wp</string>
 		<string>extract_from_markers</string>
 		<string>favorite_actions</string>
@@ -1438,6 +1443,8 @@
 		<string>quit</string>
 		<string>rawlist</string>
 		<string>read</string>
+		<string>read_entry</string>
+		<string>read_line</string>
 		<string>readint</string>
 		<string>readint32</string>
 		<string>readint32array</string>
@@ -1501,6 +1508,7 @@
 		<string>rss_enclosure</string>
 		<string>run</string>
 		<string>run_command</string>
+		<string>safecss_filter_attr</string>
 		<string>sanitize_bookmark</string>
 		<string>sanitize_bookmark_field</string>
 		<string>sanitize_category</string>
@@ -1719,6 +1727,7 @@
 		<string>translate_user_role</string>
 		<string>translate_with_context</string>
 		<string>translate_with_gettext_context</string>
+		<string>trim_quotes</string>
 		<string>type_url_form_audio</string>
 		<string>type_url_form_file</string>
 		<string>type_url_form_image</string>
@@ -1729,6 +1738,7 @@
 		<string>uninstall_plugin</string>
 		<string>unlink</string>
 		<string>unpack_package</string>
+		<string>unpoify</string>
 		<string>unregister</string>
 		<string>unregister_setting</string>
 		<string>unregister_sidebar</string>
@@ -2219,6 +2229,7 @@
 		<string>wp_upload_dir</string>
 		<string>wp_user_settings</string>
 		<string>wp_validate_auth_cookie</string>
+		<string>wp_validate_redirect</string>
 		<string>wp_verify_nonce</string>
 		<string>wp_version_check</string>
 		<string>wp_widget_control</string>
