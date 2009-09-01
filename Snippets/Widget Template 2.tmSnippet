@@ -8,79 +8,43 @@
  * Wordpress 2.8 and above
  * @see http://codex.wordpress.org/Widgets_API#Developing_Widgets
  */
-class myWidget extends WP_Widget {
-	
-	/**
-	 * Constructor
-	 * Set widget options
-	 *
-	 * @return void
-	 */
-	function myWidget() {
-		\$widget_options = array(
-			'description'=&gt;'about my widget',
-			'classname'=&gt;'custom-class'
-		);
-		\$control_options = array(
-			'width' =&gt; 350
-		);
-		parent::WP_Widget(false,'My Excellent Widget',\$widget_options,\$control_options);
-	}
-	
-	/**
-	 * Widget Output
-	 *
-	 * @param array \$args - widget args
-	 * @param array \$instance - current widget values
-	 * @return void
-	 */
-	function widget($args,$instance) {
-		extract($args);
-		echo \$before_widget.
-			\$before_title.esc_attr(\$instance['title']).\$after_title.
-			esc_attr(\$instance['content']).
-			\$after_widget;
-	}
-	
-	/**
-	 * Widget Options, optional
-	 *
-	 * @param array \$instance 
-	 * @return void
-	 */
-	function form(\$instance) {
-		echo '
-			&lt;p&gt;
-				&lt;label for="'.\$this-&gt;get_field_id('title').'"&gt;'._('Title').'&lt;/label&gt;
-				&lt;input type="text" class="widefat" name="'.\$this-&gt;get_field_name('title').'" id="'.\$this-&gt;get_field_id('title').'" value="'.esc_attr($instance['title']).'" /&gt;
-			&lt;/p&gt;
-			&lt;p&gt;
-				&lt;label for="'.\$this-&gt;get_field_id('content').'"&gt;'._('Content').'&lt;/label&gt;
-				&lt;input type="text" class="widefat" name="'.\$this-&gt;get_field_name('content').'" id="'.\$this-&gt;get_field_id('content').'" value="'.esc_attr(\$instance['content']).'" /&gt;
-			&lt;/p&gt;
-			';
+class ${1:PREFIX_Name}_Widget extends WP_Widget {
+	function $1_Widget() {
+		\$widget_ops = array( 'classname' =&gt; '${2:CSS class name}', 'description' =&gt; '${3:Description}' );
+		\$this-&gt;WP_Widget( '$2', '${4:Title}', \$widget_ops );
 	}
 
-	/**
-	 * Options saving, required if using form method to collect widget options
-	 * Modify values of $new_instance if needed before they're saved
-	 *
-	 * @param array \$new_instance - new values as defined by user
-	 * @param array \$old_instance - old values
-	 * @return array \$new_instance
-	 */
-	function update(\$new_instance,\$old_instance) {
-		return \$new_instance;
+	function widget( \$args, \$instance ) {
+		extract( \$args, EXTR_SKIP );
+		echo \$before_widget;
+		echo \$before_title;
+		echo '$4'; // Can set this with a widget option, or omit altogether
+		echo \$after_title;
+
+		//
+		// Widget display logic goes here
+		//
+
+		echo \$after_widget;
+	}
+
+	function update( \$new_instance, \$old_instance ) {
+		// update logic goes here
+		\$updated_instance = \$new_instance;
+		return \$updated_instance;
+	}
+
+	function form( \$instance ) {
+		\$instance = wp_parse_args( (array) \$instance, array( ${5:array of option_name =&gt; value pairs} ) );
+
+		// display field names here using:
+		// \$this-&gt;get_field_id('option_name') - the CSS ID
+		// \$this-&gt;get_field_name('option_name') - the HTML name
+		// \$instance['option_name'] - the option value
 	}
 }
 
-/**
- * Register the widget
- */
-function myWidget_register() {
-	register_widget('myWidget');
-}
-add_action('widgets_init','myWidget_register');</string>
+add_action( 'widgets_init', create_function( '', "register_widget('$1_Widget');" ) );</string>
 	<key>name</key>
 	<string>Widget Template</string>
 	<key>scope</key>
