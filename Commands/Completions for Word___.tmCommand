@@ -17,7 +17,7 @@ TextMate::UI.complete(choices, :initial_filter =&gt; ENV['TM_CURRENT_WORD'], :ex
 	<key>input</key>
 	<string>selection</string>
 	<key>keyEquivalent</key>
-	<string>^~</string>
+	<string>^$</string>
 	<key>name</key>
 	<string>Completions for Word...</string>
 	<key>output</key>
