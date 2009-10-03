@@ -1,6 +1,7 @@
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
 require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+require ENV['TM_SUPPORT_PATH'] + '/lib/current_word'
 
 module WordPress
   def self.wpdb
@@ -334,6 +335,23 @@ module WordPress
    script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',\${4:array('\${5:string dependency}')},\${6:float version});\$0"
    return script
  end
+  
+  def self.function_define()
+    choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/function_defs.plist'))
+    search = Word.current_word('a-zA-Z0-9_')
+    found = choices.find { |i| i['name'] == search }
+    
+    if found.is_a?(Hash)
+      ret = '<code style="font-size: 1.2em;">' + found['definition'] + '</code><br />' + found['file']
+    else
+      ret = 'Sorry, no definition found. Boo!';
+    end
+    
+    style = "font-family: 'Lucida Grande', sans-serif;"
+    
+    TextMate::UI.tool_tip('<p style="' + style + '">' + ret + '</p>', :format => :html)
+    exit
+  end
   
   # set a user role
   def self.user_can()
