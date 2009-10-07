@@ -3,7 +3,11 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 require ENV['TM_SUPPORT_PATH'] + '/lib/current_word'
 
+
 module WordPress
+  
+  @prefspath = "#{ENV['HOME']}/Library/Preferences/com.macromates.textmate.wordpress.plist"
+  
   def self.wpdb
     # manually built array until I can get proper function/class scraping
     choices = [
@@ -337,10 +341,7 @@ module WordPress
  end
   
   def self.function_define()
-    choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/function_defs.plist'))
-    search = Word.current_word('a-zA-Z0-9_')
-    found = choices.find { |i| i['name'] == search }
-    
+    found = self.search_functions_by_name(Word.current_word('a-zA-Z0-9_'))
     if found.is_a?(Hash)
       ret = '<code style="font-size: 1.2em;">' + found['definition'] + '</code><br />' + found['file']
     else
@@ -351,6 +352,58 @@ module WordPress
     
     TextMate::UI.tool_tip('<p style="' + style + '">' + ret + '</p>', :format => :html)
     exit
+  end
+  
+  # open the function's file and go to line number
+  def self.goto_function()
+    prefs = self.load_prefs
+    style = "font-family: 'Lucida Grande', sans-serif;"
+    
+    found = self.search_functions_by_name(Word.current_word('a-zA-Z0-9_'))
+    if found.is_a?(Hash)
+      fileparts = found['file'].split(', line: ');      
+    else
+      TextMate::UI.tool_tip('<p style="' + style + '">Sorry, no definition found. Boo!</p>', :format => :html)     
+      exit;
+    end
+    
+    # trailing slash must die!
+    if /\/$/.match(prefs['wp_path'])
+      prefs['wp_path'] = prefs['wp_path'].gsub(/\/$/,'')
+    end
+    
+    filepath = prefs['wp_path'].strip + fileparts[0].strip
+    line = fileparts[1]
+    if File.exist?(filepath)
+      `open "txmt://open?url=file://#{e_url filepath}&line=#{line}"`
+    else
+      TextMate::UI.tool_tip('<p style="' + style + '">Something has gone horribly wrong! File not found for function definition!<br />Check your path to the WordPress install in your preferences (command-option-,).</p>', :format => :html)       
+    end
+    
+    exit;
+  end
+  
+  def self.set_pref_warning
+    style = "font-family: 'Lucida Grande', sans-serif;"
+    TextMate::UI.tool_tip('<p style="' + style + '">WordPress path not defined. Please set bundle preferences (command-option-,).</p>', :format => :html)
+    exit;
+  end
+  
+  def self.load_prefs
+    if File.exist?(@prefspath)
+      plist = OSX::PropertyList::load(File.open(@prefspath,File::RDWR|File::CREAT))
+      if ! defined?(plist['wp_path'])
+        self.set_pref_warning
+      end
+    else
+      self.set_pref_warning
+    end
+    return plist
+  end
+  
+  def self.search_functions_by_name(search)
+    choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/function_defs.plist'))
+    found = choices.find { |i| i['name'] == search }
   end
   
   # set a user role

@@ -7,20 +7,18 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 require ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
-WordPress.function_define()</string>
-	<key>fallbackInput</key>
-	<string>word</string>
+WordPress.goto_function()</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@H</string>
+	<string>@G</string>
 	<key>name</key>
-	<string>Definition for Word...</string>
+	<string>Go to function...</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>uuid</key>
-	<string>6CFC1235-D53C-481F-8EBB-2345CCC5490E</string>
+	<string>535797D5-2F26-40E3-A8E1-DBB914B03746</string>
 </dict>
 </plist>

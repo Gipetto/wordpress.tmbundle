@@ -8,6 +8,7 @@
 		<array>
 			<string>22F74062-F46E-4574-BFCA-16A3AF8D1D3D</string>
 			<string>6CFC1235-D53C-481F-8EBB-2345CCC5490E</string>
+			<string>535797D5-2F26-40E3-A8E1-DBB914B03746</string>
 			<string>------------------------------------</string>
 			<string>993317FD-2B2F-499C-89BD-F23F3FA185F3</string>
 			<string>32E7ECF7-1231-4B12-9734-1BBF0FD86A76</string>
@@ -20,7 +21,7 @@
 			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
 			<string>------------------------------------</string>
 			<string>64BCD481-DD67-475F-84B1-273A4E742566</string>
-			<string>60210349-E311-4D32-9727-10F772342634</string>
+			<string>AF818C20-A106-4835-9E30-BD837BC86600</string>
 		</array>
 		<key>submenus</key>
 		<dict>
@@ -56,6 +57,7 @@
 			<dict>
 				<key>items</key>
 				<array>
+					<string>60210349-E311-4D32-9727-10F772342634</string>
 					<string>E2C66F05-BA7E-483F-8E64-15B6B75E3EA9</string>
 					<string>2C4AFAAF-DE2A-4B34-9DB6-10F4C35C42CF</string>
 					<string>23067813-35AB-49D3-A1DE-087686EDC364</string>
@@ -128,7 +130,6 @@
 	<string>WordPress</string>
 	<key>ordering</key>
 	<array>
-		<string>2543E52B-D5CF-4BBE-B793-51F1574EA05F</string>
 		<string>D351B614-AB48-46DF-88C7-775D448520AB</string>
 		<string>3E14F56C-C7CF-4F9F-8F69-6FBEC6EC6AD5</string>
 		<string>1013106C-2B17-4FB0-83FE-246B9C9EBAF8</string>
@@ -146,9 +147,11 @@
 		<string>7EEC763F-7235-427C-8631-B59CF0182E73</string>
 		<string>9FAA1D54-692E-4B80-A70A-63F5F1F3071A</string>
 		<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
+		<string>535797D5-2F26-40E3-A8E1-DBB914B03746</string>
 		<string>422F23C5-F58C-418E-9F68-B08C932A12D0</string>
 		<string>6C30E9F4-06F8-46FC-BE2F-19325E306A11</string>
 		<string>BB5AC0C8-B1AA-49E0-9B64-2ED927F950AB</string>
+		<string>AF818C20-A106-4835-9E30-BD837BC86600</string>
 		<string>107C0A1E-1E28-4635-ADF4-CE70A0777AD8</string>
 		<string>D94B2F0C-06B8-49A9-95DF-79D31F2CFFEB</string>
 		<string>5F694673-AC7B-4B7A-B749-B6D368640804</string>
@@ -169,6 +172,7 @@
 		<string>F1B67B91-6CBF-4124-A607-C50D7BAA464A</string>
 		<string>76ACE4D0-A91A-454E-92BA-6FDC00234D74</string>
 		<string>819935E7-6523-4D3A-9220-5E812C650A56</string>
+		<string>2543E52B-D5CF-4BBE-B793-51F1574EA05F</string>
 	</array>
 	<key>uuid</key>
 	<string>F4EA978F-C21D-485A-8E86-117D82FF60C9</string>

@@ -6,21 +6,22 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
-require ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
-WordPress.function_define()</string>
-	<key>fallbackInput</key>
-	<string>word</string>
+require "#{ENV['TM_SUPPORT_PATH']}/lib/tm/detach"
+require "#{ENV['TM_BUNDLE_SUPPORT']}/preferences.rb"
+TextMate.detach { 
+	Preferences.display
+}</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@H</string>
+	<string>~@,</string>
 	<key>name</key>
-	<string>Definition for Word...</string>
+	<string>Preferences...</string>
 	<key>output</key>
 	<string>showAsTooltip</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>uuid</key>
-	<string>6CFC1235-D53C-481F-8EBB-2345CCC5490E</string>
+	<string>AF818C20-A106-4835-9E30-BD837BC86600</string>
 </dict>
 </plist>
