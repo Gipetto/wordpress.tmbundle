@@ -11,7 +11,7 @@ WordPress.goto_function()</string>
 	<key>input</key>
 	<string>none</string>
 	<key>keyEquivalent</key>
-	<string>@G</string>
+	<string>~@H</string>
 	<key>name</key>
 	<string>Go to function...</string>
 	<key>output</key>
