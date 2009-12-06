@@ -14,7 +14,6 @@ module WPValidator
         data.each_line do |line|
           if line.match(/<form method="post" action="">/) != nil
             line = line.gsub(/action=""/,'action="http://wordpress.org/extend/plugins/about/validator/"')
-            puts CGI.escape(line)
           end
           validated << line
         end
