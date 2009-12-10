@@ -3,15 +3,15 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>=== Plugin Name ===
-Contributors: ${1:wordpress.com_username}
-Donate link: ${2:url}
-Tags: ${3:tags}
-Requires at least: ${4:version_number}
-Tested up to: ${5:version_number}
-Stable tag: ${6:stable_tag}
-
-${7:Here is a short description of the plugin.  This should be no more than 150 chars.  No markup here.}
+	<string>=== ${1:Plugin Name} ===
+Contributors: ${2:wordpress.com_username}
+Donate link: ${3:url}
+Tags: ${4:tags}
+Requires at least: ${5:version_number}
+Tested up to: ${6:version_number}
+Stable tag: ${7:stable_tag}
+ 
+${8:Here is a short description of the plugin.  This should be no more than 150 chars.  No markup here.}
 
 == Description ==
 
@@ -74,6 +74,14 @@ the directory of the stable readme.txt, so in this case, \`/tags/4.3/screenshot-
 
 = 0.5 =
 * List versions from most recent at top to oldest at bottom.
+
+== Upgrade Notice ==
+
+= 1.0 =
+Upgrade notices describe the reason a user should upgrade.  No more than 300 characters.
+
+= 0.5 =
+This version fixes a security related bug.  Upgrade immediately.
 
 == Arbitrary section ==
 
