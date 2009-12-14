@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>function ${2:func_name}($atts) {
+	\$atts = extract(shortcode_atts(array('default'=&gt;'values'),$atts));
+	
+	// do shortcode actions here
+}
+add_shortcode('${1:shortcode-id}','${2:func_name}');</string>
+	<key>name</key>
+	<string>Shortcode</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>shortcode</string>
+	<key>uuid</key>
+	<string>A868D659-F16B-49ED-9279-31AE85B4AEB1</string>
+</dict>
+</plist>
