@@ -3,8 +3,8 @@
 <plist version="1.0">
 <dict>
 	<key>content</key>
-	<string>function ${2:func_name}($atts) {
-	\$atts = extract(shortcode_atts(array('default'=&gt;'values'),$atts));
+	<string>function ${2:func_name}(\$atts) {
+	\$atts = extract(shortcode_atts(array('default'=&gt;'values'),\$atts));
 	
 	// do shortcode actions here
 }
