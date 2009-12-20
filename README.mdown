@@ -1,0 +1,124 @@
+# WordPress TextMate Bundle
+
+**For WordPress Version:** 2.9
+
+The WordPress TextMate Bundle is, well, a [TextMate](http://macromates.com) bundle built with the sole purpose of reducing the amount of times we have to dig around the [WordPress](http://wordpress.org) core to look up the little things that we work with every day.
+
+The plugin features auto-completion of WordPress functions, snippets for common sections of code, and templates for WordPress components. We even snuck in function completion for [Carrington](http://carrington-blog.com) template framework functions. We're always making improvements as we find more that we want covered by the plugin (like WordPress MU support, coming soon).
+
+## Features
+
+- Auto-completion of WordPress functions with parameter hinting.
+- Parameter hinting for common functions like `[get_]bloginfo()` and query vars.
+- Snippets of common page and plugin parts like widget blogs, admin menus, and loops.
+- Templates for some WordPress components like plugins and page templates.
+- Carrington Blog function completion support
+- Fully tab stopped parameter entries in function templates
+- Function definition tool-tips
+- Goto function command to jump to file and line number where a function is defined
+- Validation of your Plugin's README.txt file against the WordPress online validator
+
+## Function Completion
+
+**Please note that this has changed from control-option-escape to control-shift-escape due to a Snow Leopard incompatibility issue. I have no idea what the issue is. Basically Snow Leopard stopped taking input for control-option-escape so I had to change it.**
+
+General function completion can be invoked with a slight modification of the regular PHP function completion. We chose to use control-shift-escape as its easy to remember next to the regular PHP command (option-escape). The completed function will include parameter hits for the function as best as my simple grep of the core will allow. I'm still trying to build a better way of grabbing comprehensive function definitions.
+
+It does leave just a little bit to be desired. It doesn't distinguish between classes, functions and methods, and though it does filter out "magic" & private methods (those prefixed with an underscore), it does index all function declarations it finds. And I believe that there's a stray JavaScript function or two in there. ;)
+
+"Common" function prefixes are duplicated in to their own commands. They all pull from the same function definition list, but offer a limited scope search. These limited scopes are available for:
+
+- `get_`&#x21E5;, ie: get_permalink, get_post_meta
+- `is_`&#x21E5;, ie: is_home, is_search
+- `the_`&#x21E5;, ie: the_post, the_title
+- `wp_`&#x21E5;, ie: wp_cache_add, wp_themes_dir
+- `esc_`&#x21E5;, ie: esc_attr_e
+
+Functions that have many options or required a bit of special attention have been expanded in to their own completions:
+
+- `bloginfo`&#x21E5; and `get_bloginfo`&#x21E5; for bloginfo vars
+- `wp_list_pages`&#x21E5; for listing pages and providing a standard starting point
+- `get_posts`&#x21E5;
+- `wp_query`&#x21E5;
+
+Each of these is invoked with a tab trigger, for example: `wp_`&#x21E5;
+
+We can't (yet) look at the current project to pull in any custom defined functions (ie: in plugins and theme function files), but we're working on that possibility.
+
+## Function Definitions
+
+Partial function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using Command-Shift-H to bring up the tool tip. 
+
+The second line of the tool-tip lists the file and line number where the function is defined to make looking up the details of the function more convenient.
+
+## Goto Function
+
+When pointed to an install of the current version of WordPress the bundle can jump to the definition of a function so that the function can be inspected.
+
+<b>Please note that this has changed from Command-Shift-G to Command-Shift-Option-H as to not conflict with the built in TextMate search modifier for "Find Previous" keyboard command.</b>
+
+Simply place the carat in a function name, or highlight the function, and press Command-Shift-Option-H. If needed (and it will be the first time you run the command) you'll be directed to enter the full path to your WordPress (or WordPress MU) install in the Preferences (Command-Option-,) before the function completion can work properly.
+
+## Template Snippets
+
+The bundle includes snippets for some common operations we encounter during WordPress development. These include:
+
+- `plugin_head`&#x21E5; - Insert plugin header
+- `adminmenu`&#x21E5; and `adminsubmenu`&#x21E5; - Add admin menu/submenu
+- `widget`&#x21E5; - Add widget and widget control for WordPress 2.8+
+- `widget-old`&#x21E5; - Add widget and widget control for versions older than WordPress 2.8
+- `nwpq`&#x21E5; New WP_Query
+- `theme_head`&#x21E5; - Theme head
+- `comment`&#x21E5; - Comment template
+- `commentform`&#x21E5; - Comment form template
+- `post`&#x21E5; - Post template
+- `sidebar`&#x21E5; - Sidebar template
+
+## Actions &amp; Filters
+
+We've also included a complete list of built in WordPress Actions & Filters so that using `add_action`&#x21E5; or `add_filter`&#x21E5; brings up a pre-compiled list of available actions and filters. 
+
+## Enqueuing
+
+By typing `enqueue`&#x21E5; you'll be presented with a list of options for enqueuing scripts and styles. All the standard script options are included when using the straight enqueue option, or a parameter hinted function template can be inserted for enqueuing custom scripts.
+
+## User Roles
+
+Who can ever remember all the user role levels? Now you don't have to. With `user_can`&#x21E5; you'll be presented with all the available user role levels to choose from. 
+
+## Common Variables
+
+Included are functions for quickly accessing common object members for post objects, query objects and the database object. The currently available completions are:
+
+- `qv1`&#x21E5; for query vars
+- `pv`&#x21E5; for post vars
+- `wpdb`&#x21E5; for wbdb vars and methods
+- `wp_query`&#x21E5; for wp_query vars and methods
+
+## Plugin README.txt Creation & Validation
+
+Use `readme`&#x21E5; to drop in a template of the WordPress plugin README.txt file.
+
+README.txt validation just got a little bit easier. The bundle includes functionality to validate your README.txt file without leaving TextMate. Once validated the README.txt can be modified in the validation window and resubmitted if necessary.
+
+## And more&hellip;
+
+There's even more included that's not yet mentioned here. Just browse through the bundle menu to see everything that's available and play around with some of the function completions to see the multiple-levels of assistance that it provides.
+
+## Version Compatability
+
+The bundle will be kept up to date with WordPress' latest release. There will be no conscious effort made to retain backwards compatibility. As of the WordPress 2.9 release the version of this plugin that is compatible with WordPress 2.8 has been tagged in the GitHub repository.  
+
+## Bugs/Suggestions
+
+If you find a bug, would like to see a feature implemented, or would like to contribute a feature to the project please use the [Issue Tracker](http://github.com/Gipetto/wordpress.tmbundle/issues) over at our GitHub project page. We're not opposed to anything, though you may have to put up with our ideals in how we like to implement things ;)
+
+## Credits
+
+Bundle Maintainer: [Shawn Parker](http://top-frog.com/projects/wordpress-textmate-bundle/)
+
+Additional thanks to:
+
+- [Gordon Brander](http://gordonbrander.com) for helping get this project off the ground.
+- [The talented crew at Crowd Favorite](http://crowdfavorite.com) for their various contributions and testing.
+- [Mark Jaquith](http://markjaquith.wordpress.com/2009/08/31/textmate-wordpress-widget-snippet/) for making a better Widget Template and for his involvement in making WordPress better.
