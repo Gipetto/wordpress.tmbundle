@@ -11,6 +11,7 @@
       <key>completions</key>
       <array>
 		<string>cfct_about_text</string>
+		<string>cfct_add_posts_per_category_page</string>
 		<string>cfct_admin_css</string>
 		<string>cfct_admin_head</string>
 		<string>cfct_admin_js</string>
@@ -69,6 +70,7 @@
 		<string>cfct_header_image_form</string>
 		<string>cfct_home_columns</string>
 		<string>cfct_init</string>
+		<string>cfct_leading_dir</string>
 		<string>cfct_load_plugins</string>
 		<string>cfct_loop</string>
 		<string>cfct_meta_templates</string>
@@ -81,6 +83,7 @@
 		<string>cfct_post_id_to_slug</string>
 		<string>cfct_posts</string>
 		<string>cfct_posts_per_archive_page</string>
+		<string>cfct_posts_per_category_page</string>
 		<string>cfct_role_filename_to_name</string>
 		<string>cfct_role_templates</string>
 		<string>cfct_settings_form</string>

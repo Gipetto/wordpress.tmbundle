@@ -28,8 +28,6 @@
 		<string>BW_Import</string>
 		<string>Base64EncodeWrapMB</string>
 		<string>Blogger_Import</string>
-		<string>BunnyTags_Import</string>
-		<string>CachedFileReader</string>
 		<string>ClearAddresses</string>
 		<string>ClearAllRecipients</string>
 		<string>ClearAttachments</string>
@@ -52,7 +50,6 @@
 		<string>EncodeString</string>
 		<string>EndBoundary</string>
 		<string>Expand</string>
-		<string>FileReader</string>
 		<string>File_Upload_Upgrader</string>
 		<string>FixEOL</string>
 		<string>GM_Import</string>
@@ -80,7 +77,6 @@
 		<string>IsQmail</string>
 		<string>IsSMTP</string>
 		<string>IsSendmail</string>
-		<string>JeromesKeyword_Import</string>
 		<string>LJ_API_Import</string>
 		<string>Lang</string>
 		<string>MT_Import</string>
@@ -92,6 +88,8 @@
 		<string>OPML_Import</string>
 		<string>POMO_CachedFileReader</string>
 		<string>POMO_CachedIntFileReader</string>
+		<string>POMO_FileReader</string>
+		<string>POMO_Reader</string>
 		<string>POMO_StringReader</string>
 		<string>POP3</string>
 		<string>Passive</string>
@@ -128,7 +126,6 @@
 		<string>SmtpClose</string>
 		<string>SmtpConnect</string>
 		<string>SmtpSend</string>
-		<string>StringReader</string>
 		<string>TextLine</string>
 		<string>Text_Diff_Renderer_Table</string>
 		<string>Theme_Installer_Skin</string>
@@ -142,6 +139,7 @@
 		<string>WP_Ajax_Response</string>
 		<string>WP_Categories_to_Tags</string>
 		<string>WP_Dependencies</string>
+		<string>WP_Embed</string>
 		<string>WP_Error</string>
 		<string>WP_Feed_Cache</string>
 		<string>WP_Feed_Cache_Transient</string>
@@ -154,6 +152,7 @@
 		<string>WP_Http_Cookie</string>
 		<string>WP_Import</string>
 		<string>WP_Locale</string>
+		<string>WP_MatchesMapRegex</string>
 		<string>WP_Object_Cache</string>
 		<string>WP_Query</string>
 		<string>WP_Rewrite</string>
@@ -178,10 +177,10 @@
 		<string>WP_Widget_Search</string>
 		<string>WP_Widget_Tag_Cloud</string>
 		<string>WP_Widget_Text</string>
+		<string>WP_oEmbed</string>
 		<string>WrapText</string>
 		<string>__</string>
 		<string>_e</string>
-		<string>a</string>
 		<string>abort</string>
 		<string>absint</string>
 		<string>abspath</string>
@@ -195,6 +194,7 @@
 		<string>add_action</string>
 		<string>add_cap</string>
 		<string>add_clean_index</string>
+		<string>add_comment_meta</string>
 		<string>add_comment_to_entry</string>
 		<string>add_comments_page</string>
 		<string>add_contextual_help</string>
@@ -207,6 +207,7 @@
 		<string>add_external_rule</string>
 		<string>add_feed</string>
 		<string>add_filter</string>
+		<string>add_image_size</string>
 		<string>add_js</string>
 		<string>add_link</string>
 		<string>add_links_page</string>
@@ -217,6 +218,7 @@
 		<string>add_menu_page</string>
 		<string>add_meta</string>
 		<string>add_meta_box</string>
+		<string>add_metadata</string>
 		<string>add_object_page</string>
 		<string>add_option</string>
 		<string>add_option_update_handler</string>
@@ -264,6 +266,7 @@
 		<string>append</string>
 		<string>append_content</string>
 		<string>append_editor</string>
+		<string>apply</string>
 		<string>apply_filters</string>
 		<string>atime</string>
 		<string>atom_enclosure</string>
@@ -275,8 +278,11 @@
 		<string>authenticate</string>
 		<string>authentication</string>
 		<string>authentication_header</string>
+		<string>author_can</string>
 		<string>auto_ajax</string>
 		<string>auto_submit</string>
+		<string>autoembed</string>
+		<string>autoembed_callback</string>
 		<string>automatic_feed_links</string>
 		<string>backfill_attachment_urls</string>
 		<string>backfill_parents</string>
@@ -309,10 +315,13 @@
 		<string>build_query</string>
 		<string>build_query_string</string>
 		<string>bulk_edit_posts</string>
+		<string>bulk_upgrade</string>
 		<string>cache_javascript_headers</string>
+		<string>cache_oembed</string>
 		<string>calculateType</string>
 		<string>calendar_week_mod</string>
 		<string>call</string>
+		<string>callback</string>
 		<string>cancel_comment_reply_link</string>
 		<string>cat_is_ancestor_of</string>
 		<string>cat_rows</string>
@@ -323,8 +332,6 @@
 		<string>cdata</string>
 		<string>cdup</string>
 		<string>chdir</string>
-		<string>check_V1_post_keyword</string>
-		<string>check_V2_post_keyword</string>
 		<string>check_admin_referer</string>
 		<string>check_ajax_referer</string>
 		<string>check_all_rows</string>
@@ -334,7 +341,6 @@
 		<string>check_column</string>
 		<string>check_comment</string>
 		<string>check_comment_flood_db</string>
-		<string>check_post_keyword</string>
 		<string>check_server_timer</string>
 		<string>checkauthor</string>
 		<string>checked</string>
@@ -352,7 +358,6 @@
 		<string>clean_term_cache</string>
 		<string>clean_url</string>
 		<string>cleanup</string>
-		<string>cleanup_V2_import</string>
 		<string>cleanup_import</string>
 		<string>client_error</string>
 		<string>close</string>
@@ -392,6 +397,7 @@
 		<string>comments_rss</string>
 		<string>comments_rss_link</string>
 		<string>comments_template</string>
+		<string>compatible_gzinflate</string>
 		<string>compress</string>
 		<string>compression_test</string>
 		<string>compute_string_distance</string>
@@ -412,6 +418,7 @@
 		<string>core_upgrade_preamble</string>
 		<string>create</string>
 		<string>create_attachment</string>
+		<string>create_initial_post_types</string>
 		<string>create_initial_taxonomies</string>
 		<string>create_post</string>
 		<string>create_user</string>
@@ -423,9 +430,9 @@
 		<string>current_filter</string>
 		<string>current_time</string>
 		<string>current_user_can</string>
-		<string>currentpos</string>
 		<string>cwd</string>
 		<string>d</string>
+		<string>data2html</string>
 		<string>date_i18n</string>
 		<string>dbDelta</string>
 		<string>db_version</string>
@@ -440,12 +447,16 @@
 		<string>default_password_nag</string>
 		<string>default_password_nag_edit_user</string>
 		<string>default_password_nag_handler</string>
+		<string>default_topic_count_scale</string>
 		<string>default_topic_count_text</string>
 		<string>delete</string>
 		<string>delete_all_user_settings</string>
 		<string>delete_attachment</string>
+		<string>delete_comment_meta</string>
 		<string>delete_get_calendar_cache</string>
 		<string>delete_meta</string>
+		<string>delete_metadata</string>
+		<string>delete_oembed_caches</string>
 		<string>delete_old_plugin</string>
 		<string>delete_old_theme</string>
 		<string>delete_option</string>
@@ -453,6 +464,8 @@
 		<string>delete_post</string>
 		<string>delete_post_meta</string>
 		<string>delete_post_meta_by_key</string>
+		<string>delete_site_option</string>
+		<string>delete_site_transient</string>
 		<string>delete_transient</string>
 		<string>delete_user_setting</string>
 		<string>delete_usermeta</string>
@@ -462,6 +475,7 @@
 		<string>did_action</string>
 		<string>difference</string>
 		<string>dirlist</string>
+		<string>discover</string>
 		<string>discover_pingback_server_uri</string>
 		<string>dismiss_core_update</string>
 		<string>dismissed_updates</string>
@@ -489,6 +503,7 @@
 		<string>do_items</string>
 		<string>do_meta_boxes</string>
 		<string>do_paging</string>
+		<string>do_plugin_upgrade</string>
 		<string>do_robots</string>
 		<string>do_settings_fields</string>
 		<string>do_settings_sections</string>
@@ -543,6 +558,7 @@
 		<string>esc_html</string>
 		<string>esc_html__</string>
 		<string>esc_html_e</string>
+		<string>esc_html_x</string>
 		<string>esc_js</string>
 		<string>esc_sql</string>
 		<string>esc_url</string>
@@ -571,6 +587,7 @@
 		<string>feed_start_element</string>
 		<string>feedback</string>
 		<string>feof</string>
+		<string>fetch</string>
 		<string>fetch_feed</string>
 		<string>fetch_remote_file</string>
 		<string>fetch_rss</string>
@@ -586,7 +603,6 @@
 		<string>find_core_update</string>
 		<string>find_folder</string>
 		<string>find_posts_div</string>
-		<string>find_string</string>
 		<string>finished</string>
 		<string>flipTab</string>
 		<string>floated_admin_avatar</string>
@@ -612,6 +628,7 @@
 		<string>funky_javascript_callback</string>
 		<string>funky_javascript_fix</string>
 		<string>gallery_shortcode</string>
+		<string>gd_edit_image_support</string>
 		<string>generate_rewrite_rule</string>
 		<string>generate_rewrite_rules</string>
 		<string>generic_ping</string>
@@ -638,6 +655,7 @@
 		<string>get_all_user_settings</string>
 		<string>get_alloptions</string>
 		<string>get_alloptions_110</string>
+		<string>get_allowed_mime_types</string>
 		<string>get_approved_comments</string>
 		<string>get_archives</string>
 		<string>get_archives_link</string>
@@ -714,6 +732,7 @@
 		<string>get_comment_feed_permastruct</string>
 		<string>get_comment_guid</string>
 		<string>get_comment_link</string>
+		<string>get_comment_meta</string>
 		<string>get_comment_pages_count</string>
 		<string>get_comment_reply_link</string>
 		<string>get_comment_statuses</string>
@@ -739,6 +758,7 @@
 		<string>get_default_link_to_edit</string>
 		<string>get_default_page_to_edit</string>
 		<string>get_default_post_to_edit</string>
+		<string>get_delete_post_link</string>
 		<string>get_edit_bookmark_link</string>
 		<string>get_edit_comment_link</string>
 		<string>get_edit_post_link</string>
@@ -764,6 +784,7 @@
 		<string>get_field_id</string>
 		<string>get_field_name</string>
 		<string>get_file</string>
+		<string>get_file_data</string>
 		<string>get_file_description</string>
 		<string>get_filesystem_method</string>
 		<string>get_footer</string>
@@ -772,6 +793,7 @@
 		<string>get_hidden_columns</string>
 		<string>get_hidden_meta_boxes</string>
 		<string>get_home_path</string>
+		<string>get_html</string>
 		<string>get_image_send_to_editor</string>
 		<string>get_image_tag</string>
 		<string>get_images_from_uri</string>
@@ -797,6 +819,7 @@
 		<string>get_media_url</string>
 		<string>get_meridiem</string>
 		<string>get_meta_keys</string>
+		<string>get_metadata</string>
 		<string>get_month</string>
 		<string>get_month_abbrev</string>
 		<string>get_month_link</string>
@@ -814,7 +837,6 @@
 		<string>get_object_term_cache</string>
 		<string>get_objects_in_term</string>
 		<string>get_option</string>
-		<string>get_original_string</string>
 		<string>get_others_drafts</string>
 		<string>get_others_pending</string>
 		<string>get_others_unpublished_posts</string>
@@ -837,8 +859,8 @@
 		<string>get_plugin_files</string>
 		<string>get_plugin_page_hook</string>
 		<string>get_plugin_page_hookname</string>
+		<string>get_plugin_updates</string>
 		<string>get_plugins</string>
-		<string>get_plural_forms</string>
 		<string>get_plural_forms_count</string>
 		<string>get_post</string>
 		<string>get_post_ancestors</string>
@@ -851,14 +873,17 @@
 		<string>get_post_meta</string>
 		<string>get_post_meta_by_id</string>
 		<string>get_post_mime_type</string>
+		<string>get_post_mime_types</string>
 		<string>get_post_modified_time</string>
 		<string>get_post_reply_link</string>
 		<string>get_post_status</string>
 		<string>get_post_statuses</string>
 		<string>get_post_taxonomies</string>
+		<string>get_post_thumbnail_id</string>
 		<string>get_post_time</string>
 		<string>get_post_to_edit</string>
 		<string>get_post_type</string>
+		<string>get_post_types</string>
 		<string>get_postdata</string>
 		<string>get_posts</string>
 		<string>get_posts_nav_link</string>
@@ -895,6 +920,7 @@
 		<string>get_shortcut_link</string>
 		<string>get_sidebar</string>
 		<string>get_site_option</string>
+		<string>get_site_transient</string>
 		<string>get_status_header_desc</string>
 		<string>get_stp_posts</string>
 		<string>get_tag</string>
@@ -935,6 +961,7 @@
 		<string>get_the_category_list</string>
 		<string>get_the_category_rss</string>
 		<string>get_the_content</string>
+		<string>get_the_content_feed</string>
 		<string>get_the_excerpt</string>
 		<string>get_the_generator</string>
 		<string>get_the_guid</string>
@@ -942,6 +969,7 @@
 		<string>get_the_modified_date</string>
 		<string>get_the_modified_time</string>
 		<string>get_the_password_form</string>
+		<string>get_the_post_thumbnail</string>
 		<string>get_the_tag_list</string>
 		<string>get_the_tags</string>
 		<string>get_the_taxonomies</string>
@@ -950,12 +978,12 @@
 		<string>get_the_time</string>
 		<string>get_the_title</string>
 		<string>get_the_title_rss</string>
+		<string>get_theme_updates</string>
 		<string>get_to_ping</string>
 		<string>get_token_info</string>
 		<string>get_total_results</string>
 		<string>get_trackback_url</string>
 		<string>get_transient</string>
-		<string>get_translation_string</string>
 		<string>get_translations_for_domain</string>
 		<string>get_udims</string>
 		<string>get_user_by</string>
@@ -986,7 +1014,6 @@
 		<string>getchmod</string>
 		<string>gethchmod</string>
 		<string>getnumchmodfromh</string>
-		<string>gettext_reader</string>
 		<string>gettext_select_plural_form</string>
 		<string>glob</string>
 		<string>glob_pattern_match</string>
@@ -1006,6 +1033,7 @@
 		<string>has_filter</string>
 		<string>has_gzip</string>
 		<string>has_meta</string>
+		<string>has_post_thumbnail</string>
 		<string>has_tag</string>
 		<string>hash_hmac</string>
 		<string>have_comments</string>
@@ -1034,6 +1062,7 @@
 		<string>image_attachment_fields_to_save</string>
 		<string>image_constrain_size_for_editor</string>
 		<string>image_downsize</string>
+		<string>image_edit_apply_changes</string>
 		<string>image_get_intermediate_size</string>
 		<string>image_hwstring</string>
 		<string>image_link_input_fields</string>
@@ -1131,6 +1160,7 @@
 		<string>is_preview</string>
 		<string>is_readable</string>
 		<string>is_redirect</string>
+		<string>is_resource</string>
 		<string>is_robots</string>
 		<string>is_rss</string>
 		<string>is_search</string>
@@ -1162,6 +1192,8 @@
 		<string>js_2</string>
 		<string>js_escape</string>
 		<string>js_includes</string>
+		<string>json_decode</string>
+		<string>json_encode</string>
 		<string>key</string>
 		<string>kses_init</string>
 		<string>kses_init_filters</string>
@@ -1186,12 +1218,15 @@
 		<string>list_core_update</string>
 		<string>list_files</string>
 		<string>list_meta</string>
+		<string>list_plugin_updates</string>
+		<string>list_theme_updates</string>
 		<string>lj_ixr</string>
 		<string>ljapi_msg</string>
 		<string>load</string>
+		<string>load_child_theme_textdomain</string>
 		<string>load_default_textdomain</string>
+		<string>load_image_to_edit</string>
 		<string>load_plugin_textdomain</string>
-		<string>load_tables</string>
 		<string>load_textdomain</string>
 		<string>load_theme_textdomain</string>
 		<string>localize</string>
@@ -1208,6 +1243,7 @@
 		<string>make_db_current_silent</string>
 		<string>make_entry</string>
 		<string>make_headers</string>
+		<string>make_plural_form_function</string>
 		<string>make_site_theme</string>
 		<string>make_site_theme_from_default</string>
 		<string>make_site_theme_from_oldschool</string>
@@ -1220,6 +1256,8 @@
 		<string>maybe_create_table</string>
 		<string>maybe_disable_automattic_widgets</string>
 		<string>maybe_drop_column</string>
+		<string>maybe_make_link</string>
+		<string>maybe_run_ajax_cache</string>
 		<string>maybe_serialize</string>
 		<string>maybe_unserialize</string>
 		<string>mb_substr</string>
@@ -1292,16 +1330,17 @@
 		<string>next_posts_link</string>
 		<string>next_step</string>
 		<string>next_widget_id_number</string>
-		<string>ngettext</string>
 		<string>nlist</string>
 		<string>no_apos</string>
 		<string>no_content</string>
+		<string>no_update_actions</string>
 		<string>nocache_headers</string>
 		<string>noindex</string>
 		<string>normalize</string>
 		<string>normalize_whitespace</string>
 		<string>not_allowed</string>
 		<string>not_found</string>
+		<string>nplurals_and_expression_from_header</string>
 		<string>ns_to_prefix</string>
 		<string>number_format_i18n</string>
 		<string>ok</string>
@@ -1311,16 +1350,9 @@
 		<string>output</string>
 		<string>owner</string>
 		<string>page_attributes_meta_box</string>
-		<string>page_author_meta_box</string>
-		<string>page_comments_status_meta_box</string>
-		<string>page_custom_meta_box</string>
 		<string>page_links</string>
-		<string>page_password_meta_box</string>
-		<string>page_revisions_meta_box</string>
 		<string>page_rewrite_rules</string>
 		<string>page_rows</string>
-		<string>page_slug_meta_box</string>
-		<string>page_submit_meta_box</string>
 		<string>page_template_dropdown</string>
 		<string>page_uri_index</string>
 		<string>paged_walk</string>
@@ -1328,6 +1360,7 @@
 		<string>paginate_links</string>
 		<string>parent_dropdown</string>
 		<string>parent_post_rel_link</string>
+		<string>parenthesize_plural_exression</string>
 		<string>parse</string>
 		<string>parseIso</string>
 		<string>parseTimestamp</string>
@@ -1342,6 +1375,7 @@
 		<string>password</string>
 		<string>path_is_absolute</string>
 		<string>path_join</string>
+		<string>pathinfo52</string>
 		<string>permalink_anchor</string>
 		<string>permalink_link</string>
 		<string>permalink_single_rss</string>
@@ -1386,7 +1420,6 @@
 		<string>post_custom_meta_box</string>
 		<string>post_excerpt_meta_box</string>
 		<string>post_exists</string>
-		<string>post_password_meta_box</string>
 		<string>post_password_required</string>
 		<string>post_permalink</string>
 		<string>post_preview</string>
@@ -1396,9 +1429,11 @@
 		<string>post_slug_meta_box</string>
 		<string>post_submit_meta_box</string>
 		<string>post_tags_meta_box</string>
+		<string>post_thumbnail_meta_box</string>
 		<string>post_trackback_meta_box</string>
 		<string>postbox_classes</string>
 		<string>posts_nav_link</string>
+		<string>pre_schema_upgrade</string>
 		<string>preg_index</string>
 		<string>prep_atom_text_construct</string>
 		<string>prepare</string>
@@ -1432,6 +1467,7 @@
 		<string>process_post_meta</string>
 		<string>process_posts</string>
 		<string>process_tags</string>
+		<string>process_terms</string>
 		<string>put</string>
 		<string>put_attachment</string>
 		<string>put_contents</string>
@@ -1443,12 +1479,11 @@
 		<string>quit</string>
 		<string>rawlist</string>
 		<string>read</string>
+		<string>read_all</string>
 		<string>read_entry</string>
 		<string>read_line</string>
-		<string>readint</string>
 		<string>readint32</string>
 		<string>readint32array</string>
-		<string>readintarray</string>
 		<string>recent_comments_style</string>
 		<string>redirect</string>
 		<string>redirect_canonical</string>
@@ -1460,8 +1495,10 @@
 		<string>register_column_headers</string>
 		<string>register_deactivation_hook</string>
 		<string>register_globals</string>
+		<string>register_handler</string>
 		<string>register_importer</string>
 		<string>register_new_user</string>
+		<string>register_post_type</string>
 		<string>register_setting</string>
 		<string>register_sidebar</string>
 		<string>register_sidebar_widget</string>
@@ -1470,6 +1507,7 @@
 		<string>register_uninstall_hook</string>
 		<string>register_widget</string>
 		<string>register_widget_control</string>
+		<string>rel_canonical</string>
 		<string>remove</string>
 		<string>remove_accents</string>
 		<string>remove_action</string>
@@ -1508,6 +1546,7 @@
 		<string>rss_enclosure</string>
 		<string>run</string>
 		<string>run_command</string>
+		<string>run_shortcode</string>
 		<string>safecss_filter_attr</string>
 		<string>sanitize_bookmark</string>
 		<string>sanitize_bookmark_field</string>
@@ -1523,10 +1562,13 @@
 		<string>sanitize_sql_orderby</string>
 		<string>sanitize_term</string>
 		<string>sanitize_term_field</string>
+		<string>sanitize_text_field</string>
 		<string>sanitize_title</string>
 		<string>sanitize_title_with_dashes</string>
 		<string>sanitize_url</string>
 		<string>sanitize_user</string>
+		<string>sanitize_user_field</string>
+		<string>sanitize_user_object</string>
 		<string>save</string>
 		<string>saveDomDocument</string>
 		<string>save_authors</string>
@@ -1546,7 +1588,6 @@
 		<string>select</string>
 		<string>select_authors</string>
 		<string>select_plural_form</string>
-		<string>select_string</string>
 		<string>selected</string>
 		<string>self_link</string>
 		<string>send</string>
@@ -1555,10 +1596,10 @@
 		<string>separate_comments</string>
 		<string>serialize</string>
 		<string>serve</string>
+		<string>serve_request</string>
 		<string>set</string>
 		<string>setCallbacks</string>
 		<string>setCapabilities</string>
-		<string>setDefaultPermissions</string>
 		<string>setEndian</string>
 		<string>set_404</string>
 		<string>set_category_base</string>
@@ -1570,22 +1611,27 @@
 		<string>set_header</string>
 		<string>set_headers</string>
 		<string>set_permalink_structure</string>
+		<string>set_post_thumbnail_size</string>
 		<string>set_post_type</string>
 		<string>set_prefix</string>
 		<string>set_query_var</string>
 		<string>set_result</string>
 		<string>set_role</string>
 		<string>set_screen_options</string>
+		<string>set_site_transient</string>
 		<string>set_tag_base</string>
 		<string>set_transient</string>
 		<string>set_upgrader</string>
 		<string>set_user_setting</string>
 		<string>settings_fields</string>
 		<string>setup</string>
+		<string>setup_photo_actions</string>
 		<string>setup_postdata</string>
 		<string>setup_userdata</string>
+		<string>shortcode</string>
 		<string>shortcode_atts</string>
 		<string>shortcode_parse_atts</string>
+		<string>shortcode_unautop</string>
 		<string>should_decode</string>
 		<string>show</string>
 		<string>show_blogs</string>
@@ -1622,10 +1668,16 @@
 		<string>step_3</string>
 		<string>stick_post</string>
 		<string>sticky_class</string>
+		<string>str_split</string>
+		<string>stream_preview_image</string>
 		<string>strip_clf</string>
+		<string>strip_scribd_newlines</string>
 		<string>strip_shortcodes</string>
 		<string>stripos</string>
 		<string>stripslashes_deep</string>
+		<string>strlen</string>
+		<string>substr</string>
+		<string>supports_collation</string>
 		<string>suppress_errors</string>
 		<string>systype</string>
 		<string>tag2post</string>
@@ -1670,6 +1722,7 @@
 		<string>the_category_rss</string>
 		<string>the_comment</string>
 		<string>the_content</string>
+		<string>the_content_feed</string>
 		<string>the_content_rss</string>
 		<string>the_date</string>
 		<string>the_date_xml</string>
@@ -1690,6 +1743,7 @@
 		<string>the_permalink_rss</string>
 		<string>the_post</string>
 		<string>the_post_password</string>
+		<string>the_post_thumbnail</string>
 		<string>the_search_query</string>
 		<string>the_tags</string>
 		<string>the_taxonomies</string>
@@ -1740,6 +1794,7 @@
 		<string>unpack_package</string>
 		<string>unpoify</string>
 		<string>unregister</string>
+		<string>unregister_handler</string>
 		<string>unregister_setting</string>
 		<string>unregister_sidebar</string>
 		<string>unregister_sidebar_widget</string>
@@ -1755,10 +1810,13 @@
 		<string>update_callback</string>
 		<string>update_category_cache</string>
 		<string>update_comment_cache</string>
+		<string>update_comment_meta</string>
 		<string>update_core</string>
 		<string>update_gallery_tab</string>
 		<string>update_home_siteurl</string>
 		<string>update_meta</string>
+		<string>update_meta_cache</string>
+		<string>update_metadata</string>
 		<string>update_nag</string>
 		<string>update_object_term_cache</string>
 		<string>update_option</string>
@@ -1791,6 +1849,7 @@
 		<string>upgrade_260</string>
 		<string>upgrade_270</string>
 		<string>upgrade_280</string>
+		<string>upgrade_290</string>
 		<string>upgrade_all</string>
 		<string>upgrade_old_slugs</string>
 		<string>upgrade_strings</string>
@@ -1876,6 +1935,7 @@
 		<string>wp_clone</string>
 		<string>wp_comment_form_unfiltered_html_nonce</string>
 		<string>wp_comment_reply</string>
+		<string>wp_comment_trashnotice</string>
 		<string>wp_constrain_dimensions</string>
 		<string>wp_content_dir</string>
 		<string>wp_convert_bytes_to_hr</string>
@@ -1946,11 +2006,17 @@
 		<string>wp_editPage</string>
 		<string>wp_edit_attachments_query</string>
 		<string>wp_edit_posts_query</string>
+		<string>wp_embed_defaults</string>
+		<string>wp_embed_handler_googlevideo</string>
+		<string>wp_embed_handler_polldaddy</string>
+		<string>wp_embed_register_handler</string>
+		<string>wp_embed_unregister_handler</string>
 		<string>wp_enqueue_script</string>
 		<string>wp_enqueue_scripts</string>
 		<string>wp_enqueue_style</string>
 		<string>wp_exif_date2ts</string>
 		<string>wp_exif_frac2dec</string>
+		<string>wp_expand_dimensions</string>
 		<string>wp_explain_nonce</string>
 		<string>wp_ext2type</string>
 		<string>wp_filter_comment</string>
@@ -2021,6 +2087,8 @@
 		<string>wp_html_excerpt</string>
 		<string>wp_htmledit_pre</string>
 		<string>wp_iframe</string>
+		<string>wp_image_editor</string>
+		<string>wp_imagecreatetruecolor</string>
 		<string>wp_import_cleanup</string>
 		<string>wp_import_handle_upload</string>
 		<string>wp_import_upload_form</string>
@@ -2044,6 +2112,7 @@
 		<string>wp_kses_bad_protocol_once</string>
 		<string>wp_kses_bad_protocol_once2</string>
 		<string>wp_kses_check_attr_val</string>
+		<string>wp_kses_data</string>
 		<string>wp_kses_decode_entities</string>
 		<string>wp_kses_hair</string>
 		<string>wp_kses_hook</string>
@@ -2053,6 +2122,7 @@
 		<string>wp_kses_normalize_entities</string>
 		<string>wp_kses_normalize_entities2</string>
 		<string>wp_kses_normalize_entities3</string>
+		<string>wp_kses_post</string>
 		<string>wp_kses_split</string>
 		<string>wp_kses_split2</string>
 		<string>wp_kses_stripslashes</string>
@@ -2085,6 +2155,7 @@
 		<string>wp_manage_posts_columns</string>
 		<string>wp_match_mime_types</string>
 		<string>wp_max_upload_size</string>
+		<string>wp_maybe_load_embeds</string>
 		<string>wp_maybe_load_widgets</string>
 		<string>wp_menu_unfold</string>
 		<string>wp_meta</string>
@@ -2104,6 +2175,8 @@
 		<string>wp_notify_moderator</string>
 		<string>wp_notify_postauthor</string>
 		<string>wp_ob_end_flush_all</string>
+		<string>wp_oembed_add_provider</string>
+		<string>wp_oembed_get</string>
 		<string>wp_old_slug_redirect</string>
 		<string>wp_original_referer_field</string>
 		<string>wp_page_menu</string>
@@ -2112,6 +2185,7 @@
 		<string>wp_parse_str</string>
 		<string>wp_password_change_notification</string>
 		<string>wp_plugin_update_row</string>
+		<string>wp_plugin_update_rows</string>
 		<string>wp_plugins_dir</string>
 		<string>wp_popular_terms_checklist</string>
 		<string>wp_post_mime_type_where</string>
@@ -2150,6 +2224,7 @@
 		<string>wp_reschedule_event</string>
 		<string>wp_reset_query</string>
 		<string>wp_reset_vars</string>
+		<string>wp_restore_image</string>
 		<string>wp_restore_post_revision</string>
 		<string>wp_revoke_user</string>
 		<string>wp_rewrite_rules</string>
@@ -2158,9 +2233,12 @@
 		<string>wp_safe_redirect</string>
 		<string>wp_salt</string>
 		<string>wp_sanitize_redirect</string>
+		<string>wp_save_image</string>
+		<string>wp_save_image_file</string>
 		<string>wp_save_post_revision</string>
 		<string>wp_schedule_event</string>
 		<string>wp_schedule_single_event</string>
+		<string>wp_scheduled_delete</string>
 		<string>wp_script_is</string>
 		<string>wp_setOptions</string>
 		<string>wp_set_all_user_settings</string>
@@ -2178,11 +2256,15 @@
 		<string>wp_set_sidebars_widgets</string>
 		<string>wp_setcookie</string>
 		<string>wp_shrink_dimensions</string>
+		<string>wp_sidebar_description</string>
 		<string>wp_signon</string>
+		<string>wp_spam_comment</string>
 		<string>wp_specialchars</string>
 		<string>wp_specialchars_decode</string>
 		<string>wp_sprintf</string>
 		<string>wp_sprintf_l</string>
+		<string>wp_stream_image</string>
+		<string>wp_strip_all_tags</string>
 		<string>wp_style_is</string>
 		<string>wp_style_loader_src</string>
 		<string>wp_suggestCategories</string>
@@ -2200,6 +2282,9 @@
 		<string>wp_title_rss</string>
 		<string>wp_transition_comment_status</string>
 		<string>wp_transition_post_status</string>
+		<string>wp_trash_comment</string>
+		<string>wp_trash_post</string>
+		<string>wp_trash_post_comments</string>
 		<string>wp_trim_excerpt</string>
 		<string>wp_unique_filename</string>
 		<string>wp_unique_post_slug</string>
@@ -2208,6 +2293,10 @@
 		<string>wp_unregister_sidebar_widget</string>
 		<string>wp_unregister_widget_control</string>
 		<string>wp_unschedule_event</string>
+		<string>wp_unspam_comment</string>
+		<string>wp_untrash_comment</string>
+		<string>wp_untrash_post</string>
+		<string>wp_untrash_post_comments</string>
 		<string>wp_update_attachment_metadata</string>
 		<string>wp_update_category</string>
 		<string>wp_update_comment</string>
@@ -2245,7 +2334,6 @@
 		<string>wpdb</string>
 		<string>wpopen</string>
 		<string>wptexturize</string>
-		<string>wptexturize_pushpop_element</string>
 		<string>write_post</string>
 		<string>wxr_cat_name</string>
 		<string>wxr_category_description</string>
@@ -2255,6 +2343,8 @@
 		<string>wxr_site_url</string>
 		<string>wxr_tag_description</string>
 		<string>wxr_tag_name</string>
+		<string>wxr_term_description</string>
+		<string>wxr_term_name</string>
 		<string>xfn_check</string>
 		<string>xmlrpc_getpostcategory</string>
 		<string>xmlrpc_getposttitle</string>

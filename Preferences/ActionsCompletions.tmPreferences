@@ -70,14 +70,17 @@
 		<string>do_robots</string>
 		<string>edit_attachment</string>
 		<string>edit_category_form</string>
+		<string>edit_category_form_fields</string>
 		<string>edit_category_form_pre</string>
 		<string>edit_comment</string>
 		<string>edit_form_advanced</string>
 		<string>edit_link_category_form</string>
+		<string>edit_link_category_form_fields</string>
 		<string>edit_link_category_form_pre</string>
 		<string>edit_page_form</string>
 		<string>edit_post</string>
 		<string>edit_tag_form</string>
+		<string>edit_tag_form_fields</string>
 		<string>edit_tag_form_pre</string>
 		<string>edit_user_profile</string>
 		<string>edit_user_profile_update</string>
