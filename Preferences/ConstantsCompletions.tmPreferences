@@ -116,10 +116,10 @@
 		<string>SIMPLEPIE_NAMESPACE_MEDIARSS</string>
 		<string>SIMPLEPIE_NAMESPACE_MEDIARSS_WRONG</string>
 		<string>SIMPLEPIE_NAMESPACE_RDF</string>
+		<string>SIMPLEPIE_NAMESPACE_RSS_090</string>
 		<string>SIMPLEPIE_NAMESPACE_RSS_10</string>
 		<string>SIMPLEPIE_NAMESPACE_RSS_10_MODULES_CONTENT</string>
 		<string>SIMPLEPIE_NAMESPACE_RSS_20</string>
-		<string>SIMPLEPIE_NAMESPACE_RSS_090</string>
 		<string>SIMPLEPIE_NAMESPACE_W3C_BASIC_GEO</string>
 		<string>SIMPLEPIE_NAMESPACE_XHTML</string>
 		<string>SIMPLEPIE_NAMESPACE_XML</string>
@@ -131,8 +131,6 @@
 		<string>SIMPLEPIE_TYPE_ATOM_10</string>
 		<string>SIMPLEPIE_TYPE_ATOM_ALL</string>
 		<string>SIMPLEPIE_TYPE_NONE</string>
-		<string>SIMPLEPIE_TYPE_RSS_10</string>
-		<string>SIMPLEPIE_TYPE_RSS_20</string>
 		<string>SIMPLEPIE_TYPE_RSS_090</string>
 		<string>SIMPLEPIE_TYPE_RSS_091</string>
 		<string>SIMPLEPIE_TYPE_RSS_091_NETSCAPE</string>
@@ -140,6 +138,8 @@
 		<string>SIMPLEPIE_TYPE_RSS_092</string>
 		<string>SIMPLEPIE_TYPE_RSS_093</string>
 		<string>SIMPLEPIE_TYPE_RSS_094</string>
+		<string>SIMPLEPIE_TYPE_RSS_10</string>
+		<string>SIMPLEPIE_TYPE_RSS_20</string>
 		<string>SIMPLEPIE_TYPE_RSS_ALL</string>
 		<string>SIMPLEPIE_TYPE_RSS_RDF</string>
 		<string>SIMPLEPIE_TYPE_RSS_SYNDICATION</string>
