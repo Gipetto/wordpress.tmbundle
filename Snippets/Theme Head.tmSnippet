@@ -5,11 +5,11 @@
 	<key>content</key>
 	<string>/*
 Theme Name: ${1:Theme Name}
-Theme URI: ${2:$TM_HOMEPAGE}
+Theme URI: ${2:${TM_HOMEPAGE:http://example.com/}}
 Description: ${3:Description}
 Version: ${4:1.0}
-Author: ${5:$TM_NAME}
-Author URI: ${6:$TM_HOMEPAGE}
+Author: ${5:${TM_NAME:Your Name}}
+Author URI: ${6:${TM_HOMEPAGE:http://example.com/}}
 Tags: ${7:one, two}
 */
 
