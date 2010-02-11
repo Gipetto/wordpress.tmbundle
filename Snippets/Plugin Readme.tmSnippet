@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>=== ${1:Plugin Name} ===
-Contributors: ${2:wordpress.com_username}
+Contributors: ${2:wordpress.org_username}
 Donate link: ${3:url}
 Tags: ${4:tags}
 Requires at least: ${5:version_number}
