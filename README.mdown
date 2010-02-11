@@ -103,10 +103,10 @@ README.txt validation just got a little bit easier. The bundle includes function
 
 ## Shell Variables
 
-Why bother typing your name and URL each time you create a new plugin or theme? Set these Shell Variables in TextMate Preferences (Preferences > Advanced > Shell Variables):
+Why bother typing your name and URL each time you create a new plugin or theme? Set these Variables in TextMate *(Preferences > Advanced > Shell Variables)* to have them automatically replaced with the values you specify:
 
-TM_NAME
-TM_HOMEPAGE
+- `TM_NAME`
+- `TM_HOMEPAGE`
 
 ## And more&hellip;
 
