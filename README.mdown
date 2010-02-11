@@ -101,6 +101,13 @@ Use `readme`&#x21E5; to drop in a template of the WordPress plugin README.txt fi
 
 README.txt validation just got a little bit easier. The bundle includes functionality to validate your README.txt file without leaving TextMate. Once validated the README.txt can be modified in the validation window and resubmitted if necessary.
 
+## Shell Variables
+
+Why bother typing your name and URL each time you create a new plugin or theme? Set these Shell Variables in TextMate Preferences (Preferences > Advanced > Shell Variables):
+
+TM_NAME
+TM_HOMEPAGE
+
 ## And more&hellip;
 
 There's even more included that's not yet mentioned here. Just browse through the bundle menu to see everything that's available and play around with some of the function completions to see the multiple-levels of assistance that it provides.
