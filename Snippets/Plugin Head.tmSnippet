@@ -5,11 +5,11 @@
 	<key>content</key>
 	<string>/*
 Plugin Name: ${1:Plugin Name}
-Plugin URI: ${2:http://example.com}
+Plugin URI: ${2:$TM_HOMEPAGE}
 Description: ${3:Description}
-Version: ${4:1.0}
-Author: ${5:You}
-Author URI: ${6:http://example.com/} 
+Version: ${4:0.1}
+Author: ${5:$TM_NAME}
+Author URI: ${6:$TM_HOMEPAGE} 
 */
 
 $0</string>

@@ -1,10 +1,10 @@
 <?php
 /*
-Plugin Name: ${WP_PLUGIN_NAME}
-Plugin URI: ${WP_PLUGIN_URI}
-Description: ${WP_PLUGIN_VERSION}
-Version: ${WP_PLUGIN_VERSION}
-Author: ${WP_PLUGIN_AUTHOR}
-Author URI: ${WP_PLUGIN_AUTHOR_URI}
+Plugin Name: ${1:Plugin Name}
+Plugin URI: ${2:$TM_HOMEPAGE}
+Description: ${3:Description}
+Version: ${4:0.1}
+Author: ${5:$TM_NAME}
+Author URI: ${6:$TM_HOMEPAGE}
 */
 ?>
