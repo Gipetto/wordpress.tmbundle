@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
+require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+
+path = ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
+require path
+
+WordPress.metadata()</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>metadata</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.php, text.html</string>
+	<key>tabTrigger</key>
+	<string>metadata</string>
+	<key>uuid</key>
+	<string>4716EA72-4614-4E7C-AE14-E04F0A8FB596</string>
+</dict>
+</plist>

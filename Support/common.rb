@@ -7,7 +7,9 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/current_word'
 module WordPress
   
   @prefspath = "#{ENV['HOME']}/Library/Preferences/com.macromates.textmate.wordpress.plist"
-  
+ 
+# wpdb/wp_query
+ 
   def self.wpdb
     # manually built array until I can get proper function/class scraping
     choices = [
@@ -153,10 +155,6 @@ module WordPress
     TextMate.exit_insert_snippet(ret)    
   end
   
-  def self.wp_query_is
-    
-  end
-  
   def self.query_var(format_array = false)
     choices = [
       { 'title' => 'attachment' },
@@ -211,7 +209,9 @@ module WordPress
       TextMate.exit_insert_snippet("'" + t['title'] + "' => ${1:'${2:val}'},$0")
     end
   end
-  
+ 
+# admin menus
+ 
   def self.admin_menu
     choices = [
       { 'title' => 'menu' },
@@ -388,6 +388,8 @@ module WordPress
     end
   end
   
+# enqueue
+
   # Wrapper for enqueue functions
   def self.enqueue()
     choices = [
@@ -429,7 +431,75 @@ module WordPress
    script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',\${4:array('\${5:string dependency}')},\${6:float version});\$0"
    return script
  end
-  
+
+ # enqueue a predefined script from WordPress
+ def self.enqueue_script()
+    choices = [
+      { 'display' => 'scriptaculous-root' },
+      { 'display' => 'scriptaculous-builder' },
+      { 'display' => 'scriptaculous-dragdrop' },
+      { 'display' => 'scriptaculous-effects' },
+      { 'display' => 'scriptaculous-slider' },
+      { 'display' => 'scriptaculous-sound' },
+      { 'display' => 'scriptaculous-controls' },
+      { 'display' => 'scriptaculous' },
+      { 'display' => 'cropper' },
+      { 'display' => 'swfupload' },
+      { 'display' => 'swfupload-degrade' },
+      { 'display' => 'swfupload-queue' },
+      { 'display' => 'swfupload-handlers' },
+      { 'display' => 'jquery' },
+      { 'display' => 'jquery-form' },
+      { 'display' => 'jquery-color' },
+      { 'display' => 'jquery-ui-core' },
+      { 'display' => 'jquery-ui-tabs' },
+      { 'display' => 'jquery-ui-sortable' },
+      { 'display' => 'interface' },
+      { 'display' => 'schedule' },
+      { 'display' => 'suggest' },
+      { 'display' => 'thickbox' },
+      { 'display' => 'sack' },
+      { 'display' => 'quicktags' },
+      { 'display' => 'colorpicker' },
+      { 'display' => 'tiny_mce' },
+      { 'display' => 'prototype' },
+      { 'display' => 'autosave' },
+      { 'display' => 'wp-ajax-response' },
+      { 'display' => 'wp-lists' },
+      { 'display' => 'common' },
+      { 'display' => 'editor' },
+      { 'display' => 'editor-functions' },
+      { 'display' => 'ajaxcat' },
+      { 'display' => 'admin-categories' },
+      { 'display' => 'admin-tags' },
+      { 'display' => 'admin-custom-fields' },
+      { 'display' => 'password-strength-meter' },
+      { 'display' => 'admin-comments' },
+      { 'display' => 'admin-users' },
+      { 'display' => 'admin-forms' },
+      { 'display' => 'xfn' },
+      { 'display' => 'upload' },
+      { 'display' => 'postbox' },
+      { 'display' => 'slug' },
+      { 'display' => 'post' },
+      { 'display' => 'page' },
+      { 'display' => 'link' },
+      { 'display' => 'comment' },
+      { 'display' => 'admin-gallery' },
+      { 'display' => 'media-upload' },
+      { 'display' => 'admin-widgets' },
+      { 'display' => 'word-count' },
+      { 'display' => 'wp-gears' },
+      { 'display' => 'theme-preview' }
+    ]
+    TextMate::UI.complete(choices)
+    
+    script = "wp_enqueue_script('\${1}');\$0" 
+    return script
+  end
+ 
+# function definition
+ 
   def self.function_define()
     found = self.search_functions_by_name(Word.current_word('a-zA-Z0-9_'))
     if found.is_a?(Hash)
@@ -495,6 +565,8 @@ module WordPress
     choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/function_defs.plist'))
     found = choices.find { |i| i['name'] == search }
   end
+
+# user roles
   
   # set a user role
   def self.user_can()
@@ -546,71 +618,5 @@ module WordPress
     TextMate::UI.complete(choices)
     ret = "current_user_can('\${1}')\$0"
     TextMate.exit_insert_snippet(ret)    
-  end
-  
- # enqueue a predefined script from WordPress
- def self.enqueue_script()
-    choices = [
-      { 'display' => 'scriptaculous-root' },
-      { 'display' => 'scriptaculous-builder' },
-      { 'display' => 'scriptaculous-dragdrop' },
-      { 'display' => 'scriptaculous-effects' },
-      { 'display' => 'scriptaculous-slider' },
-      { 'display' => 'scriptaculous-sound' },
-      { 'display' => 'scriptaculous-controls' },
-      { 'display' => 'scriptaculous' },
-      { 'display' => 'cropper' },
-      { 'display' => 'swfupload' },
-      { 'display' => 'swfupload-degrade' },
-      { 'display' => 'swfupload-queue' },
-      { 'display' => 'swfupload-handlers' },
-      { 'display' => 'jquery' },
-      { 'display' => 'jquery-form' },
-      { 'display' => 'jquery-color' },
-      { 'display' => 'jquery-ui-core' },
-      { 'display' => 'jquery-ui-tabs' },
-      { 'display' => 'jquery-ui-sortable' },
-      { 'display' => 'interface' },
-      { 'display' => 'schedule' },
-      { 'display' => 'suggest' },
-      { 'display' => 'thickbox' },
-      { 'display' => 'sack' },
-      { 'display' => 'quicktags' },
-      { 'display' => 'colorpicker' },
-      { 'display' => 'tiny_mce' },
-      { 'display' => 'prototype' },
-      { 'display' => 'autosave' },
-      { 'display' => 'wp-ajax-response' },
-      { 'display' => 'wp-lists' },
-      { 'display' => 'common' },
-      { 'display' => 'editor' },
-      { 'display' => 'editor-functions' },
-      { 'display' => 'ajaxcat' },
-      { 'display' => 'admin-categories' },
-      { 'display' => 'admin-tags' },
-      { 'display' => 'admin-custom-fields' },
-      { 'display' => 'password-strength-meter' },
-      { 'display' => 'admin-comments' },
-      { 'display' => 'admin-users' },
-      { 'display' => 'admin-forms' },
-      { 'display' => 'xfn' },
-      { 'display' => 'upload' },
-      { 'display' => 'postbox' },
-      { 'display' => 'slug' },
-      { 'display' => 'post' },
-      { 'display' => 'page' },
-      { 'display' => 'link' },
-      { 'display' => 'comment' },
-      { 'display' => 'admin-gallery' },
-      { 'display' => 'media-upload' },
-      { 'display' => 'admin-widgets' },
-      { 'display' => 'word-count' },
-      { 'display' => 'wp-gears' },
-      { 'display' => 'theme-preview' }
-    ]
-    TextMate::UI.complete(choices)
-    
-    script = "wp_enqueue_script('\${1}');\$0" 
-    return script
   end
 end
