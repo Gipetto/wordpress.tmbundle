@@ -255,9 +255,99 @@ module WordPress
       TextMate.exit_discard()
     end
     
-    add_menu = "add_submenu_page('" + t['insert'] + "',__('${2:page_title}'),__('${3:menu_title}'),${4:access_level},${5:basename(__FILE__)},'${6:function}');$0"
+    add_menu = "add_submenu_page('" + t['insert'] + "',__('${1:page_title}'),__('${2:menu_title}'),${3:access_level},${4:basename(__FILE__)},'${5:function}');$0"
     TextMate.exit_insert_snippet(add_menu)
   end
+
+# Metadata
+
+  # metadata wrapper
+  def self.metadata()
+    choices = [
+      { 'title' => 'add_metadata' },
+      { 'title' => 'delete_metadata' },
+      { 'title' => 'get_metadata' },
+      { 'title' => 'update_metadata' },
+      { 'title' => '_get_meta_table' }
+    ]
+    t = TextMate::UI.menu(choices)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
+    ret = eval t['title']
+    
+    TextMate.exit_insert_snippet(ret)
+  end
+  
+  @metadata_types = [
+    { 'title' => 'comment' },
+    { 'title' => 'post' },
+    { 'title' => 'user' }
+  ]
+
+  # add metadata
+  def self.add_metadata
+    t = TextMate::UI.menu(@metadata_types)
+ 
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
+    add_metadata = "add_metadata( '" + t['title'] + "', ${1:int object_id}, '${2:string meta_key}', ${3:false});"
+    TextMate.exit_insert_snippet(add_metadata)
+  end
+  
+  # get metadata
+  def self.get_metadata
+    t = TextMate::UI.menu(@metadata_types)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
+    get_metadata = "get_metadata( '" + t['title'] + "', ${1:int object_id}, '${2:string meta_key}', ${3:false});"
+    TextMate.exit_insert_snippet(get_metadata)
+  end
+
+  # delete metadata
+  def self.delete_metadata
+    t = TextMate::UI.menu(@metadata_types)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
+    delete_metadata = "delete_metadata( '" + t['title'] + "', ${1:int object_id}, '${2:string meta_key}', ${3:false});"
+    TextMate.exit_insert_snippet(delete_metadata)
+  end
+  
+  # update meta cache
+  def self.update_meta_cache
+    t = TextMate::UI.menu(@metadata_types)
+    
+    if t == nil
+      TextMate.exit_discard()
+    end
+    
+    update_meta_cache = "update_meta_cache('" + t['title'] + "', ${1:object_ids});"
+    TextMate.exit_insert_snippet(update_meta_cache);
+  end
+  
+  # get meta table
+  def self._get_meta_table
+      t = TextMate::UI.menu(@metadata_types)
+
+      if t == nil
+        TextMate.exit_discard()
+      end
+      
+      meta_table = "_get_meta_table('" + t['title'] + "');"
+      TextMate.exit_insert_snippet(meta_table)
+  end
+  
+# bloginfo 
   
   # bloginfo/get_bloginfo handler
   def self.bloginfo(get_bloginfo = false)
