@@ -13,7 +13,7 @@ Author URI: ${6:${TM_HOMEPAGE:http://example.com/}}
 */
 
 /**
- * ${9:Copyright (c) ${10:`date "+%Y"`} ${11:${7}}}. All rights reserved.
+ * ${7:Copyright (c) ${8:`date "+%Y"`} ${9:${5}}}. All rights reserved.
  *
  * Released under the GPL license
  * http://www.opensource.org/licenses/gpl-license.php
