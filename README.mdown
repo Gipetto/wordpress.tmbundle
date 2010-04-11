@@ -132,5 +132,5 @@ Additional thanks to:
 - [Gordon Brander](http://gordonbrander.com) for helping get this project off the ground.
 - [The talented crew at Crowd Favorite](http://crowdfavorite.com) for their various contributions and testing.
 - [Mark Jaquith](http://markjaquith.wordpress.com/2009/08/31/textmate-wordpress-widget-snippet/) for making a better Widget Template and for contributions to WordPress.
-- [Eric Marden](http://github.com/xentek) for helping with various consistency issues.
+- [Eric Marden](http://github.com/xentek) for helping with various consistency issues and updates.
 - And, not least of all, everyone who has contributed to WordPress.
