@@ -20,6 +20,8 @@
 			<string>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</string>
 			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
 			<string>------------------------------------</string>
+			<string>F7C138DC-AF05-4986-AFBC-56A775DF33CE</string>
+			<string>------------------------------------</string>
 			<string>64BCD481-DD67-475F-84B1-273A4E742566</string>
 			<string>------------------------------------</string>
 			<string>EF2C5F4A-F5BE-404A-AC03-BB32DAACDCE8</string>
@@ -130,6 +132,15 @@
 				</array>
 				<key>name</key>
 				<string>Query</string>
+			</dict>
+			<key>F7C138DC-AF05-4986-AFBC-56A775DF33CE</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>3F0D96F1-C1C5-454B-8ACC-B2A5FF3DEE54</string>
+				</array>
+				<key>name</key>
+				<string>Multisite</string>
 			</dict>
 		</dict>
 	</dict>
