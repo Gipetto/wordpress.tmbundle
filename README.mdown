@@ -40,7 +40,7 @@ Functions that have many options or required a bit of special attention have bee
 - `wp_list_pages`&#x21E5; for listing pages and providing a standard starting point
 - `get_posts`&#x21E5;
 - `wp_query`&#x21E5;
-- `metadata`&#21E5; for quick access to the WordPress metadata apis
+- `metadata`&#x21E5; for quick access to the WordPress metadata apis
 
 Each of these is invoked with a tab trigger, for example: `wp_`&#x21E5;
 
