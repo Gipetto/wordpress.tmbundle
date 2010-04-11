@@ -16,11 +16,9 @@ The plugin features auto-completion of WordPress functions, snippets for common 
 - Fully tab stopped parameter entries in function templates
 - Function definition tool-tips
 - Goto function command to jump to file and line number where a function is defined
-- Validation of your Plugin's README.txt file against the WordPress online validator
+- Validation of your Plugin's `README.txt` file against the WordPress online validator
 
 ## Function Completion
-
-**Please note that this has changed from control-option-escape to control-shift-escape due to a Snow Leopard incompatibility issue. I have no idea what the issue is. Basically Snow Leopard stopped taking input for control-option-escape so I had to change it.**
 
 General function completion can be invoked with a slight modification of the regular PHP function completion. We chose to use control-shift-escape as its easy to remember next to the regular PHP command (option-escape). The completed function will include parameter hits for the function as best as my simple grep of the core will allow. I'm still trying to build a better way of grabbing comprehensive function definitions.
 
@@ -55,8 +53,6 @@ The second line of the tool-tip lists the file and line number where the functio
 ## Goto Function
 
 When pointed to an install of the current version of WordPress the bundle can jump to the definition of a function so that the function can be inspected.
-
-<b>Please note that this has changed from Command-Shift-G to Command-Shift-Option-H as to not conflict with the built in TextMate search modifier for "Find Previous" keyboard command.</b>
 
 Simply place the carat in a function name, or highlight the function, and press Command-Shift-Option-H. If needed (and it will be the first time you run the command) you'll be directed to enter the full path to your WordPress (or WordPress MU) install in the Preferences (Command-Option-,) before the function completion can work properly.
 
@@ -98,9 +94,9 @@ Included are functions for quickly accessing common object members for post obje
 
 ## Plugin README.txt Creation & Validation
 
-Use `readme`&#x21E5; to drop in a template of the WordPress plugin README.txt file.
+Use `readme`&#x21E5; to drop in a template of the WordPress plugin `README.txt` file.
 
-README.txt validation just got a little bit easier. The bundle includes functionality to validate your README.txt file without leaving TextMate. Once validated the README.txt can be modified in the validation window and resubmitted if necessary.
+`README.txt` validation just got a little bit easier. The bundle includes functionality to validate your `README.txt` file without leaving TextMate. Once validated the `README.txt` can be modified in the validation window and resubmitted if necessary.
 
 ## Shell Variables
 
@@ -113,7 +109,7 @@ Why bother typing your name and URL each time you create a new plugin or theme? 
 
 There's even more included that's not yet mentioned here. Just browse through the bundle menu to see everything that's available and play around with some of the function completions to see the multiple-levels of assistance that it provides.
 
-## Version Compatability
+## Version Compatibility
 
 The bundle will be kept up to date with WordPress' latest release. There will be no conscious effort made to retain backwards compatibility. As of the WordPress 2.9 release the version of this plugin that is compatible with WordPress 2.8 has been tagged in the GitHub repository.  
 
