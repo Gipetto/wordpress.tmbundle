@@ -1,6 +1,6 @@
 # WordPress TextMate Bundle
 
-**For WordPress Version:** 2.9
+**For WordPress Version:** 3.0
 
 The WordPress TextMate Bundle is a [TextMate](http://macromates.com) bundle built with the sole purpose of reducing the amount of time spent digging around the [WordPress](http://wordpress.org) core to look up the little things that we work with every day.
 
@@ -17,6 +17,7 @@ The plugin features auto-completion of WordPress functions, snippets for common 
 - Function definition tool-tips
 - Goto function command to jump to file and line number where a function is defined
 - Validation of your Plugin's `README.txt` file against the WordPress online validator
+- Multisite support starting with WordPress 3.0 (codebase merge from WordPress MU)
 
 ## Function Completion
 

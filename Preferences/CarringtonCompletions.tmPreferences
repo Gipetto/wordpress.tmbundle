@@ -11,7 +11,7 @@
       <key>completions</key>
       <array>
 		<string>cfct_about_text</string>
-		<string>cfct_add_posts_per_category_page</string>
+		<string>cfct_add_posts_per_archive_page</string>
 		<string>cfct_admin_css</string>
 		<string>cfct_admin_head</string>
 		<string>cfct_admin_js</string>
@@ -34,6 +34,7 @@
 		<string>cfct_choose_comment_template</string>
 		<string>cfct_choose_comment_template_author</string>
 		<string>cfct_choose_comment_template_default</string>
+		<string>cfct_choose_comment_template_meta</string>
 		<string>cfct_choose_comment_template_ping</string>
 		<string>cfct_choose_comment_template_role</string>
 		<string>cfct_choose_comment_template_user</string>
@@ -46,6 +47,12 @@
 		<string>cfct_choose_general_template_single</string>
 		<string>cfct_choose_general_template_tag</string>
 		<string>cfct_choose_single_template</string>
+		<string>cfct_choose_single_template_author</string>
+		<string>cfct_choose_single_template_category</string>
+		<string>cfct_choose_single_template_meta</string>
+		<string>cfct_choose_single_template_parent</string>
+		<string>cfct_choose_single_template_role</string>
+		<string>cfct_choose_single_template_tag</string>
 		<string>cfct_comment</string>
 		<string>cfct_comment_id_fields</string>
 		<string>cfct_comment_templates</string>
@@ -57,7 +64,6 @@
 		<string>cfct_error</string>
 		<string>cfct_excerpt</string>
 		<string>cfct_filename</string>
-		<string>cfct_filename_filter</string>
 		<string>cfct_files</string>
 		<string>cfct_filter_files</string>
 		<string>cfct_footer</string>
@@ -83,6 +89,7 @@
 		<string>cfct_post_id_to_slug</string>
 		<string>cfct_posts</string>
 		<string>cfct_posts_per_archive_page</string>
+		<string>cfct_posts_per_archive_page_setting</string>
 		<string>cfct_posts_per_category_page</string>
 		<string>cfct_role_filename_to_name</string>
 		<string>cfct_role_templates</string>

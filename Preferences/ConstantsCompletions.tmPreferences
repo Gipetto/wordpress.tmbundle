@@ -12,20 +12,17 @@
       <array>
 		<string>ABSPATH</string>
 		<string>APP_REQUEST</string>
-		<string>ARRAY_A</string>
-		<string>ARRAY_N</string>
 		<string>ATOM</string>
 		<string>AUTH_COOKIE</string>
 		<string>AUTH_KEY</string>
+		<string>AUTH_SALT</string>
 		<string>COMMENTS_TEMPLATE</string>
 		<string>COMPRESS_CSS</string>
 		<string>COMPRESS_SCRIPTS</string>
 		<string>CONCATENATE_SCRIPTS</string>
-		<string>COOKIEHASH</string>
 		<string>COOKIEPATH</string>
 		<string>COOKIE_DOMAIN</string>
 		<string>CRLF</string>
-		<string>CUSTOM_TAGS</string>
 		<string>DB_CHARSET</string>
 		<string>DB_COLLATE</string>
 		<string>DB_HOST</string>
@@ -50,19 +47,20 @@
 		<string>EP_SEARCH</string>
 		<string>EP_TAGS</string>
 		<string>EP_YEAR</string>
-		<string>EZSQL_VERSION</string>
 		<string>FORCE_SSL_ADMIN</string>
 		<string>FORCE_SSL_LOGIN</string>
 		<string>FS_CHMOD_DIR</string>
 		<string>FS_CHMOD_FILE</string>
+		<string>FS_CONNECT_TIMEOUT</string>
+		<string>FS_TIMEOUT</string>
 		<string>FTP_FORCE</string>
 		<string>FTP_OS_Mac</string>
 		<string>FTP_OS_Unix</string>
 		<string>FTP_OS_Windows</string>
 		<string>IS_PROFILE_PAGE</string>
-		<string>LANGDIR</string>
 		<string>LOGGED_IN_COOKIE</string>
 		<string>LOGGED_IN_KEY</string>
+		<string>LOGGED_IN_SALT</string>
 		<string>MAGPIE_CACHE_AGE</string>
 		<string>MAGPIE_CACHE_DIR</string>
 		<string>MAGPIE_CACHE_FRESH_ONLY</string>
@@ -72,9 +70,9 @@
 		<string>MAGPIE_INITALIZED</string>
 		<string>MAGPIE_USER_AGENT</string>
 		<string>MAGPIE_USE_GZIP</string>
+		<string>MEDIA_TRASH</string>
 		<string>NONCE_KEY</string>
-		<string>OBJECT</string>
-		<string>OBJECT_K</string>
+		<string>NONCE_SALT</string>
 		<string>PASS_COOKIE</string>
 		<string>PO_MAX_LINE_LEN</string>
 		<string>RSS</string>
@@ -82,6 +80,15 @@
 		<string>SECRET_KEY</string>
 		<string>SECURE_AUTH_COOKIE</string>
 		<string>SECURE_AUTH_KEY</string>
+		<string>SECURE_AUTH_SALT</string>
+		<string>SERVICES_JSON_IN_ARR</string>
+		<string>SERVICES_JSON_IN_CMT</string>
+		<string>SERVICES_JSON_IN_OBJ</string>
+		<string>SERVICES_JSON_IN_STR</string>
+		<string>SERVICES_JSON_LOOSE_TYPE</string>
+		<string>SERVICES_JSON_SLICE</string>
+		<string>SERVICES_JSON_SUPPRESS_ERRORS</string>
+		<string>SHORTINIT</string>
 		<string>SIMPLEPIE_BUILD</string>
 		<string>SIMPLEPIE_CONSTRUCT_ALL</string>
 		<string>SIMPLEPIE_CONSTRUCT_BASE64</string>
@@ -106,6 +113,7 @@
 		<string>SIMPLEPIE_LOCATOR_NONE</string>
 		<string>SIMPLEPIE_LOCATOR_REMOTE_BODY</string>
 		<string>SIMPLEPIE_LOCATOR_REMOTE_EXTENSION</string>
+		<string>SIMPLEPIE_LOWERCASE</string>
 		<string>SIMPLEPIE_NAME</string>
 		<string>SIMPLEPIE_NAMESPACE_ATOM_03</string>
 		<string>SIMPLEPIE_NAMESPACE_ATOM_10</string>
@@ -126,6 +134,7 @@
 		<string>SIMPLEPIE_PCRE_HTML_ATTRIBUTE</string>
 		<string>SIMPLEPIE_PCRE_XML_ATTRIBUTE</string>
 		<string>SIMPLEPIE_PHP5</string>
+		<string>SIMPLEPIE_SAME_CASE</string>
 		<string>SIMPLEPIE_TYPE_ALL</string>
 		<string>SIMPLEPIE_TYPE_ATOM_03</string>
 		<string>SIMPLEPIE_TYPE_ATOM_10</string>
@@ -143,6 +152,7 @@
 		<string>SIMPLEPIE_TYPE_RSS_ALL</string>
 		<string>SIMPLEPIE_TYPE_RSS_RDF</string>
 		<string>SIMPLEPIE_TYPE_RSS_SYNDICATION</string>
+		<string>SIMPLEPIE_UPPERCASE</string>
 		<string>SIMPLEPIE_URL</string>
 		<string>SIMPLEPIE_USERAGENT</string>
 		<string>SIMPLEPIE_VERSION</string>
@@ -153,15 +163,22 @@
 		<string>USER_COOKIE</string>
 		<string>WPINC</string>
 		<string>WP_ADMIN</string>
+		<string>WP_ALLOW_REPAIR</string>
+		<string>WP_CACHE</string>
 		<string>WP_CONTENT_DIR</string>
 		<string>WP_DEBUG</string>
+		<string>WP_DEBUG_DISPLAY</string>
+		<string>WP_DEBUG_LOG</string>
 		<string>WP_IMPORTING</string>
 		<string>WP_INSTALLING</string>
-		<string>WP_LANG_DIR</string>
+		<string>WP_MAIL_INTERVAL</string>
 		<string>WP_MEMORY_LIMIT</string>
+		<string>WP_POST_REVISIONS</string>
 		<string>WP_PROXY_BYPASS_HOSTS</string>
 		<string>WP_PROXY_HOST</string>
 		<string>WP_PROXY_PORT</string>
+		<string>WP_REPAIRING</string>
+		<string>WP_SETUP_CONFIG</string>
 		<string>WP_UNINSTALL_PLUGIN</string>
 		<string>WP_USE_THEMES</string>
 		<string>WXR_VERSION</string>
