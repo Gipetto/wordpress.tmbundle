@@ -619,4 +619,23 @@ module WordPress
     ret = "current_user_can('\${1}')\$0"
     TextMate.exit_insert_snippet(ret)    
   end
+  
+# Theme Support
+  @support_items = [
+    { 'title' => 'post-thumbnails' },
+    { 'title' => 'automatic-feed-links' },
+    { 'title' => 'nav-menus' }
+  ]
+
+  # add metadata
+  def self.theme_support(dir)
+    t = TextMate::UI.menu(@support_items)
+ 
+    if t == nil
+      TextMate.exit_discard()
+    end
+
+    retval = (dir == 'remove' ? 'remove' : 'add') + "_theme_support('" + t['title'] + "');"
+    TextMate.exit_insert_snippet(retval)
+  end
 end
