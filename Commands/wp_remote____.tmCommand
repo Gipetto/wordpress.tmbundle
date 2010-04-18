@@ -11,19 +11,19 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/functions.plist'))
-TextMate::UI.complete(choices, :initial_filter =&gt; 'get_', :extra_chars =&gt; '_')
-TextMate.exit_insert_snippet('get_')</string>
+TextMate::UI.complete(choices, :initial_filter =&gt; 'wp_remote_', :extra_chars =&gt; '_')
+TextMate.exit_insert_snippet('wp_remote_')</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
-	<string>get_...</string>
+	<string>wp_remote_...</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
-	<string>get_</string>
+	<string>remote</string>
 	<key>uuid</key>
-	<string>5DE5A7AD-3347-4FF4-BA87-1D4965D601FA</string>
+	<string>BCA2E6D8-EE1D-4573-8ADE-A66CB81DCC68</string>
 </dict>
 </plist>

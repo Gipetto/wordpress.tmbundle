@@ -19,6 +19,8 @@ TextMate.exit_insert_snippet('wp_')</string>
 	<string>wp_...</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.php</string>
 	<key>tabTrigger</key>
 	<string>wp_</string>
 	<key>uuid</key>
