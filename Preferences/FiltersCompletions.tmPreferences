@@ -38,6 +38,7 @@
 		<string>category_rewrite_rules</string>
 		<string>check_password</string>
 		<string>clean_url</string>
+		<string>columns_prefs_header</string>
 		<string>comments_number</string>
 		<string>comments_rewrite_rules</string>
 		<string>comments_template</string>
@@ -49,6 +50,7 @@
 		<string>comment_email</string>
 		<string>comment_excerpt</string>
 		<string>comment_flood_filter</string>
+		<string>comment_id_fields</string>
 		<string>comment_moderation_headers</string>
 		<string>comment_moderation_subject</string>
 		<string>comment_moderation_text</string>
@@ -152,6 +154,7 @@
 		<string>install_plugins_tabs</string>
 		<string>install_plugin_complete_actions</string>
 		<string>install_theme_complete_actions</string>
+		<string>kses_allowed_protocols</string>
 		<string>language_attributes</string>
 		<string>link_category</string>
 		<string>link_cat_row_actions</string>
@@ -186,8 +189,10 @@
 		<string>media_upload_form_url</string>
 		<string>media_upload_tabs</string>
 		<string>menu_order</string>
+		<string>meta_box_prefs_header</string>
 		<string>mod_rewrite_rules</string>
 		<string>month_link</string>
+		<string>ms_site_check</string>
 		<string>network_admin_url</string>
 		<string>network_site_url</string>
 		<string>nocache_headers</string>
@@ -238,6 +243,7 @@
 		<string>pre_user_nicename</string>
 		<string>pre_user_nickname</string>
 		<string>pre_user_url</string>
+		<string>privacy_on_link_title</string>
 		<string>private_title_format</string>
 		<string>protected_title_format</string>
 		<string>pub_priv_sql_capability</string>
@@ -262,9 +268,9 @@
 		<string>sanitize_key</string>
 		<string>sanitize_text_field</string>
 		<string>sanitize_title</string>
-		<string>sanitize_user</string>
 		<string>screen_layout_columns</string>
 		<string>screen_meta_screen</string>
+		<string>screen_settings</string>
 		<string>search_feed_link</string>
 		<string>search_rewrite_rules</string>
 		<string>set-screen-option</string>
@@ -273,7 +279,6 @@
 		<string>sidebars_widgets</string>
 		<string>signup_another_blog_init</string>
 		<string>signup_blog_init</string>
-		<string>signup_create_blog_meta</string>
 		<string>signup_user_init</string>
 		<string>single_cat_title</string>
 		<string>single_post_title</string>
@@ -291,14 +296,12 @@
 		<string>the_author</string>
 		<string>the_category_rss</string>
 		<string>the_content</string>
-		<string>the_content_export</string>
 		<string>the_content_feed</string>
 		<string>the_content_rss</string>
 		<string>the_date</string>
 		<string>the_editor</string>
 		<string>the_editor_content</string>
 		<string>the_excerpt</string>
-		<string>the_excerpt_export</string>
 		<string>the_excerpt_rss</string>
 		<string>the_meta_key</string>
 		<string>the_modified_author</string>

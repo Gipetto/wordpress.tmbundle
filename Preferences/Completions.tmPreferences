@@ -344,7 +344,6 @@
 		<string>blurry</string>
 		<string>body_class</string>
 		<string>bool_from_yn</string>
-		<string>browse_happy</string>
 		<string>buildCookieHeader</string>
 		<string>build_query</string>
 		<string>build_query_string</string>
@@ -629,6 +628,7 @@
 		<string>ent2ncr</string>
 		<string>error</string>
 		<string>error_handler</string>
+		<string>esc</string>
 		<string>esc_attr</string>
 		<string>esc_attr__</string>
 		<string>esc_attr_e</string>
@@ -861,6 +861,7 @@
 		<string>get_comment_excerpt</string>
 		<string>get_comment_feed_permastruct</string>
 		<string>get_comment_guid</string>
+		<string>get_comment_id_fields</string>
 		<string>get_comment_link</string>
 		<string>get_comment_meta</string>
 		<string>get_comment_pages_count</string>
@@ -927,6 +928,7 @@
 		<string>get_file_description</string>
 		<string>get_filesystem_method</string>
 		<string>get_footer</string>
+		<string>get_front_page_template</string>
 		<string>get_gmt_from_date</string>
 		<string>get_header</string>
 		<string>get_header_image</string>
@@ -1095,6 +1097,7 @@
 		<string>get_stylesheet_directory</string>
 		<string>get_stylesheet_directory_uri</string>
 		<string>get_stylesheet_uri</string>
+		<string>get_super_admins</string>
 		<string>get_tag</string>
 		<string>get_tag_feed_link</string>
 		<string>get_tag_link</string>
@@ -1175,6 +1178,7 @@
 		<string>get_translations_for_domain</string>
 		<string>get_udims</string>
 		<string>get_upload_iframe_src</string>
+		<string>get_upload_space_available</string>
 		<string>get_user_by</string>
 		<string>get_user_by_email</string>
 		<string>get_user_count</string>
@@ -1357,6 +1361,7 @@
 		<string>is_blog_installed</string>
 		<string>is_blog_user</string>
 		<string>is_category</string>
+		<string>is_child_theme</string>
 		<string>is_client_error</string>
 		<string>is_comment_feed</string>
 		<string>is_comments_popup</string>
@@ -1382,6 +1387,7 @@
 		<string>is_month</string>
 		<string>is_multisite</string>
 		<string>is_nav_menu</string>
+		<string>is_nav_menu_item</string>
 		<string>is_network_only_plugin</string>
 		<string>is_new_day</string>
 		<string>is_object_in_taxonomy</string>
@@ -1393,6 +1399,7 @@
 		<string>is_plugin_active</string>
 		<string>is_plugin_active_for_network</string>
 		<string>is_plugin_page</string>
+		<string>is_post_type</string>
 		<string>is_post_type_hierarchical</string>
 		<string>is_preview</string>
 		<string>is_readable</string>
@@ -1400,6 +1407,7 @@
 		<string>is_resource</string>
 		<string>is_robots</string>
 		<string>is_rss</string>
+		<string>is_rtl</string>
 		<string>is_search</string>
 		<string>is_serialized</string>
 		<string>is_serialized_string</string>
@@ -1562,6 +1570,7 @@
 		<string>ms_file_constants</string>
 		<string>ms_not_installed</string>
 		<string>ms_site_check</string>
+		<string>ms_subdomain_constants</string>
 		<string>ms_upload_constants</string>
 		<string>mt_authors_form</string>
 		<string>mt_getCategoryList</string>
@@ -2009,7 +2018,6 @@
 		<string>str_split</string>
 		<string>stream_preview_image</string>
 		<string>strip_clf</string>
-		<string>strip_scribd_newlines</string>
 		<string>strip_shortcodes</string>
 		<string>stripos</string>
 		<string>stripslashes_deep</string>
@@ -2218,6 +2226,7 @@
 		<string>upit</string>
 		<string>upload_is_file_too_big</string>
 		<string>upload_is_user_over_quota</string>
+		<string>upload_size_limit_filter</string>
 		<string>upload_space_setting</string>
 		<string>url_shorten</string>
 		<string>url_to_postid</string>
@@ -2407,6 +2416,7 @@
 		<string>wp_filter_comment</string>
 		<string>wp_filter_kses</string>
 		<string>wp_filter_nohtml_kses</string>
+		<string>wp_filter_object_list</string>
 		<string>wp_filter_post_kses</string>
 		<string>wp_fix_server_vars</string>
 		<string>wp_footer</string>
@@ -2432,6 +2442,7 @@
 		<string>wp_getUsersBlogs</string>
 		<string>wp_get_active_and_valid_plugins</string>
 		<string>wp_get_archives</string>
+		<string>wp_get_associated_nav_menu_items</string>
 		<string>wp_get_attachment_image</string>
 		<string>wp_get_attachment_image_src</string>
 		<string>wp_get_attachment_link</string>
@@ -2449,10 +2460,9 @@
 		<string>wp_get_links</string>
 		<string>wp_get_linksbyname</string>
 		<string>wp_get_mu_plugins</string>
-		<string>wp_get_nav_menu_item</string>
 		<string>wp_get_nav_menu_items</string>
 		<string>wp_get_nav_menu_object</string>
-		<string>wp_get_nav_menu_sub_items</string>
+		<string>wp_get_nav_menu_to_edit</string>
 		<string>wp_get_nav_menus</string>
 		<string>wp_get_nocache_headers</string>
 		<string>wp_get_object_terms</string>
@@ -2564,15 +2574,13 @@
 		<string>wp_mime_type_icon</string>
 		<string>wp_mkdir_p</string>
 		<string>wp_nav_menu</string>
-		<string>wp_nav_menu_create_metabox</string>
-		<string>wp_nav_menu_get_items</string>
-		<string>wp_nav_menu_item_link_metabox</string>
-		<string>wp_nav_menu_item_post_type_metabox</string>
-		<string>wp_nav_menu_item_taxonomy_metabox</string>
-		<string>wp_nav_menu_manage_menu_metabox</string>
-		<string>wp_nav_menu_metaboxes_setup</string>
-		<string>wp_nav_menu_post_type_metaboxes</string>
-		<string>wp_nav_menu_taxonomy_metaboxes</string>
+		<string>wp_nav_menu_item_link_meta_box</string>
+		<string>wp_nav_menu_item_post_type_meta_box</string>
+		<string>wp_nav_menu_item_taxonomy_meta_box</string>
+		<string>wp_nav_menu_manage_columns</string>
+		<string>wp_nav_menu_post_type_meta_boxes</string>
+		<string>wp_nav_menu_setup</string>
+		<string>wp_nav_menu_taxonomy_meta_boxes</string>
 		<string>wp_newCategory</string>
 		<string>wp_newComment</string>
 		<string>wp_newPage</string>
@@ -2650,6 +2658,7 @@
 		<string>wp_sanitize_redirect</string>
 		<string>wp_save_image</string>
 		<string>wp_save_image_file</string>
+		<string>wp_save_nav_menu_item</string>
 		<string>wp_save_post_revision</string>
 		<string>wp_schedule_event</string>
 		<string>wp_schedule_single_event</string>
@@ -2730,6 +2739,8 @@
 		<string>wp_update_comment_count_now</string>
 		<string>wp_update_core</string>
 		<string>wp_update_link</string>
+		<string>wp_update_nav_menu_item</string>
+		<string>wp_update_nav_menu_object</string>
 		<string>wp_update_plugin</string>
 		<string>wp_update_plugins</string>
 		<string>wp_update_post</string>

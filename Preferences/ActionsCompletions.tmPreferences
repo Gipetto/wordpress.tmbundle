@@ -132,6 +132,7 @@
 		<string>post-flash-upload-ui</string>
 		<string>post-html-upload-ui</string>
 		<string>post-upload-ui</string>
+		<string>post_edit_form_tag</string>
 		<string>post_submitbox_misc_actions</string>
 		<string>post_submitbox_start</string>
 		<string>pre-flash-upload-ui</string>
@@ -148,7 +149,6 @@
 		<string>rdf_item</string>
 		<string>rdf_ns</string>
 		<string>register_form</string>
-		<string>register_post</string>
 		<string>remove_user_from_blog</string>
 		<string>restrict_manage_posts</string>
 		<string>retreive_password</string>
@@ -170,7 +170,6 @@
 		<string>set_object_terms</string>
 		<string>sidebar_admin_setup</string>
 		<string>signup_blogform</string>
-		<string>signup_finished</string>
 		<string>spammed_comment</string>
 		<string>spam_comment</string>
 		<string>submitlink_box</string>
@@ -196,6 +195,8 @@
 		<string>untrash_post</string>
 		<string>untrash_post_comments</string>
 		<string>update_blog_public</string>
+		<string>user_edit_form_tag</string>
+		<string>user_new_form_tag</string>
 		<string>user_profile_update_errors</string>
 		<string>user_register</string>
 		<string>widgetsphp</string>
@@ -221,6 +222,7 @@
 		<string>wp_print_scripts</string>
 		<string>wp_set_comment_status</string>
 		<string>wp_update_comment_count</string>
+		<string>wp_update_nav_menu_item</string>
 		<string>xmlrpc_call</string>
 		<string>xmlrpc_publish_post</string>
 		<string>_admin_menu</string>
