@@ -8,9 +8,12 @@
 	<string>#!/usr/bin/env ruby -wKU
 require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
+require ENV['TM_SUPPORT_PATH'] + '/lib/current_word'
+
+cword = Word.current_word('a-zA-Z0-9_')
 
 choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/functions.plist'))
-TextMate::UI.complete(choices, :initial_filter =&gt; ENV['TM_CURRENT_WORD'], :extra_chars =&gt; '_')
+TextMate::UI.complete(choices, :initial_filter =&gt; cword, :extra_chars =&gt; '_')
 </string>
 	<key>fallbackInput</key>
 	<string>word</string>
