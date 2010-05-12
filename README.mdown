@@ -21,17 +21,17 @@ The plugin features auto-completion of WordPress functions, snippets for common 
 
 ## Function Completion
 
-General function completion can be invoked with a slight modification of the regular PHP function completion. We chose to use control-shift-escape as its easy to remember next to the regular PHP command (option-escape). The completed function will include parameter hits for the function as best as my simple grep of the core will allow. I'm still trying to build a better way of grabbing comprehensive function definitions.
+General function completion can be invoked with a slight modification of the regular PHP function completion. We chose to use `Control-Shift-Escape` as its easy to remember next to the regular PHP command (`Option-Escape`). The completed function will include parameter hits for the function as best as my simple grep of the core will allow. I'm still trying to build a better way of grabbing comprehensive function definitions.
 
 It does leave just a little bit to be desired. It doesn't distinguish between classes, functions and methods, and though it does filter out "magic" & private methods (those prefixed with an underscore), it does index all function declarations it finds. And I believe that there's a stray JavaScript function or two in there. ;)
 
 "Common" function prefixes are duplicated in to their own commands. They all pull from the same function definition list, but offer a limited scope search. These limited scopes are available for:
 
-- `get_`&#x21E5;, ie: get_permalink, get_post_meta
-- `is_`&#x21E5;, ie: is_home, is_search
+- `get_`&#x21E5;, ie: `get_permalink`, `get_post_meta`
+- `is_`&#x21E5;, ie: `is_home`, `is_search`
 - `the_`&#x21E5;, ie: the_post, the_title
-- `wp_`&#x21E5;, ie: wp_cache_add, wp_themes_dir
-- `esc_`&#x21E5;, ie: esc_attr_e
+- `wp_`&#x21E5;, ie: `wp_cache_add`, `wp_themes_dir`
+- `esc_`&#x21E5;, ie: `esc_attr_e`
 
 Functions that have many options or required a bit of special attention have been expanded in to their own completions:
 
@@ -40,6 +40,7 @@ Functions that have many options or required a bit of special attention have bee
 - `get_posts`&#x21E5;
 - `wp_query`&#x21E5;
 - `metadata`&#x21E5; for quick access to the WordPress metadata apis
+- `remote`&#x21E5; for quick access to the `wp_remote_*` functions 
 
 Each of these is invoked with a tab trigger, for example: `wp_`&#x21E5;
 
@@ -47,15 +48,27 @@ We can't (yet) look at the current project to pull in any custom defined functio
 
 ## Function Definitions
 
-Partial function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using Command-Shift-H to bring up the tool tip. 
+Partial function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using `Command-Shift-H` to bring up the tool tip. 
 
 The second line of the tool-tip lists the file and line number where the function is defined to make looking up the details of the function more convenient.
+
+## Support WordPress Features
+
+- `custom_post_type`&#x21E5; - Snippet for adding a custom post type
+- `shortcode`&#x21E5; - snippet for generating shortcode functions
+- `thumbnail`&#x21E5; - shortcut to display post\_thumbnail related functions
+- `taxonomy`&#x21E5; - shortcut to display taxonomy related functions
+- `add_theme_support`&#x21E5; & `remove_theme_support`&#x21E5; - enabler functions for some built in WordPress features
+
+## Multisite Functions
+
+WordPress 3.0 finally merged the WordPress MU code base in to the WordPress core. So now we have easy access to the MU functions (ie: I was too lazy before to scrape the MU code base separately) with `wpmu_`&#x21E5;.
 
 ## Goto Function
 
 When pointed to an install of the current version of WordPress the bundle can jump to the definition of a function so that the function can be inspected.
 
-Simply place the carat in a function name, or highlight the function, and press Command-Shift-Option-H. If needed (and it will be the first time you run the command) you'll be directed to enter the full path to your WordPress (or WordPress MU) install in the Preferences (Command-Option-,) before the function completion can work properly.
+Simply place the carat in a function name, or highlight the function, and press `Command-Shift-Option-H`. If needed (and it will be the first time you run the command) you'll be directed to enter the full path to your WordPress (or WordPress MU) install in the Preferences (`Command-Option-,`) before the function completion can work properly.
 
 ## Template Snippets
 
@@ -71,6 +84,8 @@ The bundle includes snippets for some common operations we encounter during Word
 - `commentform`&#x21E5; - Comment form template
 - `post`&#x21E5; - Post template
 - `sidebar`&#x21E5; - Sidebar template
+- `wp-config`&#x21E5; - a full blown WP config file with all the possible options represented
+- `readme`&#x21E5; - a sample plugin readme file
 
 ## Actions &amp; Filters
 
@@ -112,7 +127,7 @@ There's even more included that's not yet mentioned here. Just browse through th
 
 ## Version Compatibility
 
-The bundle will be kept up to date with WordPress' latest release. There will be no conscious effort made to retain backwards compatibility. As of the WordPress 2.9 release the version of this plugin that is compatible with WordPress 2.8 has been tagged in the GitHub repository.  
+The bundle will be kept up to date with WordPress' latest release. There will be no conscious effort made to retain backwards compatibility in the current version of the bundle. If you need legacy support the last available bundle build for a version of WordPress will be tagged for backwards compatibility. Look at the github project page for this bundle and look at the available tags to see which backward versions are available.
 
 ## Bugs/Suggestions
 
