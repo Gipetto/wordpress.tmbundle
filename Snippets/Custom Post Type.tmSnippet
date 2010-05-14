@@ -11,6 +11,7 @@
 	 * Supplied is a "reasonable" list of defaults
 	 * @see register_post_type for full list of options for register_post_type
 	 * @see add_post_type_support for full descriptions of 'supports' options
+	 * @see get_post_type_capabilities for full list of available fine grained capabilities that are supported
 	 */
 	register_post_type('${2:post_type}', array( 
 		${3:'labels' =&gt; array(
@@ -40,6 +41,10 @@
 			${31:'category',}
 		),}
 		${32:'capability_type' => &gt; '${39:post}',}
+		${33:'capabilities' => array(
+			// for fine grained control include valid capabilities here
+			// if left empty 'capability_type' will define editing capability requirements
+		),}
 	));
 }
 add_action('init', '$1');</string>
