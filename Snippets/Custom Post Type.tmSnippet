@@ -6,35 +6,40 @@
 	<string>function ${1:registration_func_name}() {
 
 	/**
-	 * Register our post type
+	 * Register a custom post type
+	 * 
+	 * Supplied is a "reasonable" list of defaults
 	 * @see register_post_type for full list of options for register_post_type
 	 * @see add_post_type_support for full descriptions of 'supports' options
 	 */
 	register_post_type('${2:post_type}', array( 
-		${3:'label' =&gt; __('${4:label}'),}
-		${5:'singular_label' =&gt; __('${6:singular-label}'),}
-		${7:'description' =&gt; __('${8:description}'),}
-		${9:'public' =&gt; ${10:true},}
-		${11:'exclude_from_search' =&gt; ${12:null},}
-		${13:'publically_queryable' =&gt; ${14:null},}
-		${15:'show_ui' =&gt; ${16:true},}
-		${17:'hierarchal' =&gt; ${18:false},}
-		${19:'supports' =&gt; array(
-			${20:'title',}
-			${21:'editor',}
-			${22:'comments',}
-			${23:'revisions',}
-			${24:'trackbacks',}
-			${25:'author',}
-			${26:'excerpt',}
-			${27:'page-attributes',}
-			${28:'thumbnail',}
-			${29:'custom-fields'}
+		${3:'labels' =&gt; array(
+			'name' => __('${4:name}'),
+			'singular_name' => __('${5:singular-name}')
 		),}
-		${30:'taxonomies' =&gt; array(
-			${31:'post_tag',}
-			${32:'category',}
-		)}
+		${6:'description' =&gt; __('${7:description}'),}
+		${8:'public' =&gt; ${9:true},}
+		${10:'exclude_from_search' =&gt; ${11:null},}
+		${12:'publically_queryable' =&gt; ${13:null},}
+		${14:'show_ui' =&gt; ${15:true},}
+		${16:'hierarchal' =&gt; ${17:false},}
+		${18:'supports' =&gt; array(
+			${19:'title',}
+			${20:'editor',}
+			${21:'comments',}
+			${22:'revisions',}
+			${23:'trackbacks',}
+			${24:'author',}
+			${25:'excerpt',}
+			${26:'page-attributes',}
+			${27:'thumbnail',}
+			${28:'custom-fields'}
+		),}
+		${29:'taxonomies' =&gt; array(
+			${30:'post_tag',}
+			${31:'category',}
+		),}
+		${32:'capability_type' => &gt; '${39:post}',}
 	));
 }
 add_action('init', '$1');</string>
