@@ -509,7 +509,7 @@ module WordPress
       { 'display' => 'swfupload-queue' },
       { 'display' => 'swfupload-speed' },
       { 'display' => 'swfupload-swfobject' },
-      { 'display' => 'theme-preview' }
+      { 'display' => 'theme-preview' },
       { 'display' => 'thickbox' },
       { 'display' => 'tiny_mce' },
       { 'display' => 'upload' },
