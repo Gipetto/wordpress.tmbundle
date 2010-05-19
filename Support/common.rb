@@ -519,7 +519,7 @@ module WordPress
       { 'display' => 'wp-ajax-response' },
       { 'display' => 'wp-gears' },
       { 'display' => 'wp-lists' },
-      { 'display' => 'xfn' },
+      { 'display' => 'xfn' }
 
     ]
     TextMate::UI.complete(choices)

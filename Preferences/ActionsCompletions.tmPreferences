@@ -10,173 +10,213 @@
     <dict>
       <key>completions</key>
       <array>
+		<string>activated_plugin</string>
+		<string>activate_blog</string>
+		<string>activate_plugin</string>
+		<string>added_existing_user</string>
+		<string>added_option</string>
+		<string>added_postmeta</string>
+		<string>added_term_relationship</string>
+		<string>added_usermeta</string>
+		<string>added_{\\$meta_type}_meta</string>
 		<string>add_attachment</string>
 		<string>add_category_form_pre</string>
+		<string>add_link</string>
 		<string>add_link_category_form_pre</string>
 		<string>add_meta_boxes</string>
 		<string>add_meta_boxes_comment</string>
 		<string>add_meta_boxes_link</string>
+		<string>add_option</string>
+		<string>add_option_{\\$option}</string>
+		<string>add_site_option</string>
+		<string>add_site_option_{\\$option}</string>
 		<string>add_tag_form</string>
 		<string>add_tag_form_fields</string>
 		<string>add_tag_form_pre</string>
+		<string>add_term_relationship</string>
 		<string>add_user_to_blog</string>
 		<string>admin_enqueue_scripts</string>
 		<string>admin_footer</string>
-		<string>admin_head</string>
-		<string>admin_head-media-upload-popup</string>
-		<string>admin_init</string>
 		<string>admin_menu</string>
-		<string>admin_notices</string>
-		<string>admin_page_access_denied</string>
-		<string>admin_print_footer_scripts</string>
-		<string>admin_print_scripts</string>
-		<string>admin_print_scripts-media-upload-popup</string>
-		<string>admin_print_styles</string>
-		<string>admin_print_styles-media-upload-popup</string>
-		<string>admin_xml_ns</string>
-		<string>after-</string>
-		<string>after_db_upgrade</string>
-		<string>app_entry</string>
-		<string>app_head</string>
-		<string>app_ns</string>
+		<string>after-\'.\\$taxonomy.\'-table</string>
+		<string>after_mu_upgrade</string>
 		<string>app_publish_post</string>
-		<string>atom_entry</string>
-		<string>atom_head</string>
-		<string>atom_ns</string>
+		<string>archive_blog</string>
+		<string>atompub_create_post</string>
+		<string>atompub_put_post</string>
 		<string>auth_cookie_bad_hash</string>
 		<string>auth_cookie_bad_username</string>
 		<string>auth_cookie_expired</string>
 		<string>auth_cookie_malformed</string>
 		<string>auth_cookie_valid</string>
 		<string>auth_redirect</string>
-		<string>blog_privacy_selector</string>
+		<string>begin_fetch_post_thumbnail_html</string>
 		<string>check_admin_referer</string>
 		<string>check_ajax_referer</string>
+		<string>check_comment_flood</string>
+		<string>check_passwords</string>
 		<string>clean_attachment_cache</string>
 		<string>clean_object_term_cache</string>
 		<string>clean_page_cache</string>
 		<string>clean_post_cache</string>
 		<string>clean_term_cache</string>
-		<string>clear_auth_cookie</string>
 		<string>commentrss2_item</string>
-		<string>commentsrss2_head</string>
-		<string>comments_atom_head</string>
 		<string>comment_atom_entry</string>
 		<string>comment_closed</string>
+		<string>comment_duplicate_trigger</string>
 		<string>comment_flood_trigger</string>
+		<string>comment_form</string>
+		<string>comment_form_logged_in_after</string>
 		<string>comment_id_not_found</string>
-		<string>comment_loop_start</string>
 		<string>comment_on_draft</string>
 		<string>comment_on_password_protected</string>
 		<string>comment_on_trash</string>
 		<string>comment_post</string>
-		<string>core_upgrade_preamble</string>
-		<string>dbx_post_advanced</string>
-		<string>dbx_post_sidebar</string>
+		<string>comment_\\${new_status}_\\$comment->comment_type</string>
+		<string>comment_\\${old_status}_to_\\$new_status</string>
+		<string>created_term</string>
+		<string>created_\\$taxonomy</string>
+		<string>create_term</string>
+		<string>create_\\$taxonomy</string>
+		<string>deactivated_plugin</string>
+		<string>deactivate_blog</string>
+		<string>deactivate_plugin</string>
 		<string>deleted_comment</string>
+		<string>deleted_commentmeta</string>
+		<string>deleted_link</string>
+		<string>deleted_option</string>
 		<string>deleted_post</string>
+		<string>deleted_postmeta</string>
+		<string>deleted_site_transient</string>
+		<string>deleted_term_relationships</string>
+		<string>deleted_term_taxonomy</string>
+		<string>deleted_transient</string>
 		<string>deleted_user</string>
+		<string>deleted_usermeta</string>
+		<string>deleted_{\\$meta_type}_meta</string>
 		<string>delete_attachment</string>
+		<string>delete_blog</string>
 		<string>delete_comment</string>
+		<string>delete_commentmeta</string>
+		<string>delete_link</string>
+		<string>delete_option</string>
+		<string>delete_option_\\$option</string>
 		<string>delete_post</string>
+		<string>delete_postmeta</string>
+		<string>delete_site_option</string>
+		<string>delete_site_option_{\\$option}</string>
 		<string>delete_term</string>
+		<string>delete_term_relationships</string>
+		<string>delete_term_taxonomy</string>
 		<string>delete_user</string>
+		<string>delete_usermeta</string>
+		<string>delete_\\$taxonomy</string>
+		<string>deprecated_argument_run</string>
+		<string>deprecated_file_included</string>
+		<string>deprecated_function_run</string>
 		<string>do_meta_boxes</string>
-		<string>do_robots</string>
+		<string>dynamic_sidebar</string>
+		<string>edited_term</string>
+		<string>edited_terms</string>
+		<string>edited_term_taxonomies</string>
+		<string>edited_term_taxonomy</string>
+		<string>edited_\\$taxonomy</string>
 		<string>edit_attachment</string>
 		<string>edit_category_form</string>
 		<string>edit_category_form_fields</string>
 		<string>edit_category_form_pre</string>
 		<string>edit_comment</string>
+		<string>edit_link</string>
 		<string>edit_link_category_form</string>
 		<string>edit_link_category_form_fields</string>
 		<string>edit_link_category_form_pre</string>
-		<string>edit_page_form</string>
 		<string>edit_post</string>
 		<string>edit_tag_form</string>
 		<string>edit_tag_form_fields</string>
 		<string>edit_tag_form_pre</string>
+		<string>edit_term</string>
+		<string>edit_terms</string>
+		<string>edit_term_taxonomies</string>
+		<string>edit_term_taxonomy</string>
+		<string>edit_user_profile</string>
 		<string>edit_user_profile_update</string>
-		<string>export_wp</string>
+		<string>edit_\\$taxonomy</string>
+		<string>end_fetch_post_thumbnail_html</string>
 		<string>generate_rewrite_rules</string>
+		<string>get_footer</string>
+		<string>get_header</string>
+		<string>get_sidebar</string>
+		<string>get_template_part_{\\$slug}</string>
+		<string>granted_super_admin</string>
+		<string>grant_super_admin</string>
+		<string>http_api_curl</string>
+		<string>http_api_debug</string>
+		<string>http_transport_get_debug</string>
+		<string>http_transport_post_debug</string>
 		<string>import_done</string>
-		<string>import_end</string>
 		<string>import_post_added</string>
 		<string>import_post_meta</string>
-		<string>import_start</string>
-		<string>install_plugins_table_header</string>
-		<string>in_admin_header</string>
-		<string>load-widgetsphp</string>
-		<string>load_feed_engine</string>
-		<string>login_form</string>
-		<string>login_head</string>
+		<string>in_plugin_update_message-\\$file</string>
+		<string>in_widget_form</string>
+		<string>load_textdomain</string>
 		<string>loop_end</string>
 		<string>loop_start</string>
-		<string>lostpassword_form</string>
-		<string>lostpassword_post</string>
-		<string>lost_password</string>
+		<string>make_ham_blog</string>
+		<string>make_ham_user</string>
+		<string>make_spam_blog</string>
+		<string>make_spam_user</string>
+		<string>manage_blogs_custom_column</string>
+		<string>manage_comments_custom_column</string>
 		<string>manage_comments_nav</string>
 		<string>manage_link_custom_column</string>
 		<string>manage_media_custom_column</string>
 		<string>manage_pages_custom_column</string>
 		<string>manage_posts_custom_column</string>
-		<string>opml_head</string>
+		<string>manage_users_custom_column</string>
 		<string>parse_query</string>
 		<string>parse_request</string>
 		<string>password_reset</string>
 		<string>permalink_structure_changed</string>
 		<string>personal_options</string>
 		<string>personal_options_update</string>
+		<string>phpmailer_init</string>
 		<string>pingback_post</string>
-		<string>populate_options</string>
-		<string>post-flash-upload-ui</string>
 		<string>post-html-upload-ui</string>
-		<string>post-upload-ui</string>
-		<string>post_edit_form_tag</string>
-		<string>post_submitbox_misc_actions</string>
-		<string>post_submitbox_start</string>
-		<string>pre-flash-upload-ui</string>
-		<string>pre-html-upload-ui</string>
-		<string>pre-upload-ui</string>
+		<string>posts_selection</string>
 		<string>pre_comment_on_post</string>
 		<string>pre_get_posts</string>
 		<string>pre_ping</string>
+		<string>pre_post_update</string>
+		<string>pre_user_search</string>
 		<string>private_to_published</string>
 		<string>profile_personal_options</string>
 		<string>profile_update</string>
 		<string>publish_phone</string>
-		<string>rdf_header</string>
-		<string>rdf_item</string>
-		<string>rdf_ns</string>
-		<string>register_form</string>
+		<string>quick_edit_custom_box</string>
+		<string>register_post</string>
+		<string>register_sidebar</string>
 		<string>remove_user_from_blog</string>
-		<string>restrict_manage_posts</string>
 		<string>retreive_password</string>
 		<string>retrieve_password</string>
 		<string>retrieve_password_key</string>
-		<string>right_now_content_table_end</string>
-		<string>right_now_discussion_table_end</string>
-		<string>right_now_table_end</string>
-		<string>rss2_head</string>
-		<string>rss2_item</string>
-		<string>rss2_ns</string>
-		<string>rss_head</string>
-		<string>rss_item</string>
+		<string>revoked_super_admin</string>
+		<string>revoke_super_admin</string>
 		<string>save_post</string>
 		<string>send_headers</string>
+		<string>setted_site_transient</string>
+		<string>setted_transient</string>
 		<string>set_auth_cookie</string>
-		<string>set_current_user</string>
 		<string>set_logged_in_cookie</string>
 		<string>set_object_terms</string>
-		<string>sidebar_admin_setup</string>
+		<string>set_user_role</string>
+		<string>show_user_profile</string>
 		<string>signup_blogform</string>
+		<string>signup_extra_fields</string>
 		<string>spammed_comment</string>
 		<string>spam_comment</string>
-		<string>submitlink_box</string>
-		<string>submitpage_box</string>
 		<string>switch_blog</string>
-		<string>template_redirect</string>
 		<string>the_post</string>
+		<string>the_widget</string>
 		<string>trackback_post</string>
 		<string>transition_comment_status</string>
 		<string>transition_post_status</string>
@@ -186,6 +226,8 @@
 		<string>trash_comment</string>
 		<string>trash_post</string>
 		<string>trash_post_comments</string>
+		<string>unarchive_blog</string>
+		<string>unload_textdomain</string>
 		<string>unspammed_comment</string>
 		<string>unspam_comment</string>
 		<string>untrashed_comment</string>
@@ -194,38 +236,56 @@
 		<string>untrash_comment</string>
 		<string>untrash_post</string>
 		<string>untrash_post_comments</string>
-		<string>update_blog_public</string>
-		<string>user_edit_form_tag</string>
-		<string>user_new_form_tag</string>
+		<string>updated_option</string>
+		<string>updated_postmeta</string>
+		<string>updated_usermeta</string>
+		<string>updated_{\\$meta_type}_meta</string>
+		<string>update_option</string>
+		<string>update_option_{\\$option}</string>
+		<string>update_postmeta</string>
+		<string>update_site_option</string>
+		<string>update_site_option_{\\$option}</string>
+		<string>update_usermeta</string>
+		<string>update_{\\$meta_type}_meta</string>
 		<string>user_profile_update_errors</string>
 		<string>user_register</string>
-		<string>widgetsphp</string>
-		<string>widgets_init</string>
 		<string>wp</string>
-		<string>wp-mailphp</string>
+		<string>wpmuadminresult</string>
+		<string>wpmublogsaction</string>
+		<string>wpmueditblogaction</string>
 		<string>wpmu_activate_blog</string>
 		<string>wpmu_activate_user</string>
+		<string>wpmu_blog_updated</string>
+		<string>wpmu_delete_user</string>
+		<string>wpmu_new_blog</string>
+		<string>wpmu_new_user</string>
+		<string>wpmu_upgrade_site</string>
 		<string>wp_authenticate</string>
 		<string>wp_blacklist_check</string>
 		<string>wp_create_file_in_uploads</string>
-		<string>wp_enqueue_scripts</string>
-		<string>wp_footer</string>
-		<string>wp_head</string>
+		<string>wp_create_nav_menu</string>
+		<string>wp_default_scripts</string>
+		<string>wp_default_styles</string>
+		<string>wp_delete_file</string>
+		<string>wp_delete_nav_menu</string>
+		<string>wp_delete_post_revision</string>
+		<string>wp_feed_options</string>
 		<string>wp_insert_comment</string>
 		<string>wp_insert_post</string>
-		<string>wp_loaded</string>
 		<string>wp_login</string>
 		<string>wp_login_failed</string>
-		<string>wp_logout</string>
-		<string>wp_meta</string>
-		<string>wp_print_footer_scripts</string>
-		<string>wp_print_scripts</string>
+		<string>wp_register_sidebar_widget</string>
+		<string>wp_restore_post_revision</string>
 		<string>wp_set_comment_status</string>
+		<string>wp_unregister_sidebar_widget</string>
 		<string>wp_update_comment_count</string>
+		<string>wp_update_nav_menu</string>
 		<string>wp_update_nav_menu_item</string>
 		<string>xmlrpc_call</string>
 		<string>xmlrpc_publish_post</string>
-		<string>_admin_menu</string>
+		<string>\\${new_status}_\\$post->post_type</string>
+		<string>\\${old_status}_to_\\$new_status</string>
+		<string>_wp_put_post_revision</string>
       </array>
     </dict>
     <key>uuid</key>
