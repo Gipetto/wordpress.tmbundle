@@ -28,8 +28,6 @@
 		<string>EZSQL_VERSION</string>
 		<string>IS_PROFILE_PAGE</string>
 		<string>LANGDIR</string>
-		<string>MAX_EXECUTION_TIME</string>
-		<string>MAX_RESULTS</string>
 		<string>MULTISITE</string>
 		<string>MUPLUGINDIR</string>
 		<string>OBJECT</string>
@@ -107,7 +105,6 @@
 		<string>SHORTINIT</string>
 		<string>SITECOOKIEPATH</string>
 		<string>SITE_ID_CURRENT_SITE</string>
-		<string>STATUS_INTERVAL</string>
 		<string>SUBDOMAIN_INSTALL</string>
 		<string>UPLOADBLOGSDIR</string>
 		<string>UPLOADS</string>
@@ -122,6 +119,7 @@
 		<string>WP_DEBUG</string>
 		<string>WP_DEBUG_DISPLAY</string>
 		<string>WP_DEFAULT_THEME</string>
+		<string>WP_IMPORTING</string>
 		<string>WP_INSTALLING</string>
 		<string>WP_LANG_DIR</string>
 		<string>WP_PLUGIN_DIR</string>

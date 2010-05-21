@@ -49,7 +49,6 @@
 		<string>category_rewrite_rules</string>
 		<string>check_password</string>
 		<string>clean_url</string>
-		<string>columns_prefs_header</string>
 		<string>comments_array</string>
 		<string>comments_number</string>
 		<string>comments_open</string>
@@ -231,10 +230,6 @@
 		<string>image_send_to_editor</string>
 		<string>image_send_to_editor_url</string>
 		<string>img_caption_shortcode</string>
-		<string>import_allow_create_users</string>
-		<string>import_allow_fetch_attachments</string>
-		<string>import_attachment_size_limit</string>
-		<string>import_post_meta_key</string>
 		<string>import_upload_size_limit</string>
 		<string>includes_url</string>
 		<string>index_rel_link</string>
@@ -294,7 +289,6 @@
 		<string>media_upload_form_url</string>
 		<string>media_upload_tabs</string>
 		<string>menu_order</string>
-		<string>meta_box_prefs_header</string>
 		<string>mod_rewrite_rules</string>
 		<string>month_link</string>
 		<string>ms_sites_per_page</string>
@@ -453,10 +447,10 @@
 		<string>tagsperpage</string>
 		<string>tag_cloud_sort</string>
 		<string>tag_escape</string>
-		<string>tag_feed_link</string>
 		<string>tag_link</string>
 		<string>tag_rewrite_rules</string>
 		<string>tag_row_actions</string>
+		<string>taxonomy_feed_link</string>
 		<string>taxonomy_template</string>
 		<string>teeny_mce_before_init</string>
 		<string>teeny_mce_buttons</string>
@@ -539,6 +533,7 @@
 		<string>use_streams_transport</string>
 		<string>validate_username</string>
 		<string>video_send_to_editor_url</string>
+		<string>walker_nav_menu_start_el</string>
 		<string>whitelist_options</string>
 		<string>widget_archives_args</string>
 		<string>widget_archives_dropdown_args</string>
@@ -565,6 +560,7 @@
 		<string>wp_admin_css</string>
 		<string>wp_admin_css_uri</string>
 		<string>wp_authenticate_user</string>
+		<string>wp_check_filetype_and_ext</string>
 		<string>wp_check_post_lock_window</string>
 		<string>wp_comment_reply</string>
 		<string>wp_count_comments</string>
@@ -577,6 +573,7 @@
 		<string>wp_dropdown_cats</string>
 		<string>wp_dropdown_pages</string>
 		<string>wp_dropdown_users</string>
+		<string>wp_edit_nav_menu_walker</string>
 		<string>wp_feed_cache_transient_lifetime</string>
 		<string>wp_generate_attachment_metadata</string>
 		<string>wp_generate_tag_cloud</string>
@@ -587,7 +584,6 @@
 		<string>wp_get_attachment_thumb_file</string>
 		<string>wp_get_attachment_thumb_url</string>
 		<string>wp_get_attachment_url</string>
-		<string>wp_get_nav_menu_item</string>
 		<string>wp_get_object_terms</string>
 		<string>wp_handle_upload</string>
 		<string>wp_handle_upload_prefilter</string>
