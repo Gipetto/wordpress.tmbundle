@@ -117,6 +117,8 @@ Strings can be wrapped in internationalization functions using the shortcut `com
 - selected strings, including their quotes, are added to an `__()` function 
 - selected text in HTML scope are added to a `<?php _e() ?>` block
 
+Starting with version 3.0 of this bundle the TextMate Shell Variable `WP_TEXT_DOMAIN` is pulled (if present) and is used for the text-domain.
+
 ## Plugin README.txt Creation & Validation
 
 Use `readme`&#x21E5; to drop in a template of the WordPress plugin `README.txt` file.
