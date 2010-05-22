@@ -498,6 +498,23 @@ module WordPress
     return script
   end
  
+# internationalization
+
+  def self.intl()
+    if ENV['TM_SCOPE'].include? 'string.quoted.single.php'
+      ret = "'.__('" + ENV['TM_SELECTED_TEXT'] + "', '\${1:domain}').'\$0"
+    elsif ENV['TM_SCOPE'].include? 'string.quoted.double.php'
+      ret = '".__("' + ENV['TM_SELECTED_TEXT'] + '", "${1:domain}")."$0'
+    elsif ENV['TM_SCOPE'].include? 'source.php'
+      ret = '__(' + ENV['TM_SELECTED_TEXT'] + ", '\${1:domain}')\$0"
+    elsif ENV['TM_SCOPE'].include? 'text.html'
+      ret = "<?php _e('" + ENV['TM_SELECTED_TEXT'] + "', '\${1:domain}'); ?>\$0"
+    else
+      ret = "__('" + ENV['TM_SELECTED_TEXT'] + "', '\${1:domain}')\$0"
+    end
+    TextMate.exit_insert_snippet(ret)
+  end
+ 
 # function definition
  
   def self.function_define()
