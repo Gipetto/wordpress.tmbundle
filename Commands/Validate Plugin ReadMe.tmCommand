@@ -11,6 +11,8 @@ WPValidator.validate_readme
 </string>
 	<key>input</key>
 	<string>document</string>
+	<key>keyEquivalent</key>
+	<string>~@V</string>
 	<key>name</key>
 	<string>Validate Plugin ReadMe</string>
 	<key>output</key>

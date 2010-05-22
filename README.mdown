@@ -117,6 +117,8 @@ Strings can be wrapped in internationalization functions using the shortcut `com
 - selected strings, including their quotes, are added to an `__()` function 
 - selected text in HTML scope are added to a `<?php _e() ?>` block
 
+A quick blog post writeup of the feature [is here](http://top-frog.com/2010/05/21/new-internationalization-feature-in-the-wordpress-textmate-bundle/).
+
 Starting with version 3.0 of this bundle the TextMate Shell Variable `WP_TEXT_DOMAIN` is pulled (if present) and is used for the text-domain.
 
 ## Plugin README.txt Creation & Validation
