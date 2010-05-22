@@ -153,9 +153,6 @@
 		<string>http_api_debug</string>
 		<string>http_transport_get_debug</string>
 		<string>http_transport_post_debug</string>
-		<string>import_done</string>
-		<string>import_post_added</string>
-		<string>import_post_meta</string>
 		<string>in_plugin_update_message-\\$file</string>
 		<string>in_widget_form</string>
 		<string>load_textdomain</string>
@@ -266,7 +263,6 @@
 		<string>wp_create_nav_menu</string>
 		<string>wp_default_scripts</string>
 		<string>wp_default_styles</string>
-		<string>wp_delete_file</string>
 		<string>wp_delete_nav_menu</string>
 		<string>wp_delete_post_revision</string>
 		<string>wp_feed_options</string>
