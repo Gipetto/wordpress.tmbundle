@@ -18,6 +18,7 @@ The plugin features auto-completion of WordPress functions, snippets for common 
 - Goto function command to jump to file and line number where a function is defined
 - Validation of your Plugin's `README.txt` file against the WordPress online validator
 - Multisite support starting with WordPress 3.0 (codebase merge from WordPress MU)
+- Internationalization of strings in proper context
 
 ## Function Completion
 
@@ -107,6 +108,14 @@ Included are functions for quickly accessing common object members for post obje
 - `pv`&#x21E5; for post vars
 - `wpdb`&#x21E5; for wbdb vars and methods
 - `wp_query`&#x21E5; for wp_query vars and methods
+
+## Internationalization 
+
+Strings can be wrapped in internationalization functions using the shortcut `command-shift-i`. Strings are wrapped according to their proper context:
+
+- selected text inside single or double quotes is appropriately broken out of their quotes and added to `__()` function
+- selected strings, including their quotes, are added to an `__()` function 
+- selected text in HTML scope are added to a `<?php _e() ?>` block
 
 ## Plugin README.txt Creation & Validation
 
