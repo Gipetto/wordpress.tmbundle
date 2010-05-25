@@ -5,21 +5,23 @@
 	<key>content</key>
 	<string>/**
  * Registers admin messages for a custom post type
+ *
+ * @see wp-admin/edit-form-advanced.php for \$messages format
  */
 function ${1:my_post_type_messages}($messages) {
 	\$messages['${2:custom-post-type-id}'] = array(
-		1 =&gt; sprintf(__('Book updated. &lt;a href="%s"&gt;View book&lt;/a&gt;', '${3:my_plugin_text_domain}'), esc_url(get_permalink(\$post_ID))),
+		1 =&gt; sprintf(__('${3:Post Type Name} updated. &lt;a href="%s"&gt;View book&lt;/a&gt;', '${4:my_plugin_text_domain}'), esc_url(get_permalink(\$post_ID))),
 		2 =&gt; \$messages['post'][2],
 		3 =&gt; \$messages['post'][3],
-		4 =&gt; __('Book updated.', '$3'),
-		5 =&gt; isset(\$_GET['revision']) ? sprintf( __('Book restored to revision from %s', '$3'), wp_post_revision_title((int) \$_GET['revision'], false)) : false,
-		6 =&gt; sprintf(__('Book published. &lt;a href="%s"&gt;View book&lt;/a&gt;', '$3'), esc_url(get_permalink(\$post_ID))),
-		7 =&gt; __('Book saved.', '$3'),
-		8 =&gt; sprintf(__('Book submitted. &lt;a target="_blank" href="%s"&gt;Preview book&lt;/a&gt;', '$3'), esc_url(add_query_arg('preview', 'true', get_permalink(\$post_ID)))),
-		9 =&gt; sprintf(__('Book scheduled for: &lt;strong&gt;%1$s&lt;/strong&gt;. &lt;a target="_blank" href="%2$s"&gt;Preview book&lt;/a&gt;', '$3'),
+		4 =&gt; __('$3 updated.', '$4'),
+		5 =&gt; isset(\$_GET['revision']) ? sprintf( __('Book restored to revision from %s', '$4'), wp_post_revision_title((int) \$_GET['revision'], false)) : false,
+		6 =&gt; sprintf(__('$3 published. &lt;a href="%s"&gt;View $3&lt;/a&gt;', '$4'), esc_url(get_permalink(\$post_ID))),
+		7 =&gt; __('Book saved.', '$4'),
+		8 =&gt; sprintf(__('$3 submitted. &lt;a target="_blank" href="%s"&gt;Preview $3&lt;/a&gt;', '$4'), esc_url(add_query_arg('preview', 'true', get_permalink(\$post_ID)))),
+		9 =&gt; sprintf(__('$3 scheduled for: &lt;strong&gt;%1$s&lt;/strong&gt;. &lt;a target="_blank" href="%2$s"&gt;Preview $3&lt;/a&gt;', '$4'),
 			date_i18n(__('M j, Y @ G:i'), strtotime(\$post-&gt;post_date)),
 			esc_url( get_permalink(\$post_ID))),
-		10 =&gt; sprintf(__('Book draft updated. &lt;a target="_blank" href="%s"&gt;Preview book&lt;/a&gt;', '$3'), esc_url(add_query_arg('preview', 'true', get_permalink(\$post_ID))))
+		10 =&gt; sprintf(__('$3 draft updated. &lt;a target="_blank" href="%s"&gt;Preview $3&lt;/a&gt;', '$4'), esc_url(add_query_arg('preview', 'true', get_permalink(\$post_ID))))
 	);
 	return \$messages;
 }
