@@ -25,7 +25,7 @@ function ${1:my_post_type_messages}($messages) {
 }
 add_filter('post_updated_messages', '$1');</string>
 	<key>name</key>
-	<string>Custom Post Type Message</string>
+	<string>Custom Post Type: Admin Messages</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>

@@ -15,8 +15,8 @@
 	 */
 	register_post_type('${2:post_type}', array( 
 		${3:'labels' =&gt; array(
-			'name' => __('${4:name}'),
-			'singular_name' => __('${5:singular-name}')
+			'name' =&gt; __('${4:name}'),
+			'singular_name' =&gt; __('${5:singular-name}')
 		),}
 		${6:'description' =&gt; __('${7:description}'),}
 		${8:'public' =&gt; ${9:true},}
@@ -40,8 +40,8 @@
 			${30:'post_tag',}
 			${31:'category',}
 		),}
-		${32:'capability_type' => &gt; '${39:post}',}
-		${33:'capabilities' => array(
+		${32:'capability_type' =&gt; &gt; '${39:post}',}
+		${33:'capabilities' =&gt; array(
 			// for fine grained control include valid capabilities here
 			// if left empty 'capability_type' will define editing capability requirements
 		),}
@@ -49,7 +49,7 @@
 }
 add_action('init', '$1');</string>
 	<key>name</key>
-	<string>Custom Post Type</string>
+	<string>Custom Post Type: Register</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>tabTrigger</key>
