@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>. "$TM_SUPPORT_PATH/lib/webpreview.sh"
-html_header "TimeTracker"
+html_header "WordPress"
 Markdown.pl "$TM_BUNDLE_PATH/README.mdown"
 html_footer</string>
 	<key>input</key>
