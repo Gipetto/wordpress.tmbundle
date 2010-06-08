@@ -4,13 +4,13 @@
 <dict>
 	<key>content</key>
 	<string>register_sidebar(array(
-	'name' =&gt; ${1:'Sidebar 1'},
-	'id' =&gt; ${2:'sidebar-1'},
-	'description' =&gt; ${3:''},
-	'before_widget' =&gt; ${4:'&lt;li id="%1\$s" class="widget %2\$s"&gt;'},
-	'after_widget' =&gt; ${5:'&lt;/li&gt;\n'},
-	'before_title' =&gt; ${6:'&lt;h2 class="widgettitle"&gt;'},
-	'after_title' =&gt; ${7:'&lt;/h2&gt;\n'}
+	'name' =&gt; '${1:Sidebar 1}',
+	'id' =&gt; '${2:sidebar-1}',
+	'description' =&gt; '${3:}',
+	'before_widget' =&gt; '${4:&lt;li id="%1\$s" class="widget %2\$s"&gt;}',
+	'after_widget' =&gt; "${5:&lt;/li&gt;\n}",
+	'before_title' =&gt; '${6:&lt;h2 class="widgettitle"&gt;}',
+	'after_title' =&gt; "${7:&lt;/h2&gt;\n}"
 ));
 
 $0</string>
