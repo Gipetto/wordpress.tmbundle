@@ -19,6 +19,7 @@ The plugin features auto-completion of WordPress functions, snippets for common 
 - Validation of your Plugin's `README.txt` file against the WordPress online validator
 - Multisite support starting with WordPress 3.0 (codebase merge from WordPress MU)
 - Internationalization of strings in proper context
+- Custom Post type functionality as refined in WordPress 3.0
 
 ## Function Completion
 
@@ -55,7 +56,7 @@ The second line of the tool-tip lists the file and line number where the functio
 
 ## Support WordPress Features
 
-- `custom_post_type`&#x21E5; - Snippet for adding a custom post type
+- `custom_post_type`&#x21E5; & `cptm`&#x21E5; - Snippets for adding a custom post types and customizing the edit screen messages
 - `shortcode`&#x21E5; - snippet for generating shortcode functions
 - `thumbnail`&#x21E5; - shortcut to display post\_thumbnail related functions
 - `taxonomy`&#x21E5; - shortcut to display taxonomy related functions
@@ -158,4 +159,5 @@ Additional thanks to:
 - [The talented crew at Crowd Favorite](http://crowdfavorite.com) for their various contributions and testing.
 - [Mark Jaquith](http://markjaquith.wordpress.com/2009/08/31/textmate-wordpress-widget-snippet/) for making a better Widget Template and for contributions to WordPress.
 - [Sean Klein](http://seanklein.org/), [Eric Marden](http://github.com/xentek), & [simonwheatley](http://github.com/simonwheatley) for their contributions.
+- Every one that participates on the [WP Hackers](http://lists.automattic.com/mailman/listinfo/wp-hackers) mailing list
 - And, not least of all, everyone who has contributed to WordPress.
