@@ -668,6 +668,41 @@ module WordPress
     TextMate.exit_insert_snippet(ret)    
   end
   
+# Cache
+  def self.cache()
+    choices = [
+      { 'title' => 'add' },
+      { 'title' => 'delete' },
+      { 'title' => 'get' },
+      { 'title' => 'set' }
+    ]
+    t = TextMate::UI.menu(choices)
+    method = "cache_" + t['title']
+    self.send method
+  end
+  
+  def self.cache_add()
+    ret = "wp_cache_add('${1:cache_id}', \\$\${2:data}, '\${3:cache_flag}', \${4:cache_timeout_seconds});\$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+
+  def self.cache_set()
+    ret = "wp_cache_set('${1:cache_id}', \\$\${2:data}, '\${3:cache_flag}', \${4:cache_timeout_seconds});\$0"
+    TextMate.exit_insert_snippet(ret)    
+  end
+  
+  def self.cache_get()
+    ret = "if (\\$\${1:cache_data} = wp_cache_get('\${2:cache_id}', '\${3:cache_flag}')) {\n" +
+    	    "\treturn \\$\$1;\n"+
+          "}\$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+  
+  def self.cache_delete()
+    ret = "wp_cache_delete('\${1:cache_id}', '\${2:cache_flag}');\$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+    
 # Theme Support
   @support_items = [
     { 'title' => 'post-thumbnails' },
