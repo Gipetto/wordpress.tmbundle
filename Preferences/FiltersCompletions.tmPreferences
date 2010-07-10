@@ -42,6 +42,7 @@
 		<string>bloginfo_rss</string>
 		<string>bloginfo_url</string>
 		<string>blog_details</string>
+		<string>blog_option_</string>
 		<string>body_class</string>
 		<string>cancel_comment_reply_link</string>
 		<string>category_feed_link</string>
@@ -107,13 +108,13 @@
 		<string>editable_roles</string>
 		<string>editable_slug</string>
 		<string>editor_max_image_size</string>
+		<string>edit_</string>
 		<string>edit_categories_per_page</string>
 		<string>edit_posts_per_page</string>
 		<string>edit_post_\\$field</string>
 		<string>edit_tags_per_page</string>
 		<string>edit_term_\\$field</string>
 		<string>edit_user_\\$field</string>
-		<string>edit_\'.\\$taxonomy.\'_per_page</string>
 		<string>edit_\\$field</string>
 		<string>edit_\\${taxonomy}_\\$field</string>
 		<string>embed_googlevideo</string>
@@ -125,7 +126,8 @@
 		<string>example_filter</string>
 		<string>excerpt_length</string>
 		<string>excerpt_more</string>
-		<string>extra_\\$context".\'_headers</string>
+		<string>explain_nonce_</string>
+		<string>extra_\\$context</string>
 		<string>favorite_actions</string>
 		<string>feed_content_type</string>
 		<string>feed_link</string>
@@ -192,6 +194,7 @@
 		<string>get_terms</string>
 		<string>get_terms_fields</string>
 		<string>get_terms_orderby</string>
+		<string>get_the_author_</string>
 		<string>get_the_date</string>
 		<string>get_the_excerpt</string>
 		<string>get_the_generator_{\\$type}</string>
@@ -263,12 +266,12 @@
 		<string>logout_url</string>
 		<string>lostpassword_redirect</string>
 		<string>lostpassword_url</string>
+		<string>manage_</string>
 		<string>manage_link_categories_custom_column</string>
 		<string>manage_media_columns</string>
 		<string>manage_pages_columns</string>
 		<string>manage_posts_columns</string>
 		<string>manage_users_custom_column</string>
-		<string>manage_\'.\\$screen->id.\'_columns</string>
 		<string>manage_\\${taxonomy}_custom_column</string>
 		<string>manage_{\\$post_type}_posts_columns</string>
 		<string>map_meta_cap</string>
@@ -313,6 +316,7 @@
 		<string>number_format_i18n</string>
 		<string>oembed_dataparse</string>
 		<string>oembed_result</string>
+		<string>option_</string>
 		<string>override_load_textdomain</string>
 		<string>override_unload_textdomain</string>
 		<string>page_css_class</string>
@@ -351,6 +355,7 @@
 		<string>preprocess_comment</string>
 		<string>preview_post_link</string>
 		<string>previous_posts_link_attributes</string>
+		<string>pre_add_site_option_</string>
 		<string>pre_category_nicename</string>
 		<string>pre_comment_approved</string>
 		<string>pre_comment_author_email</string>
@@ -363,10 +368,18 @@
 		<string>pre_http_request</string>
 		<string>pre_insert_term</string>
 		<string>pre_kses</string>
+		<string>pre_option_</string>
 		<string>pre_post_link</string>
 		<string>pre_post_\\$field</string>
 		<string>pre_remote_source</string>
+		<string>pre_set_site_transient_</string>
+		<string>pre_set_transient_</string>
+		<string>pre_site_option_</string>
+		<string>pre_site_transient_</string>
 		<string>pre_term_\\$field</string>
+		<string>pre_transient_</string>
+		<string>pre_update_option_</string>
+		<string>pre_update_site_option_</string>
 		<string>pre_user_description</string>
 		<string>pre_user_display_name</string>
 		<string>pre_user_email</string>
@@ -438,6 +451,8 @@
 		<string>single_cat_title</string>
 		<string>single_post_title</string>
 		<string>single_tag_title</string>
+		<string>site_option_</string>
+		<string>site_transient_</string>
 		<string>site_url</string>
 		<string>smilies_src</string>
 		<string>status_header</string>
@@ -464,6 +479,7 @@
 		<string>term_\\${field}_rss</string>
 		<string>theme_locale</string>
 		<string>the_author</string>
+		<string>the_author_</string>
 		<string>the_author_posts_link</string>
 		<string>the_category</string>
 		<string>the_category_rss</string>
@@ -500,6 +516,7 @@
 		<string>tiny_mce_before_init</string>
 		<string>tiny_mce_version</string>
 		<string>trackback_url</string>
+		<string>transient_</string>
 		<string>update_attached_file</string>
 		<string>update_feedback</string>
 		<string>update_footer</string>
@@ -518,13 +535,13 @@
 		<string>upload_per_page</string>
 		<string>upload_size_limit</string>
 		<string>url_to_postid</string>
+		<string>user_</string>
 		<string>user_can_richedit</string>
 		<string>user_contactmethods</string>
 		<string>user_has_cap</string>
 		<string>user_registration_email</string>
 		<string>user_row_actions</string>
 		<string>user_trailingslashit</string>
-		<string>user_\'.\\$name.\'_label</string>
 		<string>user_\\$field</string>
 		<string>use_curl_transport</string>
 		<string>use_fopen_transport</string>
@@ -597,6 +614,7 @@
 		<string>wp_mail</string>
 		<string>wp_mail_charset</string>
 		<string>wp_mail_content_type</string>
+		<string>wp_mail_from</string>
 		<string>wp_mail_from_name</string>
 		<string>wp_mail_original_content</string>
 		<string>wp_mime_type_icon</string>
