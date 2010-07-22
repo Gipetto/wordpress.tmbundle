@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
+require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
+
+choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/functions.plist'))
+choices.each { |i|
+	if i['display'] == 'wp_register_style'
+		TextMate.exit_insert_snippet('wp_register_style' + i['insert'])	end
+}</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>register style</string>
+	<key>output</key>
+	<string>insertAsSnippet</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>register_style</string>
+	<key>uuid</key>
+	<string>44364A1D-3D5B-4390-A6D1-B9829E85EA09</string>
+</dict>
+</plist>

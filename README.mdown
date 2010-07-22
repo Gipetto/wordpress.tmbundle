@@ -94,9 +94,11 @@ The bundle includes snippets for some common operations we encounter during Word
 
 We've also included a complete list of built in WordPress Actions & Filters so that using `add_action`&#x21E5; or `add_filter`&#x21E5; brings up a pre-compiled list of available actions and filters. 
 
-## Enqueuing
+## Scripts & Styles
 
 By typing `enqueue`&#x21E5; you'll be presented with a list of options for enqueuing scripts and styles. All the standard script options are included when using the straight enqueue option, or a parameter hinted function template can be inserted for enqueuing custom scripts.
+
+There are also shortcuts for `register_style`&#x21E5; and `register_script`&#x21E5; for access to `wp_register_style` and `wp_register_script` respectively.
 
 ## User Roles
 
@@ -122,6 +124,16 @@ Strings can be wrapped in internationalization functions using the shortcut `com
 A quick blog post writeup of the feature [is here](http://top-frog.com/2010/05/21/new-internationalization-feature-in-the-wordpress-textmate-bundle/).
 
 Starting with version 3.0 of this bundle the TextMate Shell Variable `WP_TEXT_DOMAIN` is pulled (if present) and is used for the text-domain.
+
+## WP-Cron
+
+For some wp-cron can be a bit of a mystery. With the help of [Sitepoint.com's article on scheduling events](http://articles.sitepoint.com/print/wordpress-scheduling) this was demystified for me. I've used that article to build in some helpers for working with wp-cron's system. Available triggers are:
+
+- `register_event`&#x21E5; - register a one time event
+- `schedule_event`&#x21E5; - register a recurring event
+- `register_schedule`&#x21E5; - register a new time schedule for the cron system
+- `clear_scheduled`&#x21E5; - unschedule a recurring event
+- `clear_event`&#x21E5; - unschedule a one time event
 
 ## Plugin README.txt Creation & Validation
 

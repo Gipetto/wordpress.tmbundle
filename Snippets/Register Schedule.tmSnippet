@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>/**
+ * Register a new Cron Schedule
+ *
+ * 'interval' - time in seconds between each time the schedule is run
+ * 'display' - friendly description of the interval
+ *
+ * @param array $schedules
+ * @return array
+ */
+function ${1:register_my_schedule}(\$schedules) {
+	// remember, we're adding to the array, not replacing it
+	\$schedules['${2:string quarter_hour}'] = array(
+		'interval' =&gt; ${3:900},
+		'display' =&gt; _('${4:Every 15 Minutes}')
+	);$0
+	return \$schedules;
+}
+add_filter('cron_schedules', '$1');</string>
+	<key>name</key>
+	<string>Register Schedule</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>register_schedule</string>
+	<key>uuid</key>
+	<string>AF505635-9346-491F-8D58-42889748A5EC</string>
+</dict>
+</plist>

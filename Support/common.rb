@@ -530,7 +530,7 @@ module WordPress
 
 # internationalization
  
-  def self.intl()
+  def self.intl()    
     domain = "\${1:\${WP_TEXT_DOMAIN:domain}}"
     if ENV['TM_SCOPE'].include? 'string.quoted.single.php'
       ret = "'.__('" + ENV['TM_SELECTED_TEXT'] + "', '" + domain + "').'\$0"
@@ -702,7 +702,36 @@ module WordPress
     ret = "wp_cache_delete('\${1:cache_id}', '\${2:cache_flag}');\$0"
     TextMate.exit_insert_snippet(ret)
   end
-    
+  
+# Transients
+  def self.transients()
+    choices = [
+      { 'title' => 'get' },
+      { 'title' => 'set' },
+      { 'title' => 'delete' }
+    ]
+    t = TextMate::UI.menu(choices)
+    method = "transient_" + t['title']
+    self.send method
+  end
+
+  def self.transient_set()
+    ret = "set_transient('${1:cache_id}', \\$\${2:data}, \${4:transient_timeout_seconds});\$0"
+    TextMate.exit_insert_snippet(ret)    
+  end
+
+  def self.transient_get()
+    ret = "if (\\$\${1:cache_data} = get_transient('\${2:cache_id}')) {\n" +
+    	    "\treturn \\$\$1;\n"+
+          "}\$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+
+  def self.transient_delete()
+    ret = "delete_transient('\${1:cache_id}');\$0"
+    TextMate.exit_insert_snippet(ret)
+  end
+   
 # Theme Support
   @support_items = [
     { 'title' => 'post-thumbnails' },

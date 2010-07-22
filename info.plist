@@ -15,11 +15,12 @@
 			<string>8D7EBBDD-A95F-4DD2-A0A3-D80974005CCD</string>
 			<string>------------------------------------</string>
 			<string>7F20F3C3-571B-4A78-A02C-1C2FD57439D8</string>
+			<string>D059AD1A-129E-4E6F-8492-ECB2AB08B76C</string>
 			<string>ECEBBE1D-83C1-4536-B226-FB0594B60D05</string>
 			<string>53CD44CD-A5EC-43BC-A67A-8D8A3B73C80C</string>
 			<string>------------------------------------</string>
 			<string>3DB5DF17-A62B-4F69-B383-1F55CB8B6885</string>
-			<string>D47A2961-1BFD-4E89-B734-FC05A3135CDE</string>
+			<string>04813BAD-52C5-45BC-8BF2-F2A58E085EB2</string>
 			<string>------------------------------------</string>
 			<string>F7C138DC-AF05-4986-AFBC-56A775DF33CE</string>
 			<string>------------------------------------</string>
@@ -32,6 +33,21 @@
 		</array>
 		<key>submenus</key>
 		<dict>
+			<key>04813BAD-52C5-45BC-8BF2-F2A58E085EB2</key>
+			<dict>
+				<key>items</key>
+				<array>
+					<string>9FC500FF-94E8-495E-861A-8FB3E40E5C82</string>
+					<string>2397BA49-4380-4887-908C-ED4AC6CE03B4</string>
+					<string>------------------------------------</string>
+					<string>62501FE8-5BE1-4BF0-A89A-6A4DDD060D4D</string>
+					<string>59BBBEE9-347B-498E-9601-C8BB024CAB6D</string>
+					<string>------------------------------------</string>
+					<string>AF505635-9346-491F-8D58-42889748A5EC</string>
+				</array>
+				<key>name</key>
+				<string>Cron</string>
+			</dict>
 			<key>1B4CE650-59B4-41EE-B2FE-165815979C30</key>
 			<dict>
 				<key>items</key>
@@ -113,9 +129,11 @@
 					<string>4E0F5B11-A2F0-4A93-A48C-B34B5A578E12</string>
 					<string>941032C7-C872-423C-80C0-A0EE209646AD</string>
 					<string>------------------------------------</string>
+					<string>4B10448C-7C8F-477F-8E70-585EB7F3A97C</string>
+					<string>78C8AE1A-1BD8-43C3-8274-0A108800B60F</string>
+					<string>------------------------------------</string>
 					<string>9FAA1D54-692E-4B80-A70A-63F5F1F3071A</string>
 					<string>7EEC763F-7235-427C-8631-B59CF0182E73</string>
-					<string>4B10448C-7C8F-477F-8E70-585EB7F3A97C</string>
 					<string>B255E225-7654-4230-AD3A-190B2522324E</string>
 				</array>
 				<key>name</key>
@@ -137,14 +155,16 @@
 				<key>name</key>
 				<string>Theme</string>
 			</dict>
-			<key>D47A2961-1BFD-4E89-B734-FC05A3135CDE</key>
+			<key>D059AD1A-129E-4E6F-8492-ECB2AB08B76C</key>
 			<dict>
 				<key>items</key>
 				<array>
 					<string>052C31E2-E330-4AF7-B748-5EF16541CBE8</string>
+					<string>69BE2199-CA53-4409-A72A-0AE6B4E105C8</string>
+					<string>44364A1D-3D5B-4390-A6D1-B9829E85EA09</string>
 				</array>
 				<key>name</key>
-				<string>Scripts</string>
+				<string>Scripts/Styles</string>
 			</dict>
 			<key>ECEBBE1D-83C1-4536-B226-FB0594B60D05</key>
 			<dict>
@@ -174,6 +194,11 @@
 	<string>WordPress</string>
 	<key>ordering</key>
 	<array>
+		<string>9FC500FF-94E8-495E-861A-8FB3E40E5C82</string>
+		<string>62501FE8-5BE1-4BF0-A89A-6A4DDD060D4D</string>
+		<string>AF505635-9346-491F-8D58-42889748A5EC</string>
+		<string>2397BA49-4380-4887-908C-ED4AC6CE03B4</string>
+		<string>59BBBEE9-347B-498E-9601-C8BB024CAB6D</string>
 		<string>D351B614-AB48-46DF-88C7-775D448520AB</string>
 		<string>3E14F56C-C7CF-4F9F-8F69-6FBEC6EC6AD5</string>
 		<string>1013106C-2B17-4FB0-83FE-246B9C9EBAF8</string>
@@ -209,10 +234,13 @@
 		<string>0FEE8AF2-2AAC-43F9-AE1F-C7B813063FE4</string>
 		<string>EF2C5F4A-F5BE-404A-AC03-BB32DAACDCE8</string>
 		<string>4B10448C-7C8F-477F-8E70-585EB7F3A97C</string>
+		<string>78C8AE1A-1BD8-43C3-8274-0A108800B60F</string>
 		<string>36614334-A9EF-430A-B966-D45D33B25410</string>
 		<string>E6A90D0B-0A5D-431E-8C4F-88B279CB7906</string>
 		<string>3F0D96F1-C1C5-454B-8ACC-B2A5FF3DEE54</string>
 		<string>BCA2E6D8-EE1D-4573-8ADE-A66CB81DCC68</string>
+		<string>69BE2199-CA53-4409-A72A-0AE6B4E105C8</string>
+		<string>44364A1D-3D5B-4390-A6D1-B9829E85EA09</string>
 		<string>963B0E20-263D-4061-A234-5BB25D5E32AC</string>
 		<string>300F43EB-449E-416C-9DB9-330F6EF32AEF</string>
 		<string>F893B083-1745-461A-8762-66F72FC5ACD7</string>

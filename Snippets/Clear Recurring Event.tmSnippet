@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>wp_clear_scheduled_hook('${1:recurring_event_action}');</string>
+	<key>name</key>
+	<string>Clear Recurring Event</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>clear_event</string>
+	<key>uuid</key>
+	<string>59BBBEE9-347B-498E-9601-C8BB024CAB6D</string>
+</dict>
+</plist>
