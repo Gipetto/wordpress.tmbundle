@@ -163,7 +163,7 @@ If you find a bug, would like to see a feature implemented, or would like to con
 
 ## Credits
 
-Bundle Maintainer: [Shawn Parker](http://top-frog.com/projects/wordpress-textmate-bundle/)
+Bundle Maintainer: [Shawn Parker](http://top-frog.com/projects/wordpress-textmate-bundle/).
 
 Donations help make this project possible. If you find this project helpful, [please help and contribute to the cause](http://top-frog.com/donate).
 
