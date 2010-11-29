@@ -46,13 +46,17 @@
 		<string>cfct_choose_general_template_role</string>
 		<string>cfct_choose_general_template_single</string>
 		<string>cfct_choose_general_template_tag</string>
+		<string>cfct_choose_general_template_taxonomy</string>
 		<string>cfct_choose_single_template</string>
 		<string>cfct_choose_single_template_author</string>
 		<string>cfct_choose_single_template_category</string>
+		<string>cfct_choose_single_template_format</string>
 		<string>cfct_choose_single_template_meta</string>
 		<string>cfct_choose_single_template_parent</string>
 		<string>cfct_choose_single_template_role</string>
 		<string>cfct_choose_single_template_tag</string>
+		<string>cfct_choose_single_template_taxonomy</string>
+		<string>cfct_choose_single_template_type</string>
 		<string>cfct_comment</string>
 		<string>cfct_comment_id_fields</string>
 		<string>cfct_comment_templates</string>
@@ -64,10 +68,13 @@
 		<string>cfct_error</string>
 		<string>cfct_excerpt</string>
 		<string>cfct_filename</string>
+		<string>cfct_filename_filter</string>
 		<string>cfct_files</string>
 		<string>cfct_filter_files</string>
 		<string>cfct_footer</string>
 		<string>cfct_form</string>
+		<string>cfct_format_filename_to_format</string>
+		<string>cfct_format_templates</string>
 		<string>cfct_get_adjacent_image_link</string>
 		<string>cfct_get_cancel_comment_reply_link</string>
 		<string>cfct_get_custom_colors</string>
@@ -99,9 +106,13 @@
 		<string>cfct_single_templates</string>
 		<string>cfct_tag_filename_to_name</string>
 		<string>cfct_tag_templates</string>
+		<string>cfct_tax_filename_to_slug</string>
+		<string>cfct_tax_filename_to_tax_name</string>
+		<string>cfct_tax_templates</string>
 		<string>cfct_template</string>
 		<string>cfct_template_file</string>
 		<string>cfct_threaded_comment</string>
+		<string>cfct_type_templates</string>
 		<string>cfct_update_settings</string>
 		<string>cfct_username_to_id</string>
 		<string>cfct_wp_footer</string>

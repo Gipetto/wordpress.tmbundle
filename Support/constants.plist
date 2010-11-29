@@ -19,6 +19,8 @@
 	{'display' = 'LANGDIR';},
 	{'display' = 'MULTISITE';},
 	{'display' = 'MUPLUGINDIR';},
+	{'display' = 'NOBLOGREDIRECT';},
+	{'display' = 'NONCE_SALT';},
 	{'display' = 'OBJECT';},
 	{'display' = 'OBJECT_K';},
 	{'display' = 'PATH_CURRENT_SITE';},
@@ -95,6 +97,7 @@
 	{'display' = 'SITECOOKIEPATH';},
 	{'display' = 'SITE_ID_CURRENT_SITE';},
 	{'display' = 'SUBDOMAIN_INSTALL';},
+	{'display' = 'SUNRISE';},
 	{'display' = 'UPLOADBLOGSDIR';},
 	{'display' = 'UPLOADS';},
 	{'display' = 'VHOST';},
@@ -111,6 +114,9 @@
 	{'display' = 'WP_IMPORTING';},
 	{'display' = 'WP_INSTALLING';},
 	{'display' = 'WP_LANG_DIR';},
+	{'display' = 'WP_NETWORK_ADMIN';},
+	{'display' = 'WP_NETWORK_ADMIN_PAGE';},
 	{'display' = 'WP_PLUGIN_DIR';},
-	{'display' = 'WP_PLUGIN_URL';}
+	{'display' = 'WP_PLUGIN_URL';},
+	{'display' = 'WXR_VERSION';}
 )
