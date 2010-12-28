@@ -1,6 +1,6 @@
 # WordPress TextMate Bundle
 
-**For WordPress Version:** 3.0
+**For WordPress Version:** 3.1
 
 The WordPress TextMate Bundle is a [TextMate](http://macromates.com) bundle built with the sole purpose of reducing the amount of time spent digging around the [WordPress](http://wordpress.org) core to look up the little things that we work with every day.
 
