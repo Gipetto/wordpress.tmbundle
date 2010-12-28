@@ -26,11 +26,13 @@
 		<string>DOMAIN_CURRENT_SITE</string>
 		<string>EMPTY_TRASH_DAYS</string>
 		<string>EZSQL_VERSION</string>
+		<string>IFRAME_REQUEST</string>
 		<string>IS_PROFILE_PAGE</string>
 		<string>LANGDIR</string>
 		<string>MULTISITE</string>
 		<string>MUPLUGINDIR</string>
 		<string>NOBLOGREDIRECT</string>
+		<string>NONCE_SALT</string>
 		<string>OBJECT</string>
 		<string>OBJECT_K</string>
 		<string>PATH_CURRENT_SITE</string>
@@ -124,9 +126,12 @@
 		<string>WP_IMPORTING</string>
 		<string>WP_INSTALLING</string>
 		<string>WP_LANG_DIR</string>
+		<string>WP_NETWORK_ADMIN</string>
 		<string>WP_NETWORK_ADMIN_PAGE</string>
 		<string>WP_PLUGIN_DIR</string>
 		<string>WP_PLUGIN_URL</string>
+		<string>WP_USER_ADMIN</string>
+		<string>WXR_VERSION</string>
       </array>
     </dict>
     <key>uuid</key>

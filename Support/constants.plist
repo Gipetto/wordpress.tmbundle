@@ -15,11 +15,13 @@
 	{'display' = 'DOMAIN_CURRENT_SITE';},
 	{'display' = 'EMPTY_TRASH_DAYS';},
 	{'display' = 'EZSQL_VERSION';},
+	{'display' = 'IFRAME_REQUEST';},
 	{'display' = 'IS_PROFILE_PAGE';},
 	{'display' = 'LANGDIR';},
 	{'display' = 'MULTISITE';},
 	{'display' = 'MUPLUGINDIR';},
 	{'display' = 'NOBLOGREDIRECT';},
+	{'display' = 'NONCE_SALT';},
 	{'display' = 'OBJECT';},
 	{'display' = 'OBJECT_K';},
 	{'display' = 'PATH_CURRENT_SITE';},
@@ -113,7 +115,10 @@
 	{'display' = 'WP_IMPORTING';},
 	{'display' = 'WP_INSTALLING';},
 	{'display' = 'WP_LANG_DIR';},
+	{'display' = 'WP_NETWORK_ADMIN';},
 	{'display' = 'WP_NETWORK_ADMIN_PAGE';},
 	{'display' = 'WP_PLUGIN_DIR';},
-	{'display' = 'WP_PLUGIN_URL';}
+	{'display' = 'WP_PLUGIN_URL';},
+	{'display' = 'WP_USER_ADMIN';},
+	{'display' = 'WXR_VERSION';}
 )

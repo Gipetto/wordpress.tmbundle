@@ -35,6 +35,8 @@
 		<string>add_tag_form_pre</string>
 		<string>add_term_relationship</string>
 		<string>add_user_to_blog</string>
+		<string>add_{\\$meta_type}_meta</string>
+		<string>admin_bar_menu</string>
 		<string>admin_enqueue_scripts</string>
 		<string>admin_footer</string>
 		<string>admin_menu</string>
@@ -72,8 +74,8 @@
 		<string>comment_on_password_protected</string>
 		<string>comment_on_trash</string>
 		<string>comment_post</string>
-		<string>comment_\\${new_status}_\\$comment->comment_type</string>
-		<string>comment_\\${old_status}_to_\\$new_status</string>
+		<string>comment_{\\$new_status}_{\\$comment->comment_type}</string>
+		<string>comment_{\\$old_status}_to_{\\$new_status}</string>
 		<string>created_term</string>
 		<string>created_\\$taxonomy</string>
 		<string>create_term</string>
@@ -111,9 +113,11 @@
 		<string>delete_user</string>
 		<string>delete_usermeta</string>
 		<string>delete_\\$taxonomy</string>
+		<string>delete_{\\$meta_type}_meta</string>
 		<string>deprecated_argument_run</string>
 		<string>deprecated_file_included</string>
 		<string>deprecated_function_run</string>
+		<string>doing_it_wrong_run</string>
 		<string>do_meta_boxes</string>
 		<string>dynamic_sidebar</string>
 		<string>edited_term</string>
@@ -154,6 +158,7 @@
 		<string>http_transport_get_debug</string>
 		<string>http_transport_post_debug</string>
 		<string>in_plugin_update_message-\\$file</string>
+		<string>in_theme_update_message-\\$theme_key</string>
 		<string>in_widget_form</string>
 		<string>load_textdomain</string>
 		<string>loop_end</string>
@@ -162,14 +167,17 @@
 		<string>make_ham_user</string>
 		<string>make_spam_blog</string>
 		<string>make_spam_user</string>
-		<string>manage_blogs_custom_column</string>
 		<string>manage_comments_custom_column</string>
 		<string>manage_comments_nav</string>
 		<string>manage_link_custom_column</string>
 		<string>manage_media_custom_column</string>
 		<string>manage_pages_custom_column</string>
 		<string>manage_posts_custom_column</string>
-		<string>manage_users_custom_column</string>
+		<string>manage_sites_custom_column</string>
+		<string>manage_{\\$post->post_type}_posts_custom_column</string>
+		<string>mature_blog</string>
+		<string>network_admin_menu</string>
+		<string>network_site_users_after_list_table</string>
 		<string>parse_query</string>
 		<string>parse_request</string>
 		<string>password_reset</string>
@@ -180,11 +188,14 @@
 		<string>pingback_post</string>
 		<string>post-html-upload-ui</string>
 		<string>posts_selection</string>
+		<string>post_comment_status_meta_box-options</string>
 		<string>post_updated</string>
 		<string>pre_comment_on_post</string>
+		<string>pre_get_comments</string>
 		<string>pre_get_posts</string>
 		<string>pre_ping</string>
 		<string>pre_post_update</string>
+		<string>pre_user_query</string>
 		<string>pre_user_search</string>
 		<string>private_to_published</string>
 		<string>profile_personal_options</string>
@@ -224,7 +235,6 @@
 		<string>trash_comment</string>
 		<string>trash_post</string>
 		<string>trash_post_comments</string>
-		<string>unarchive_blog</string>
 		<string>unload_textdomain</string>
 		<string>unspammed_comment</string>
 		<string>unspam_comment</string>
@@ -245,6 +255,7 @@
 		<string>update_site_option_{\\$option}</string>
 		<string>update_usermeta</string>
 		<string>update_{\\$meta_type}_meta</string>
+		<string>user_admin_menu</string>
 		<string>user_profile_update_errors</string>
 		<string>user_register</string>
 		<string>wp</string>
@@ -280,9 +291,9 @@
 		<string>wp_update_nav_menu_item</string>
 		<string>xmlrpc_call</string>
 		<string>xmlrpc_publish_post</string>
-		<string>\\${new_status}_\\$post->post_type</string>
-		<string>\\${old_status}_to_\\$new_status</string>
 		<string>_wp_put_post_revision</string>
+		<string>{\\$new_status}_{\\$post->post_type}</string>
+		<string>{\\$old_status}_to_{\\$new_status}</string>
       </array>
     </dict>
     <key>uuid</key>
