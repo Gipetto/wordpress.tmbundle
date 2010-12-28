@@ -13,11 +13,9 @@
 		<string>add_menu_classes</string>
 		<string>add_ping</string>
 		<string>add_signup_meta</string>
-		<string>add_{\\$meta_type}_metadata</string>
 		<string>admin_footer_text</string>
 		<string>admin_memory_limit</string>
 		<string>admin_post_thumbnail_html</string>
-		<string>admin_title</string>
 		<string>admin_url</string>
 		<string>admin_user_info_links</string>
 		<string>allowed_redirect_hosts</string>
@@ -38,7 +36,6 @@
 		<string>author_rewrite_rules</string>
 		<string>auth_cookie</string>
 		<string>auth_cookie_expiration</string>
-		<string>auth_redirect_scheme</string>
 		<string>avatar_defaults</string>
 		<string>block_local_requests</string>
 		<string>bloginfo</string>
@@ -49,6 +46,7 @@
 		<string>cancel_comment_reply_link</string>
 		<string>category_feed_link</string>
 		<string>category_link</string>
+		<string>category_rewrite_rules</string>
 		<string>check_password</string>
 		<string>clean_url</string>
 		<string>comments_array</string>
@@ -100,9 +98,7 @@
 		<string>default_contextual_help</string>
 		<string>default_excerpt</string>
 		<string>default_feed</string>
-		<string>default_hidden_meta_boxes</string>
 		<string>default_title</string>
-		<string>delete_{\\$meta_type}_metadata</string>
 		<string>disable_captions</string>
 		<string>display_post_states</string>
 		<string>documentation_ignore_functions</string>
@@ -113,26 +109,23 @@
 		<string>editor_max_image_size</string>
 		<string>edit_categories_per_page</string>
 		<string>edit_posts_per_page</string>
-		<string>edit_post_{\\$field}</string>
-		<string>edit_profile_url</string>
+		<string>edit_post_\\$field</string>
 		<string>edit_tags_per_page</string>
-		<string>edit_term_{\\$field}</string>
-		<string>edit_user_{\\$field}</string>
+		<string>edit_term_\\$field</string>
+		<string>edit_user_\\$field</string>
+		<string>edit_\'.\\$taxonomy.\'_per_page</string>
 		<string>edit_\\$field</string>
-		<string>edit_{\\$field}</string>
-		<string>edit_{\\$taxonomy}_{\\$field}</string>
+		<string>edit_\\${taxonomy}_\\$field</string>
 		<string>embed_googlevideo</string>
 		<string>embed_handler_html</string>
 		<string>embed_maybe_make_link</string>
 		<string>embed_oembed_discover</string>
 		<string>embed_oembed_html</string>
-		<string>enter_title_here</string>
 		<string>esc_html</string>
-		<string>esc_textarea</string>
 		<string>example_filter</string>
 		<string>excerpt_length</string>
 		<string>excerpt_more</string>
-		<string>extra_{\\$context}".\'_headers</string>
+		<string>extra_\\$context".\'_headers</string>
 		<string>favorite_actions</string>
 		<string>feed_content_type</string>
 		<string>feed_link</string>
@@ -148,7 +141,6 @@
 		<string>getarchives_where</string>
 		<string>gettext</string>
 		<string>gettext_with_context</string>
-		<string>get_ancestors</string>
 		<string>get_archives_link</string>
 		<string>get_attached_file</string>
 		<string>get_avatar</string>
@@ -180,14 +172,11 @@
 		<string>get_edit_comment_link</string>
 		<string>get_edit_post_link</string>
 		<string>get_edit_tag_link</string>
-		<string>get_edit_term_link</string>
 		<string>get_enclosed</string>
 		<string>get_image_tag</string>
 		<string>get_image_tag_class</string>
 		<string>get_lastpostdate</string>
 		<string>get_lastpostmodified</string>
-		<string>get_list_table_\\$class</string>
-		<string>get_media_item_args</string>
 		<string>get_others_drafts</string>
 		<string>get_pagenum_link</string>
 		<string>get_pages</string>
@@ -201,10 +190,8 @@
 		<string>get_tags</string>
 		<string>get_term</string>
 		<string>get_terms</string>
-		<string>get_terms_args</string>
 		<string>get_terms_fields</string>
 		<string>get_terms_orderby</string>
-		<string>get_the_categories</string>
 		<string>get_the_date</string>
 		<string>get_the_excerpt</string>
 		<string>get_the_generator_{\\$type}</string>
@@ -212,7 +199,6 @@
 		<string>get_the_modified_date</string>
 		<string>get_the_modified_time</string>
 		<string>get_the_tags</string>
-		<string>get_the_terms</string>
 		<string>get_the_time</string>
 		<string>get_to_ping</string>
 		<string>get_usernumposts</string>
@@ -223,7 +209,6 @@
 		<string>get_{\\$adjacent}_post_join</string>
 		<string>get_{\\$adjacent}_post_sort</string>
 		<string>get_{\\$adjacent}_post_where</string>
-		<string>get_{\\$meta_type}_metadata</string>
 		<string>global_terms_enabled</string>
 		<string>got_rewrite</string>
 		<string>graceful_fail</string>
@@ -261,13 +246,11 @@
 		<string>language_attributes</string>
 		<string>lang_codes</string>
 		<string>link_category</string>
+		<string>link_cat_row_actions</string>
 		<string>link_title</string>
 		<string>list_cats</string>
-		<string>list_pages</string>
 		<string>list_terms_exclusions</string>
 		<string>load_image_to_edit</string>
-		<string>load_image_to_edit_attachmenturl</string>
-		<string>load_image_to_edit_filesystempath</string>
 		<string>load_image_to_edit_path</string>
 		<string>load_textdomain_mofile</string>
 		<string>locale</string>
@@ -280,14 +263,14 @@
 		<string>logout_url</string>
 		<string>lostpassword_redirect</string>
 		<string>lostpassword_url</string>
+		<string>manage_link_categories_custom_column</string>
 		<string>manage_media_columns</string>
 		<string>manage_pages_columns</string>
 		<string>manage_posts_columns</string>
 		<string>manage_users_custom_column</string>
 		<string>manage_\'.\\$screen->id.\'_columns</string>
+		<string>manage_\\${taxonomy}_custom_column</string>
 		<string>manage_{\\$post_type}_posts_columns</string>
-		<string>manage_{\\$screen->id}_sortable_columns</string>
-		<string>manage_{\\$screen->taxonomy}_custom_column</string>
 		<string>map_meta_cap</string>
 		<string>mce_buttons</string>
 		<string>mce_buttons_2</string>
@@ -308,7 +291,9 @@
 		<string>menu_order</string>
 		<string>mod_rewrite_rules</string>
 		<string>month_link</string>
+		<string>ms_sites_per_page</string>
 		<string>ms_site_check</string>
+		<string>ms_users_per_page</string>
 		<string>mu_dropdown_languages</string>
 		<string>mu_menu_items</string>
 		<string>myblogs_options</string>
@@ -336,8 +321,11 @@
 		<string>page_css_class</string>
 		<string>page_link</string>
 		<string>page_rewrite_rules</string>
+		<string>page_row_actions</string>
 		<string>parent_file</string>
 		<string>parent_post_rel_link</string>
+		<string>password_reset_message</string>
+		<string>password_reset_title</string>
 		<string>phone_content</string>
 		<string>pingback_useragent</string>
 		<string>pings_open</string>
@@ -345,7 +333,6 @@
 		<string>plugins_api_args</string>
 		<string>plugins_api_result</string>
 		<string>plugins_url</string>
-		<string>plugin_basename</string>
 		<string>plugin_install_action_links</string>
 		<string>plugin_locale</string>
 		<string>postmeta_form_limit</string>
@@ -358,14 +345,12 @@
 		<string>post_link</string>
 		<string>post_mime_types</string>
 		<string>post_rewrite_rules</string>
+		<string>post_row_actions</string>
 		<string>post_thumbnail_html</string>
 		<string>post_thumbnail_size</string>
-		<string>post_type_archive_feed_link</string>
-		<string>post_type_archive_link</string>
-		<string>post_type_archive_title</string>
 		<string>post_type_link</string>
 		<string>post_updated_messages</string>
-		<string>post_{\\$field}</string>
+		<string>post_\\$field</string>
 		<string>prepend_attachment</string>
 		<string>preprocess_comment</string>
 		<string>preview_post_link</string>
@@ -383,9 +368,9 @@
 		<string>pre_insert_term</string>
 		<string>pre_kses</string>
 		<string>pre_post_link</string>
-		<string>pre_post_{\\$field}</string>
+		<string>pre_post_\\$field</string>
 		<string>pre_remote_source</string>
-		<string>pre_term_{\\$field}</string>
+		<string>pre_term_\\$field</string>
 		<string>pre_user_description</string>
 		<string>pre_user_display_name</string>
 		<string>pre_user_email</string>
@@ -396,10 +381,9 @@
 		<string>pre_user_nicename</string>
 		<string>pre_user_nickname</string>
 		<string>pre_user_url</string>
-		<string>pre_user_{\\$field}</string>
+		<string>pre_user_\\$field</string>
 		<string>pre_\\$field</string>
-		<string>pre_{\\$field}</string>
-		<string>pre_{\\$taxonomy}_{\\$field}</string>
+		<string>pre_\\${taxonomy}_\\$field</string>
 		<string>print_scripts_array</string>
 		<string>print_styles_array</string>
 		<string>privacy_on_link_title</string>
@@ -439,7 +423,6 @@
 		<string>sanitize_text_field</string>
 		<string>sanitize_title</string>
 		<string>sanitize_user</string>
-		<string>schedule_event</string>
 		<string>screen_layout_columns</string>
 		<string>screen_meta_screen</string>
 		<string>screen_settings</string>
@@ -450,7 +433,6 @@
 		<string>set-screen-option</string>
 		<string>shake_error_codes</string>
 		<string>shortcut_link</string>
-		<string>show_admin_bar</string>
 		<string>show_password_fields</string>
 		<string>sidebars_widgets</string>
 		<string>signup_another_blog_init</string>
@@ -460,15 +442,12 @@
 		<string>single_cat_title</string>
 		<string>single_post_title</string>
 		<string>single_tag_title</string>
-		<string>single_term_title</string>
 		<string>site_url</string>
 		<string>smilies_src</string>
 		<string>status_header</string>
 		<string>style_loader_src</string>
 		<string>style_loader_tag</string>
 		<string>subdirectory_reserved_names</string>
-		<string>swfupload_post_params</string>
-		<string>swfupload_success_handler</string>
 		<string>tables_to_repair</string>
 		<string>tagsperpage</string>
 		<string>tag_cloud_sort</string>
@@ -481,14 +460,13 @@
 		<string>teeny_mce_before_init</string>
 		<string>teeny_mce_buttons</string>
 		<string>teeny_mce_plugins</string>
-		<string>terms_clauses</string>
 		<string>terms_to_edit</string>
 		<string>term_id_filter</string>
 		<string>term_link</string>
 		<string>term_links-\\$taxonomy</string>
 		<string>term_name</string>
-		<string>term_{\\$field}</string>
-		<string>term_{\\$field}_rss</string>
+		<string>term_\\$field</string>
+		<string>term_\\${field}_rss</string>
 		<string>theme_locale</string>
 		<string>the_author</string>
 		<string>the_author_posts_link</string>
@@ -538,7 +516,6 @@
 		<string>update_welcome_subject</string>
 		<string>update_welcome_user_email</string>
 		<string>update_welcome_user_subject</string>
-		<string>update_{\\$meta_type}_metadata</string>
 		<string>upgrader_clear_destination</string>
 		<string>upgrader_post_install</string>
 		<string>upgrader_pre_install</string>
@@ -548,16 +525,14 @@
 		<string>upload_per_page</string>
 		<string>upload_size_limit</string>
 		<string>url_to_postid</string>
-		<string>user_admin_url</string>
 		<string>user_can_richedit</string>
 		<string>user_contactmethods</string>
-		<string>user_dashboard_url</string>
 		<string>user_has_cap</string>
 		<string>user_registration_email</string>
 		<string>user_row_actions</string>
 		<string>user_trailingslashit</string>
 		<string>user_\'.\\$name.\'_label</string>
-		<string>user_{\\$field}</string>
+		<string>user_\\$field</string>
 		<string>use_curl_transport</string>
 		<string>use_fopen_transport</string>
 		<string>use_fsockopen_transport</string>
@@ -582,10 +557,13 @@
 		<string>wpmu_blogs_columns</string>
 		<string>wpmu_delete_blog_upload_dir</string>
 		<string>wpmu_drop_tables</string>
+		<string>wpmu_signup_blog_notification_email</string>
+		<string>wpmu_signup_blog_notification_subject</string>
+		<string>wpmu_signup_user_notification_email</string>
+		<string>wpmu_signup_user_notification_subject</string>
 		<string>wpmu_users_columns</string>
 		<string>wpmu_validate_blog_signup</string>
 		<string>wpmu_validate_user_signup</string>
-		<string>wp_admin_bar_class</string>
 		<string>wp_admin_css</string>
 		<string>wp_admin_css_uri</string>
 		<string>wp_authenticate_user</string>
@@ -613,7 +591,6 @@
 		<string>wp_get_attachment_thumb_file</string>
 		<string>wp_get_attachment_thumb_url</string>
 		<string>wp_get_attachment_url</string>
-		<string>wp_get_current_commenter</string>
 		<string>wp_get_nav_menus</string>
 		<string>wp_get_nav_menu_items</string>
 		<string>wp_get_object_terms</string>
@@ -621,7 +598,6 @@
 		<string>wp_handle_upload_prefilter</string>
 		<string>wp_headers</string>
 		<string>wp_insert_post_data</string>
-		<string>wp_insert_post_parent</string>
 		<string>wp_link_pages_args</string>
 		<string>wp_list_bookmarks</string>
 		<string>wp_list_categories</string>
@@ -637,9 +613,7 @@
 		<string>wp_nav_menu_args</string>
 		<string>wp_nav_menu_container_allowedtags</string>
 		<string>wp_nav_menu_items</string>
-		<string>wp_nav_menu_objects</string>
 		<string>wp_nav_menu_{\\$menu->slug}_items</string>
-		<string>wp_network_dashboard_widgets</string>
 		<string>wp_page_menu</string>
 		<string>wp_page_menu_args</string>
 		<string>wp_parse_str</string>
@@ -655,15 +629,18 @@
 		<string>wp_title_rss</string>
 		<string>wp_trim_excerpt</string>
 		<string>wp_update_attachment_metadata</string>
-		<string>wp_update_term_parent</string>
 		<string>wp_upload_bits</string>
-		<string>wp_user_dashboard_widgets</string>
-		<string>wp_xmlrpc_server_class</string>
 		<string>xmlrpc_allow_anonymous_comments</string>
 		<string>xmlrpc_blog_options</string>
 		<string>xmlrpc_methods</string>
 		<string>xmlrpc_text_filters</string>
 		<string>year_link</string>
+		<string>\\${field_no_prefix}_edit_pre</string>
+		<string>\\${field_no_prefix}_save_pre</string>
+		<string>\\${field}_pre</string>
+		<string>\\${taxonomy}_row_actions</string>
+		<string>\\${taxonomy}_\\$field</string>
+		<string>\\${taxonomy}_\\${field}_rss</string>
 		<string>_get_page_link</string>
 		<string>_wp_post_revision_fields</string>
 		<string>_wp_post_revision_field_\\$field</string>
@@ -671,12 +648,6 @@
 		<string>{\\$adjacent}_post_link</string>
 		<string>{\\$adjacent}_post_rel_link</string>
 		<string>{\\$boundary}_post_rel_link</string>
-		<string>{\\$field_no_prefix}_edit_pre</string>
-		<string>{\\$field_no_prefix}_save_pre</string>
-		<string>{\\$field}_pre</string>
-		<string>{\\$taxonomy}_row_actions</string>
-		<string>{\\$taxonomy}_{\\$field}</string>
-		<string>{\\$taxonomy}_{\\$field}_rss</string>
       </array>
     </dict>
     <key>uuid</key>

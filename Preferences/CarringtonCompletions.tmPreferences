@@ -47,6 +47,7 @@
 		<string>cfct_choose_general_template_single</string>
 		<string>cfct_choose_general_template_tag</string>
 		<string>cfct_choose_general_template_taxonomy</string>
+		<string>cfct_choose_general_template_type</string>
 		<string>cfct_choose_single_template</string>
 		<string>cfct_choose_single_template_author</string>
 		<string>cfct_choose_single_template_category</string>

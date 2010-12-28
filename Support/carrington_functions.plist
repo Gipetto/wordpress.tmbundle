@@ -36,6 +36,7 @@
 	{display = 'cfct_choose_general_template_single'; insert = '(${1:string dir}, ${2:string files});$0'; match = 'cfct_choose_general_template_single';},
 	{display = 'cfct_choose_general_template_tag'; insert = '(${1:string dir}, ${2:string files});$0'; match = 'cfct_choose_general_template_tag';},
 	{display = 'cfct_choose_general_template_taxonomy'; insert = '(${1:string dir}, ${2:string files});$0'; match = 'cfct_choose_general_template_taxonomy';},
+	{display = 'cfct_choose_general_template_type'; insert = '(${1:string dir}, ${2:string files});$0'; match = 'cfct_choose_general_template_type';},
 	{display = 'cfct_choose_single_template'; insert = '(${1:string files}, ${2:string filter}, ${3:string dir});$0'; match = 'cfct_choose_single_template';},
 	{display = 'cfct_choose_single_template_author'; insert = '(${1:string dir}, ${2:string files}, ${3:string filter});$0'; match = 'cfct_choose_single_template_author';},
 	{display = 'cfct_choose_single_template_category'; insert = '(${1:string dir}, ${2:string files}, ${3:string filter});$0'; match = 'cfct_choose_single_template_category';},
