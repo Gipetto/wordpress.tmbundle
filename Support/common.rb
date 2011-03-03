@@ -410,7 +410,8 @@ module WordPress
       { 'title' => 'script', 'func_to_call' => 'enqueue_script' },
       { 'title' => 'script, from theme', 'func_to_call' => 'enqueue_from_theme' },
       { 'title' => 'script, from plugin', 'func_to_call' => 'enqueue_from_plugin' },
-      { 'title' => 'style', 'func_to_call' => 'enqueue_style' }
+      { 'title' => 'style', 'func_to_call' => 'enqueue_style' },
+      { 'title' => 'conditional style', 'func_to_call' => 'enqueue_style_conditional' }
     ]
     
     t = TextMate::UI.menu(choices)
@@ -430,19 +431,28 @@ module WordPress
   
   # enqueue a style
   def self.enqueue_style()
-    style = "wp_enqueue_style('\${1:style_id}',get_bloginfo('template_directory').'\${2:/css/mystyle.css}',\${3:array('\${4:string dependency}')},\${5:float version},'\${6:string media}');\$0"    
+    style = "wp_enqueue_style('\${1:style_id}', get_bloginfo('template_directory').'\${2:/css/mystyle.css}', \${3:array('\${4:string dependency}')}, \${5:float version}, '\${6:string media}');\$0"    
+    return style
+  end
+  
+  # enqueue a conditional style
+  def self.enqueue_style_conditional()
+    style = "wp_register_style('\${1:style_id}', '\${2:style_path}', \${3:array('\${4:string dependency}')}, \${5:float version}, '\${6:string media}');\n"
+    style += "\$GLOBALS['wp_styles']->add_data('\$1', 'conditional', '\${7:lte IE 7}');\n"
+    style += "wp_enqueue_style('\$1');\$0\n"
+    
     return style
   end
  
  # enqueue a script from the theme
  def self.enqueue_from_theme()
-   script = "wp_enqueue_script('\${1:script_name}',get_bloginfo('template_directory').'\${2:/js/myscript.js}',\${3:array('\${4:string dependency}')},\${5:float version});\$0"
+   script = "wp_enqueue_script('\${1:script_name}', get_bloginfo('template_directory').'\${2:/js/myscript.js}', \${3:array('\${4:string dependency}')}, \${5:float version});\$0"
    return script
  end
   
  # enqueue a script from a plugin
  def self.enqueue_from_plugin()
-   script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',\${4:array('\${5:string dependency}')},\${6:float version});\$0"
+   script = "wp_enqueue_script('\${1:string script_id}', '/index.php?\${2:my_action}=\${3:action_handler}', \${4:array('\${5:string dependency}')}, \${6:float version});\$0"
    return script
  end
 
