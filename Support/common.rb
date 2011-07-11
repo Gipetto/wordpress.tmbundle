@@ -599,11 +599,15 @@ module WordPress
         choices.push({'title' => i['name'], 'data' => i});
       end
       t = TextMate::UI.menu(choices)
-      found = t['data']
+      #found = t['data'] if defined?(t).nil? && t['data']
+      found = ''
+      if t.is_a?(Hash)
+        found = t['data']
+      end
     else 
       found = found.first
     end
-    
+            
     if found.is_a?(Hash)
       # get header
       ret = IO.read(ENV['TM_BUNDLE_PATH']+'/Support/html/header.html');
@@ -708,6 +712,22 @@ module WordPress
     style = "font-family: 'Lucida Grande', sans-serif;"
     
     found = self.search_functions_by_name(Word.current_word('a-zA-Z0-9_'))
+    
+    if (found.length > 1)
+      # narrow it down if more than 1 found
+      choices = []
+      found.each do |i|
+        choices.push({'title' => i['name'], 'data' => i});
+      end
+      t = TextMate::UI.menu(choices)
+      found = ''
+      if t.is_a?(Hash)
+        found = t['data']
+      end
+    else 
+      found = found.first
+    end
+    
     if found.is_a?(Hash)
       fileparts = found['file'].split(', line: ');      
     else
