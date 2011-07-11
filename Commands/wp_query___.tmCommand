@@ -10,7 +10,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 
 ret = "\\$${1:query} = New WP_Query(${2:array(${0})});"
 
-if ENV['TM_SCOPE'].include? 'source.php.embedded.html'
+if ENV['TM_SCOPE'].include? 'source.php'
 	TextMate.exit_insert_snippet(ret)
 else
 	TextMate.exit_insert_snippet("&lt;?php \n" + ret + "\n ?&gt;")
@@ -18,11 +18,11 @@ end</string>
 	<key>input</key>
 	<string>none</string>
 	<key>name</key>
-	<string>New QP_Query</string>
+	<string>New WP_Query</string>
 	<key>output</key>
 	<string>insertAsSnippet</string>
 	<key>scope</key>
-	<string>source.php</string>
+	<string>source.php,text.html</string>
 	<key>tabTrigger</key>
 	<string>nwpq</string>
 	<key>uuid</key>

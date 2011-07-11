@@ -4,7 +4,7 @@
 <dict>
 	<key>content</key>
 	<string>&lt;?${TM_PHP_OPEN_TAG:php} if ( have_posts() ) : while ( have_posts() ) : the_post(); ?&gt;
-	${1:&lt;!-- post -- &gt;}
+	${1:&lt;!-- post --&gt;}
 &lt;?${TM_PHP_OPEN_TAG:php} endwhile; ?&gt;
 	${2:&lt;!-- post navigation --&gt;}
 &lt;?${TM_PHP_OPEN_TAG:php} else: ?&gt;

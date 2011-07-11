@@ -166,23 +166,36 @@ module WordPress
       { 'title' => 'category_name' },
       { 'title' => 'category__in' },
       { 'title' => 'category__not_in' },
+      { 'title' => 'child_of' },
       { 'title' => 'comments_popup' },
+      { 'title' => 'comments_per_page' },
       { 'title' => 'day' },
       { 'title' => 'error' },
       { 'title' => 'feed' },
+      { 'title' => 'fields' },
       { 'title' => 'hour' },
+      { 'title' => 'hierarchical' },
       { 'title' => 'm' },
+      { 'title' => 'meta_key' },
+      { 'title' => 'meta_value' },
       { 'title' => 'minute' },
       { 'title' => 'monthnum' },
       { 'title' => 'name' },
+      { 'title' => 'order' },
+      { 'title' => 'orderby' },
       { 'title' => 'p' },
+      { 'title' => 'page' },
       { 'title' => 'paged' },
       { 'title' => 'pagename' },
       { 'title' => 'page_id' },
+      { 'title' => 'post_mime_type' },
       { 'title' => 'post_status' },
       { 'title' => 'post_type' },
       { 'title' => 'preview' },
+      { 'title' => 's' },
+      { 'title' => 'search_terms' },
       { 'title' => 'second' },
+      { 'title' => 'showposts' },
       { 'title' => 'tag' },
       { 'title' => 'tag_id' },
       { 'title' => 'tag__and' },
@@ -190,6 +203,7 @@ module WordPress
       { 'title' => 'tag__not_in' },
       { 'title' => 'tag__slug_and' },
       { 'title' => 'tag__slug_in' },
+      { 'title' => 'tax_query' },
       { 'title' => 'taxonomy' },
       { 'title' => 'tb' },
       { 'title' => 'term' },
@@ -361,7 +375,7 @@ module WordPress
       { 'display' => 'comments_atom_url' },
       { 'display' => 'comments_rss2_url' },
       { 'display' => 'description' },
-      { 'display' => 'home' },
+     #{ 'display' => 'home' },
       { 'display' => 'html_type' },
       { 'display' => 'language' },
       { 'display' => 'name' },
@@ -369,7 +383,7 @@ module WordPress
       { 'display' => 'rdf_url' },
       { 'display' => 'rss2_url' },
       { 'display' => 'rss_url' },
-      { 'display' => 'siteurl' },
+      #{ 'display' => 'siteurl' },
       { 'display' => 'stylesheet_directory' },
       { 'display' => 'stylesheet_url' },
       { 'display' => 'template_directory' },
@@ -397,7 +411,8 @@ module WordPress
       { 'title' => 'script', 'func_to_call' => 'enqueue_script' },
       { 'title' => 'script, from theme', 'func_to_call' => 'enqueue_from_theme' },
       { 'title' => 'script, from plugin', 'func_to_call' => 'enqueue_from_plugin' },
-      { 'title' => 'style', 'func_to_call' => 'enqueue_style' }
+      { 'title' => 'style', 'func_to_call' => 'enqueue_style' },
+      { 'title' => 'conditional style', 'func_to_call' => 'enqueue_style_conditional' }
     ]
     
     t = TextMate::UI.menu(choices)
@@ -417,37 +432,47 @@ module WordPress
   
   # enqueue a style
   def self.enqueue_style()
-    style = "wp_enqueue_style('\${1:style_id}',get_bloginfo('template_directory').'\${2:/css/mystyle.css}',\${3:array('\${4:string dependency}')},\${5:float version},'\${6:string media}');\$0"    
+    style = "wp_enqueue_style('\${1:style_id}', get_bloginfo('template_directory').'\${2:/css/mystyle.css}', \${3:array('\${4:string dependency}')}, \${5:float version}, '\${6:string media}');\$0"    
+    return style
+  end
+  
+  # enqueue a conditional style
+  def self.enqueue_style_conditional()
+    style = "wp_register_style('\${1:style_id}', '\${2:style_path}', \${3:array('\${4:string dependency}')}, \${5:float version}, '\${6:string media}');\n"
+    style += "\$GLOBALS['wp_styles']->add_data('\$1', 'conditional', '\${7:lte IE 7}');\n"
+    style += "wp_enqueue_style('\$1');\$0\n"
+    
     return style
   end
  
  # enqueue a script from the theme
  def self.enqueue_from_theme()
-   script = "wp_enqueue_script('\${1:script_name}',get_bloginfo('template_directory').'\${2:/js/myscript.js}',\${3:array('\${4:string dependency}')},\${5:float version});\$0"
+   script = "wp_enqueue_script('\${1:script_name}', get_bloginfo('template_directory').'\${2:/js/myscript.js}', \${3:array('\${4:string dependency}')}, \${5:float version});\$0"
    return script
  end
   
  # enqueue a script from a plugin
  def self.enqueue_from_plugin()
-   script = "wp_enqueue_script('\${1:string script_id}','/index.php?\${2:my_action}=\${3:action_handler}',\${4:array('\${5:string dependency}')},\${6:float version});\$0"
+   script = "wp_enqueue_script('\${1:string script_id}', '/index.php?\${2:my_action}=\${3:action_handler}', \${4:array('\${5:string dependency}')}, \${6:float version});\$0"
    return script
  end
 
  # enqueue a predefined script from WordPress
  def self.enqueue_script()
     choices = [
+      { 'display' => 'admin-bar' },
       { 'display' => 'admin-categories' },
       { 'display' => 'admin-comments' },
       { 'display' => 'admin-custom-fields' },
-      { 'display' => 'admin-forms' },
       { 'display' => 'admin-gallery' },
       { 'display' => 'admin-tags' },
-      { 'display' => 'admin-users' },
       { 'display' => 'admin-widgets' },
       { 'display' => 'ajaxcat' },
       { 'display' => 'autosave' },
-      { 'display' => 'codepress' },
       { 'display' => 'colorpicker' },
+      { 'display' => 'colors' },
+      { 'display' => 'colors-classic' },
+      { 'display' => 'colors-fresh' },
       { 'display' => 'comment' },
       { 'display' => 'comment-reply' },
       { 'display' => 'common' },
@@ -455,39 +480,50 @@ module WordPress
       { 'display' => 'custom-background' },
       { 'display' => 'dashboard' },
       { 'display' => 'editor' },
-      { 'display' => 'editor-functions' },
       { 'display' => 'farbtastic' },
+      { 'display' => 'global' },
       { 'display' => 'hoverIntent' },
+      { 'display' => 'ie' },
       { 'display' => 'image-edit' },
       { 'display' => 'imgareaselect' },
       { 'display' => 'inline-edit-post' },
       { 'display' => 'inline-edit-tax' },
-      { 'display' => 'interface' },
+      { 'display' => 'install' },
       { 'display' => 'jcrop' },
       { 'display' => 'jquery' },
-      { 'display' => 'jquery-autocomplete' },
       { 'display' => 'jquery-color' },
-      { 'display' => 'jquery-hotkeys' },
       { 'display' => 'jquery-form' },
+      { 'display' => 'jquery-hotkeys' },
+      { 'display' => 'jquery-query' },
+      { 'display' => 'jquery-serialize-object' },
       { 'display' => 'jquery-table-hotkeys' },
+      { 'display' => 'jquery-ui-button' },
       { 'display' => 'jquery-ui-core' },
       { 'display' => 'jquery-ui-dialog' },
       { 'display' => 'jquery-ui-draggable' },
       { 'display' => 'jquery-ui-droppable' },
-      { 'display' => 'jquery-ui-form' },
+      { 'display' => 'jquery-ui-mouse' },
+      { 'display' => 'jquery-ui-position' },
       { 'display' => 'jquery-ui-resizable' },
       { 'display' => 'jquery-ui-selectable' },
       { 'display' => 'jquery-ui-sortable' },
       { 'display' => 'jquery-ui-tabs' },
+      { 'display' => 'jquery-ui-widget' },
       { 'display' => 'json2' },
+      { 'display' => 'l10n' },
+      { 'display' => 'link' },
       { 'display' => 'list-revisions' },
+      { 'display' => 'list-table' },
+      { 'display' => 'login' },
       { 'display' => 'media' },
       { 'display' => 'media-upload' },
+      { 'display' => 'ms' },
       { 'display' => 'nav-menu' },
       { 'display' => 'password-strength-meter' },
       { 'display' => 'plugin-install' },
       { 'display' => 'post' },
       { 'display' => 'postbox' },
+      { 'display' => 'press-this' },
       { 'display' => 'prototype' },
       { 'display' => 'quicktags' },
       { 'display' => 'sack' },
@@ -505,23 +541,26 @@ module WordPress
       { 'display' => 'swfobject' },
       { 'display' => 'swfupload' },
       { 'display' => 'swfupload-all' },
-      { 'display' => 'swfupload-degrade' },
       { 'display' => 'swfupload-handlers' },
       { 'display' => 'swfupload-queue' },
       { 'display' => 'swfupload-speed' },
       { 'display' => 'swfupload-swfobject' },
+      { 'display' => 'theme' },
+      { 'display' => 'theme-editor' },
+      { 'display' => 'theme-install' },
       { 'display' => 'theme-preview' },
       { 'display' => 'thickbox' },
-      { 'display' => 'tiny_mce' },
-      { 'display' => 'upload' },
       { 'display' => 'user-profile' },
       { 'display' => 'utils' },
+      { 'display' => 'widgets' },
       { 'display' => 'word-count' },
+      { 'display' => 'wp-admin' },
       { 'display' => 'wp-ajax-response' },
-      { 'display' => 'wp-gears' },
+      { 'display' => 'wp-jquery-ui-dialog' },
       { 'display' => 'wp-lists' },
+      { 'display' => 'wpdialogs-popup' },
+      { 'display' => 'wplink' },
       { 'display' => 'xfn' }
-
     ]
     TextMate::UI.complete(choices)
     

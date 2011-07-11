@@ -24,7 +24,7 @@
 		${12:'publically_queryable' =&gt; ${13:null},}
 		${14:'show_ui' =&gt; ${15:true},}
 		${16:'show_in_nav_menus' =&gt; ${17:null},}
-		${18:'hierarchal' =&gt; ${19:false},}
+		${18:'hierarchical' =&gt; ${19:false},}
 		${20:'supports' =&gt; array(
 			${21:'title',}
 			${22:'editor',}
