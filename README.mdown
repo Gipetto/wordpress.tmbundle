@@ -1,6 +1,6 @@
 # WordPress TextMate Bundle
 
-**For WordPress Version:** 3.1
+**For WordPress Version:** 3.2
 
 The WordPress TextMate Bundle is a [TextMate](http://macromates.com) bundle built with the sole purpose of reducing the amount of time spent digging around the [WordPress](http://wordpress.org) core to look up the little things that we work with every day.
 
@@ -55,6 +55,8 @@ We can't (yet) look at the current project to pull in any custom defined functio
 Partial function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using `Command-Shift-H` to bring up the tool tip. 
 
 The second line of the tool-tip lists the file and line number where the function is defined to make looking up the details of the function more convenient.
+
+**New for WP 3.2:** A much prettier function definition display as well as properly handling functions vs. methods. Also properly prompts for user selection when multiple possible matches are found.
 
 ## Support WordPress Features
 
