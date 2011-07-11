@@ -17,7 +17,7 @@ WordPress.function_define()</string>
 	<key>name</key>
 	<string>Definition for Word...</string>
 	<key>output</key>
-	<string>showAsTooltip</string>
+	<string>afterSelectedText</string>
 	<key>scope</key>
 	<string>source.php</string>
 	<key>uuid</key>

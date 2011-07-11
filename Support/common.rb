@@ -2,6 +2,7 @@ require ENV['TM_SUPPORT_PATH'] + '/lib/ui'
 require ENV['TM_SUPPORT_PATH'] + '/lib/osx/plist'
 require ENV['TM_SUPPORT_PATH'] + '/lib/exit_codes'
 require ENV['TM_SUPPORT_PATH'] + '/lib/current_word'
+require ENV['TM_SUPPORT_PATH'] + '/lib/tm/htmloutput'
 
 
 module WordPress
@@ -548,22 +549,122 @@ module WordPress
  
 # function definition
  
+  # yeah, this can be abstracted more, but for now this works.
   def self.function_define()
     found = self.search_functions_by_name(Word.current_word('a-zA-Z0-9_'))
-    if found.is_a?(Hash)
-      ret = '<code style="font-size: 1.2em;">' + found['definition'] + '</code><br />' + found['file']
-    else
-      ret = 'Sorry, no definition found. Boo!';
+
+    if (found.length > 1)
+      # narrow it down if more than 1 found
+      choices = []
+      found.each do |i|
+        choices.push({'title' => i['name'], 'data' => i});
+      end
+      t = TextMate::UI.menu(choices)
+      found = t['data']
+    else 
+      found = found.first
     end
     
-    style = "font-family: 'Lucida Grande', sans-serif;"
+    if found.is_a?(Hash)
+      # get header
+      ret = IO.read(ENV['TM_BUNDLE_PATH']+'/Support/html/header.html');
+      
+      # body parts
+      ret += '
+        <h1>' + found['name'] + '</h1>
+
+        <section id="usage">
+          <h2>Usage</h2>
+          <div>
+            <pre>' + found['definition'] + '</pre>
+          </div>
+        </section>
     
-    TextMate::UI.tool_tip('<p style="' + style + '">' + ret + '</p>', :format => :html)
-    exit
+        <section id="location">
+          <h2>Location</h2>
+          <div>
+            <p>' + found['file'] + '</p>
+          </div>
+        </section>'
+      
+      ret += '
+        <section id="since">
+          <h2>Since</h2>
+          <div>
+            <p>' + WordPress.format_html(found['since']) + '</p>
+          </div>
+        </section>' if found['since']
+      
+      ret += '
+        <section id="description">
+          <h2>Description</h2>
+          <div>
+            <p>' + WordPress.format_html(found['description'] != '' ? found['description'] : 'n/a') + '</p>
+          </div>
+        </section>'
+        
+        if found['uses']
+          ret += '
+            <section id="uses">
+              <h2>Uses</h2>
+              <div>
+                <ul>'
+          found['uses'].split("\n").each do |uses|
+            ret += '
+                  <li>' + WordPress.format_html(uses) + '</li>'
+          end
+          ret += '
+                </ul>
+              </div>
+            </section>
+            ' if !found['uses'].empty?
+        end
+        
+        if found['params']
+          ret += '
+            <section id="parameters">
+              <h2>Parameters</h2>
+              <div>
+                <ul>'
+          found['params'].split("\n").each do |param|
+            ret += '
+                  <li>' + WordPress.format_html(param) + '</li>'
+          end
+          ret += '
+                </ul>
+              </div>
+            </section>' if !found['params'].empty?
+        end
+        
+        ret += '
+          <section id="return">
+            <h2>Return</h2>
+            <div>
+              <p>' + WordPress.format_html(found['return'] ? found['return'] : 'void') + '</p>
+            </div>
+          </section>
+          '
+      
+      # footer 
+      ret += IO.read(ENV['TM_BUNDLE_PATH']+'/Support/html/footer.html');
+    
+    else
+      ret = '<p>Sorry, no definition found. Boo!</p>';
+    end
+    
+    TextMate.exit_show_html(ret);
+    return false;
+  end
+  
+  def self.format_html(string) 
+    string = string.gsub(/^@[\w]+\b/, '<span class="param">\0</span>') # params
+    string = string.gsub(/(\$[\w\-\>&;]+)/, '<code>\0</code>') # class or var references
+    string = string.gsub(/([\w]+\(\))/, '<code>\0</code>') # function references
+    string = string.gsub("\n", "<br />")
   end
   
   # open the function's file and go to line number
-  def self.goto_function()
+  def self.goto_function
     prefs = self.load_prefs
     style = "font-family: 'Lucida Grande', sans-serif;"
     
@@ -611,7 +712,11 @@ module WordPress
   
   def self.search_functions_by_name(search)
     choices = OSX::PropertyList.load(File.read(ENV['TM_BUNDLE_SUPPORT'] + '/function_defs.plist'))
-    found = choices.find { |i| i['name'] == search }
+    method = ENV['TM_SCOPE'].include? 'meta.function-call.object.php'
+    scope = method && 'method' || 'function'
+    found = choices.find_all { |i| 
+      i['match'] == search && i['type'] == scope 
+    }
   end
 
 # user roles
