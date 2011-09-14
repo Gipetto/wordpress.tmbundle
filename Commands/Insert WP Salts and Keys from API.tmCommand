@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>curl -s -L https://api.wordpress.org/secret-key/1.1/salt/</string>
+	<key>input</key>
+	<string>none</string>
+	<key>name</key>
+	<string>Insert WP Salts and Keys from API</string>
+	<key>output</key>
+	<string>afterSelectedText</string>
+	<key>scope</key>
+	<string>source.php</string>
+	<key>tabTrigger</key>
+	<string>wpsalts</string>
+	<key>uuid</key>
+	<string>82DC3B5F-F92A-493B-83D5-E4889A0F859C</string>
+</dict>
+</plist>
