@@ -115,7 +115,7 @@ Included are functions for quickly accessing common object members for post obje
 - `pv`&#x21E5; for post vars
 - `wpdb`&#x21E5; for wbdb vars and methods
 - `wp_query`&#x21E5; for wp_query vars and methods
-- `wpsalts`&@x21E5; to generate salts using the WordPress.org secret-key service
+- `wpsalts`&#x21E5; to generate salts using the WordPress.org secret-key service
 
 ## Internationalization 
 
