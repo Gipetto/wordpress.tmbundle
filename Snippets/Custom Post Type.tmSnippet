@@ -15,34 +15,34 @@
 	 */
 	register_post_type('${2:post_type}', array( 
 		${3:'labels' =&gt; array(
-			'name' =&gt; __('${4:name}'),
-			'singular_name' =&gt; __('${5:singular-name}')
+			'name' =&gt; __('${4:name}'${5:, '${6:localisation_domain}'}),
+			'singular_name' =&gt; __('${7:singular-name}'$5)
 		),}
-		${6:'description' =&gt; __('${7:description}'),}
-		${8:'public' =&gt; ${9:true},}
-		${10:'exclude_from_search' =&gt; ${11:null},}
-		${12:'publically_queryable' =&gt; ${13:null},}
-		${14:'show_ui' =&gt; ${15:true},}
-		${16:'show_in_nav_menus' =&gt; ${17:null},}
-		${18:'hierarchical' =&gt; ${19:false},}
-		${20:'supports' =&gt; array(
-			${21:'title',}
-			${22:'editor',}
-			${23:'comments',}
-			${24:'revisions',}
-			${25:'trackbacks',}
-			${26:'author',}
-			${27:'excerpt',}
-			${28:'page-attributes',}
-			${29:'thumbnail',}
-			${30:'custom-fields'}
+		${8:'description' =&gt; __('${9:description}'$5),}
+		${10:'public' =&gt; ${11:true},}
+		${12:'exclude_from_search' =&gt; ${13:null},}
+		${14:'publicly_queryable' =&gt; ${15:null},}
+		${16:'show_ui' =&gt; ${17:true},}
+		${18:'show_in_nav_menus' =&gt; ${19:null},}
+		${20:'hierarchical' =&gt; ${21:false},}
+		${22:'supports' =&gt; array(
+			${23:'title',}
+			${24:'editor',}
+			${25:'comments',}
+			${26:'revisions',}
+			${27:'trackbacks',}
+			${28:'author',}
+			${29:'excerpt',}
+			${30:'page-attributes',}
+			${31:'thumbnail',}
+			${32:'custom-fields'}
 		),}
-		${31:'taxonomies' =&gt; array(
-			${32:'post_tag',}
-			${33:'category',}
+		${33:'taxonomies' =&gt; array(
+			${34:'post_tag',}
+			${35:'category',}
 		),}
-		${34:'capability_type' =&gt; '${35:post}',}
-		${36:'capabilities' =&gt; array(
+		${36:'capability_type' =&gt; '${37:post}',}
+		${38:'capabilities' =&gt; array(
 			// for fine grained control include valid capabilities here
 			// if left empty 'capability_type' will define editing capability requirements
 		),}
