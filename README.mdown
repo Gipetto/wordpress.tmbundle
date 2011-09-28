@@ -29,20 +29,20 @@ It does leave just a little bit to be desired. It doesn't distinguish between cl
 
 "Common" function prefixes are duplicated in to their own commands. They all pull from the same function definition list, but offer a limited scope search. These limited scopes are available for:
 
-- `get_`&#x21E5;, ie: `get_permalink`, `get_post_meta`
-- `is_`&#x21E5;, ie: `is_home`, `is_search`
-- `the_`&#x21E5;, ie: the_post, the_title
-- `wp_`&#x21E5;, ie: `wp_cache_add`, `wp_themes_dir`
-- `esc_`&#x21E5;, ie: `esc_attr_e`
+- `get_`&#x21E5; - ie: `get_permalink`, `get_post_meta`
+- `is_`&#x21E5; - ie: `is_home`, `is_search`
+- `the_`&#x21E5; - ie: the_post, the_title
+- `wp_`&#x21E5; - ie: `wp_cache_add`, `wp_themes_dir`
+- `esc_`&#x21E5; - ie: `esc_attr_e`
 
 Functions that have many options or required a bit of special attention have been expanded in to their own completions:
 
-- `bloginfo`&#x21E5; and `get_bloginfo`&#x21E5; for bloginfo vars
-- `wp_list_pages`&#x21E5; for listing pages and providing a standard starting point
+- `bloginfo`&#x21E5; and `get_bloginfo`&#x21E5; - for bloginfo vars
+- `wp_list_pages`&#x21E5; - for listing pages and providing a standard starting point
 - `get_posts`&#x21E5;
 - `wp_query`&#x21E5;
-- `metadata`&#x21E5; for quick access to the WordPress metadata apis
-- `remote`&#x21E5; for quick access to the `wp_remote_*` functions 
+- `metadata`&#x21E5; - for quick access to the WordPress metadata apis
+- `remote`&#x21E5; - for quick access to the `wp_remote_*` functions 
 - `cache`&#x21E5; - for quick access to the `wp_cache_` functions
 - `transients`&#x21E5; - for quick access to the transient functions
 
@@ -111,11 +111,11 @@ Who can ever remember all the user role levels? Now you don't have to. With `use
 
 Included are functions for quickly accessing common object members for post objects, query objects and the database object. The currently available completions are:
 
-- `qv1`&#x21E5; for query vars
-- `pv`&#x21E5; for post vars
-- `wpdb`&#x21E5; for wbdb vars and methods
-- `wp_query`&#x21E5; for wp_query vars and methods
-- `wpsalts`&#x21E5; to generate salts using the WordPress.org secret-key service
+- `qv1`&#x21E5; - for query vars
+- `pv`&#x21E5; - for post vars
+- `wpdb`&#x21E5; - for wbdb vars and methods
+- `wp_query`&#x21E5; - for wp_query vars and methods
+- `wpsalts`&#x21E5; - to generate salts using the WordPress.org secret-key service
 
 ## Internationalization 
 
