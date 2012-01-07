@@ -1,6 +1,14 @@
 # WordPress TextMate Bundle
 
-**For WordPress Version:** 3.2
+**For WordPress Version:** 3.2 (3.3 support is coming...)
+
+---
+
+**TextMate 2 Alpha Notes:** This bundle is being converted for compatibility with TextMate 2 Alpha. To my knowledge at this time the plugin works in both TM1 and TM2. If you notice any oddities please open an [issue on GitHub](https://github.com/Gipetto/wordpress.tmbundle/issues).
+
+If you're running TextMate 2 under a different name than just TextMate there will be oddities with the Go To Function command. The target file will open in TextMate 1.x.
+
+---
 
 The WordPress TextMate Bundle is a [TextMate](http://macromates.com) bundle built with the sole purpose of reducing the amount of time spent digging around the [WordPress](http://wordpress.org) core to look up the little things that we work with every day.
 
@@ -31,7 +39,7 @@ It does leave just a little bit to be desired. It doesn't distinguish between cl
 
 - `get_`&#x21E5;, ie: `get_permalink`, `get_post_meta`
 - `is_`&#x21E5;, ie: `is_home`, `is_search`
-- `the_`&#x21E5;, ie: the_post, the_title
+- `the_`&#x21E5;, ie: `the_post`, `the_title`
 - `wp_`&#x21E5;, ie: `wp_cache_add`, `wp_themes_dir`
 - `esc_`&#x21E5;, ie: `esc_attr_e`
 
@@ -111,7 +119,7 @@ Who can ever remember all the user role levels? Now you don't have to. With `use
 
 Included are functions for quickly accessing common object members for post objects, query objects and the database object. The currently available completions are:
 
-- `qv1`&#x21E5; for query vars
+- `qv`&#x21E5; for query vars
 - `pv`&#x21E5; for post vars
 - `wpdb`&#x21E5; for wbdb vars and methods
 - `wp_query`&#x21E5; for wp_query vars and methods

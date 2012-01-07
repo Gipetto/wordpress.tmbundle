@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>filetypes</key>
+	<array>
+		<string>php</string>
+	</array>
+	<key>name</key>
+	<string>WordPress</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>begin</key>
+			<string>&lt;\?(php|=|)</string>
+			<key>end</key>
+			<string>\?&gt;</string>
+			<key>patterns</key>
+			<array>
+				<dict>
+					<key>include</key>
+					<string>source.php</string>
+				</dict>
+			</array>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>(?i)\bdo_(shortcode|action)(?=\s*\()</string>
+			<key>name</key>
+			<string>source.function.wordpress.php</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.php.wordpress</string>
+	<key>uuid</key>
+	<string>BAAE0DA8-9862-4C3F-87FC-7C30C59A259F</string>
+</dict>
+</plist>

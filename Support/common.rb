@@ -610,7 +610,7 @@ module WordPress
             
     if found.is_a?(Hash)
       # get header
-      ret = IO.read(ENV['TM_BUNDLE_PATH']+'/Support/html/header.html');
+      ret = IO.read(ENV['TM_BUNDLE_SUPPORT']+'/html/header.html');
       
       # body parts
       ret += '
@@ -689,7 +689,7 @@ module WordPress
           '
       
       # footer 
-      ret += IO.read(ENV['TM_BUNDLE_PATH']+'/Support/html/footer.html');
+      ret += IO.read(ENV['TM_BUNDLE_SUPPORT']+'/html/footer.html');
     
     else
       ret = '<p>Sorry, no definition found. Boo!</p>';

@@ -7,7 +7,7 @@
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
 
-path = ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
+path = ENV['TM_BUNDLE_SUPPORT'] + '/common.rb'
 require path
 
 WordPress.theme_support('add')</string>

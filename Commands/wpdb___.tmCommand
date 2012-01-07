@@ -6,7 +6,7 @@
 	<string>nop</string>
 	<key>command</key>
 	<string>#!/usr/bin/env ruby -wKU
-require ENV['TM_BUNDLE_PATH'] + '/Support/common.rb'
+require ENV['TM_BUNDLE_SUPPORT'] + '/common.rb'
 WordPress.wpdb()</string>
 	<key>input</key>
 	<string>none</string>
