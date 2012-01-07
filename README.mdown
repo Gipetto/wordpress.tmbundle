@@ -45,12 +45,12 @@ It does leave just a little bit to be desired. It doesn't distinguish between cl
 
 Functions that have many options or required a bit of special attention have been expanded in to their own completions:
 
-- `bloginfo`&#x21E5; and `get_bloginfo`&#x21E5; for bloginfo vars
-- `wp_list_pages`&#x21E5; for listing pages and providing a standard starting point
+- `bloginfo`&#x21E5; and `get_bloginfo`&#x21E5; - for bloginfo vars
+- `wp_list_pages`&#x21E5; - for listing pages and providing a standard starting point
 - `get_posts`&#x21E5;
 - `wp_query`&#x21E5;
-- `metadata`&#x21E5; for quick access to the WordPress metadata apis
-- `remote`&#x21E5; for quick access to the `wp_remote_*` functions 
+- `metadata`&#x21E5; - for quick access to the WordPress metadata apis
+- `remote`&#x21E5; - for quick access to the `wp_remote_*` functions 
 - `cache`&#x21E5; - for quick access to the `wp_cache_` functions
 - `transients`&#x21E5; - for quick access to the transient functions
 
@@ -115,14 +115,15 @@ There are also shortcuts for `register_style`&#x21E5; and `register_script`&#x21
 
 Who can ever remember all the user role levels? Now you don't have to. With `user_can`&#x21E5; you'll be presented with all the available user role levels to choose from. 
 
-## Common Variables
+## Common Variables & Settings
 
 Included are functions for quickly accessing common object members for post objects, query objects and the database object. The currently available completions are:
 
-- `qv`&#x21E5; for query vars
-- `pv`&#x21E5; for post vars
-- `wpdb`&#x21E5; for wbdb vars and methods
-- `wp_query`&#x21E5; for wp_query vars and methods
+- `qv1`&#x21E5; - for query vars
+- `pv`&#x21E5; - for post vars
+- `wpdb`&#x21E5; - for wbdb vars and methods
+- `wp_query`&#x21E5; - for wp_query vars and methods
+- `wpsalts`&#x21E5; - to generate salts using the WordPress.org secret-key service
 
 ## Internationalization 
 
@@ -154,7 +155,7 @@ Use `readme`&#x21E5; to drop in a template of the WordPress plugin `README.txt` 
 
 ## Shell Variables
 
-Why bother typing your name and URL each time you create a new plugin or theme? Set these Variables in TextMate *(Preferences > Advanced > Shell Variables)* to have them automatically replaced with the values you specify:
+Why bother typing your name and URL each time you create a new plugin or theme? Set these Variables in TextMate (*Preferences > Advanced > Shell Variables*) to have them automatically replaced with the values you specify:
 
 - `TM_NAME`
 - `TM_HOMEPAGE`
