@@ -1,0 +1,266 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>WordPress TextMate Bundle by Gipetto</title>
+    
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>WordPress TextMate Bundle</h1>
+        <p>A WordPress focused TextMate bundle to rule all WordPress Textmate bundles.</p>
+        <p class="view"><a href="https://github.com/Gipetto/wordpress.tmbundle">View the Project on GitHub <small>Gipetto/wordpress.tmbundle</small></a></p>
+        <ul>
+          <li><a href="https://github.com/Gipetto/wordpress.tmbundle/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/Gipetto/wordpress.tmbundle/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/Gipetto/wordpress.tmbundle">Fork On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <p><strong>For WordPress Version:</strong> 3.3</p>
+
+<hr><p><strong>TextMate 2 Alpha Notes:</strong> This bundle is being converted for compatibility with TextMate 2 Alpha. To my knowledge at this time the plugin works in both TM1 and TM2. If you notice any oddities please open an <a href="https://github.com/Gipetto/wordpress.tmbundle/issues">issue on GitHub</a>.</p>
+
+<p>If you're running TextMate 2 under a different name than just TextMate there will be oddities with the Go To Function command. The target file will open in TextMate 1.x.</p>
+
+<hr><p>The WordPress TextMate Bundle is a <a href="http://macromates.com">TextMate</a> bundle built with the sole purpose of reducing the amount of time spent digging around the <a href="http://wordpress.org">WordPress</a> core to look up the little things that we work with every day.</p>
+
+<p>The plugin features auto-completion of WordPress functions, snippets for common sections of code, and templates for WordPress components. We even snuck in function completion for the <a href="http://carrington-blog.com">Carrington</a> template framework functions. We're always making improvements as we find more that we want covered by the plugin (merged from WordPress MU with the WordPress 3.0 code base consolidation).</p>
+
+<h2>Features</h2>
+
+<ul>
+<li>Auto-completion of WordPress functions with parameter hinting.</li>
+<li>Parameter hinting for common functions like <code>[get_]bloginfo()</code> and query vars.</li>
+<li>Snippets of common page and plugin parts like widget blogs, admin menus, and loops.</li>
+<li>Templates for some WordPress components like plugins and page templates.</li>
+<li>Carrington Blog function completion support</li>
+<li>Fully tab stopped parameter entries in function templates</li>
+<li>Function definition tool-tips</li>
+<li>Goto function command to jump to file and line number where a function is defined</li>
+<li>Validation of your Plugin's <code>README.txt</code> file against the WordPress online validator</li>
+<li>Multisite support starting with WordPress 3.0 (codebase merge from WordPress MU)</li>
+<li>Internationalization of strings in proper context</li>
+<li>Custom Post type functionality as refined in WordPress 3.0</li>
+</ul><h2>Function Completion</h2>
+
+<p>General function completion can be invoked with a slight modification of the regular PHP function completion. We chose to use <code>Control-Shift-Escape</code> as its easy to remember next to the regular PHP command (<code>Option-Escape</code>). The completed function will include parameter hits for the function as best as my simple grep of the core will allow. I'm still trying to build a better way of grabbing comprehensive function definitions.</p>
+
+<p>It does leave just a little bit to be desired. It doesn't distinguish between classes, functions and methods, and though it does filter out "magic" &amp; private methods (those prefixed with an underscore), it does index all function declarations it finds. And I believe that there's a stray JavaScript function or two in there. ;)</p>
+
+<p>"Common" function prefixes are duplicated in to their own commands. They all pull from the same function definition list, but offer a limited scope search. These limited scopes are available for:</p>
+
+<ul>
+<li>
+<code>get_</code>⇥, ie: <code>get_permalink</code>, <code>get_post_meta</code>
+</li>
+<li>
+<code>is_</code>⇥, ie: <code>is_home</code>, <code>is_search</code>
+</li>
+<li>
+<code>the_</code>⇥, ie: <code>the_post</code>, <code>the_title</code>
+</li>
+<li>
+<code>wp_</code>⇥, ie: <code>wp_cache_add</code>, <code>wp_themes_dir</code>
+</li>
+<li>
+<code>esc_</code>⇥, ie: <code>esc_attr_e</code>
+</li>
+</ul><p>Functions that have many options or required a bit of special attention have been expanded in to their own completions:</p>
+
+<ul>
+<li>
+<code>bloginfo</code>⇥ and <code>get_bloginfo</code>⇥ - for bloginfo vars</li>
+<li>
+<code>wp_list_pages</code>⇥ - for listing pages and providing a standard starting point</li>
+<li>
+<code>get_posts</code>⇥</li>
+<li>
+<code>wp_query</code>⇥</li>
+<li>
+<code>metadata</code>⇥ - for quick access to the WordPress metadata apis</li>
+<li>
+<code>remote</code>⇥ - for quick access to the <code>wp_remote_*</code> functions </li>
+<li>
+<code>cache</code>⇥ - for quick access to the <code>wp_cache_</code> functions</li>
+<li>
+<code>transients</code>⇥ - for quick access to the transient functions</li>
+</ul><p>Each of these is invoked with a tab trigger, for example: <code>wp_</code>⇥</p>
+
+<p>We can't (yet) look at the current project to pull in any custom defined functions (ie: in plugins and theme function files), but we're working on that possibility.</p>
+
+<h2>Function Definitions</h2>
+
+<p>Function definitions can be brought up by selecting or setting the carat inside the function that needs to be defined and then using <code>Command-Shift-H</code> to bring up the function definition dialog. </p>
+
+<h2>Support WordPress Features</h2>
+
+<ul>
+<li>
+<code>custom_post_type</code>⇥ &amp; <code>cptm</code>⇥ - Snippets for adding a custom post types and customizing the edit screen messages</li>
+<li>
+<code>shortcode</code>⇥ - snippet for generating shortcode functions</li>
+<li>
+<code>thumbnail</code>⇥ - shortcut to display post_thumbnail related functions</li>
+<li>
+<code>taxonomy</code>⇥ - shortcut to display taxonomy related functions</li>
+<li>
+<code>add_theme_support</code>⇥ &amp; <code>remove_theme_support</code>⇥ - enabler functions for some built in WordPress features</li>
+</ul><h2>Multisite Functions</h2>
+
+<p>WordPress 3.0 finally merged the WordPress MU code base in to the WordPress core. So now we have easy access to the MU functions (ie: I was too lazy before to scrape the MU code base separately) with <code>wpmu_</code>⇥.</p>
+
+<h2>Goto Function</h2>
+
+<p>When pointed to an install of the current version of WordPress the bundle can jump to the definition of a function so that the function can be inspected.</p>
+
+<p>Simply place the carat in a function name, or highlight the function, and press <code>Command-Shift-Option-H</code>. If needed (and it will be the first time you run the command) you'll be directed to enter the full path to your WordPress (or WordPress MU) install in the Preferences (<code>Command-Option-,</code>) before the function completion can work properly.</p>
+
+<h2>Template Snippets</h2>
+
+<p>The bundle includes snippets for some common operations we encounter during WordPress development. These include:</p>
+
+<ul>
+<li>
+<code>plugin_head</code>⇥ - Insert plugin header</li>
+<li>
+<code>adminmenu</code>⇥ and <code>adminsubmenu</code>⇥ - Add admin menu/submenu</li>
+<li>
+<code>widget</code>⇥ - Add widget and widget control for WordPress 2.8+</li>
+<li>
+<code>widget-old</code>⇥ - Add widget and widget control for versions older than WordPress 2.8</li>
+<li>
+<code>nwpq</code>⇥ New WP_Query</li>
+<li>
+<code>theme_head</code>⇥ - Theme head</li>
+<li>
+<code>comment</code>⇥ - Comment template</li>
+<li>
+<code>commentform</code>⇥ - Comment form template</li>
+<li>
+<code>post</code>⇥ - Post template</li>
+<li>
+<code>sidebar</code>⇥ - Sidebar template</li>
+<li>
+<code>wp-config</code>⇥ - a full blown WP config file with all the possible options represented</li>
+<li>
+<code>readme</code>⇥ - a sample plugin readme file</li>
+</ul><h2>Actions &amp; Filters</h2>
+
+<p>We've also included a complete list of built in WordPress Actions &amp; Filters so that using <code>add_action</code>⇥ or <code>add_filter</code>⇥ brings up a pre-compiled list of available actions and filters. </p>
+
+<h2>Scripts &amp; Styles</h2>
+
+<p>By typing <code>enqueue</code>⇥ you'll be presented with a list of options for enqueuing scripts and styles. All the standard script options are included when using the straight enqueue option, or a parameter hinted function template can be inserted for enqueuing custom scripts.</p>
+
+<p>There are also shortcuts for <code>register_style</code>⇥ and <code>register_script</code>⇥ for access to <code>wp_register_style</code> and <code>wp_register_script</code> respectively.</p>
+
+<h2>User Roles</h2>
+
+<p>Who can ever remember all the user role levels? Now you don't have to. With <code>user_can</code>⇥ you'll be presented with all the available user role levels to choose from. </p>
+
+<h2>Common Variables &amp; Settings</h2>
+
+<p>Included are functions for quickly accessing common object members for post objects, query objects and the database object. The currently available completions are:</p>
+
+<ul>
+<li>
+<code>qv1</code>⇥ - for query vars</li>
+<li>
+<code>pv</code>⇥ - for post vars</li>
+<li>
+<code>wpdb</code>⇥ - for wbdb vars and methods</li>
+<li>
+<code>wp_query</code>⇥ - for wp_query vars and methods</li>
+<li>
+<code>wpsalts</code>⇥ - to generate salts using the WordPress.org secret-key service</li>
+</ul><h2>Internationalization</h2>
+
+<p>Strings can be wrapped in internationalization functions using the shortcut <code>command-shift-i</code>. Strings are wrapped according to their proper context:</p>
+
+<ul>
+<li>selected text inside single or double quotes is appropriately broken out of their quotes and added to <code>__()</code> function</li>
+<li>selected strings, including their quotes, are added to an <code>__()</code> function </li>
+<li>selected text in HTML scope are added to a <code>&lt;?php _e() ?&gt;</code> block</li>
+</ul><p>A quick blog post writeup of the feature <a href="http://top-frog.com/2010/05/21/new-internationalization-feature-in-the-wordpress-textmate-bundle/">is here</a>.</p>
+
+<p>Starting with version 3.0 of this bundle the TextMate Shell Variable <code>WP_TEXT_DOMAIN</code> is pulled (if present) and is used for the text-domain.</p>
+
+<h2>WP-Cron</h2>
+
+<p>For some wp-cron can be a bit of a mystery. With the help of <a href="http://articles.sitepoint.com/print/wordpress-scheduling">Sitepoint.com's article on scheduling events</a> this was demystified for me. I've used that article to build in some helpers for working with wp-cron's system. Available triggers are:</p>
+
+<ul>
+<li>
+<code>register_event</code>⇥ - register a one time event</li>
+<li>
+<code>schedule_event</code>⇥ - register a recurring event</li>
+<li>
+<code>register_schedule</code>⇥ - register a new time schedule for the cron system</li>
+<li>
+<code>clear_scheduled</code>⇥ - unschedule a recurring event</li>
+<li>
+<code>clear_event</code>⇥ - unschedule a one time event</li>
+</ul><h2>Plugin README.txt Creation &amp; Validation</h2>
+
+<p>Use <code>readme</code>⇥ to drop in a template of the WordPress plugin <code>README.txt</code> file.</p>
+
+<p><code>README.txt</code> validation just got a little bit easier. The bundle includes functionality to validate your <code>README.txt</code> file without leaving TextMate. Once validated the <code>README.txt</code> can be modified in the validation window and resubmitted if necessary.</p>
+
+<h2>Shell Variables</h2>
+
+<p>Why bother typing your name and URL each time you create a new plugin or theme? Set these Variables in TextMate (<em>Preferences &gt; Advanced &gt; Shell Variables</em>) to have them automatically replaced with the values you specify:</p>
+
+<ul>
+<li><code>TM_NAME</code></li>
+<li><code>TM_HOMEPAGE</code></li>
+</ul><h2>And more…</h2>
+
+<p>There's even more included that's not yet mentioned here. Just browse through the bundle menu to see everything that's available and play around with some of the function completions to see the multiple-levels of assistance that it provides.</p>
+
+<h2>Version Compatibility</h2>
+
+<p>The bundle will be kept up to date with WordPress' latest release. There will be no conscious effort made to retain backwards compatibility in the current version of the bundle. If you need legacy support the last available bundle build for a version of WordPress will be tagged for backwards compatibility. Look at the github project page for this bundle and look at the available tags to see which backward versions are available.</p>
+
+<h2>Bugs/Suggestions</h2>
+
+<p>If you find a bug, would like to see a feature implemented, or would like to contribute a feature to the project please use the <a href="http://github.com/Gipetto/wordpress.tmbundle/issues">Issue Tracker</a> over at our GitHub project page. We're not opposed to anything, though you may have to put up with our ideals in how we like to implement things ;)</p>
+
+<h2>Credits</h2>
+
+<p>Bundle Maintainer: <a href="http://top-frog.com/projects/wordpress-textmate-bundle/">Shawn Parker</a>.</p>
+
+<p>Donations help make this project possible. If you find this project helpful, <a href="http://top-frog.com/donate">please help and contribute to the cause</a>.</p>
+
+<p>Additional thanks to:</p>
+
+<ul>
+<li>
+<a href="http://gordonbrander.com">Gordon Brander</a> for helping get this project off the ground.</li>
+<li>
+<a href="http://crowdfavorite.com">The talented crew at Crowd Favorite</a> for their various contributions and testing.</li>
+<li>
+<a href="http://markjaquith.wordpress.com/2009/08/31/textmate-wordpress-widget-snippet/">Mark Jaquith</a> for making a better Widget Template and for contributions to WordPress.</li>
+<li>
+<a href="http://seanklein.org/">Sean Klein</a>, <a href="http://github.com/xentek">Eric Marden</a>, &amp; <a href="http://github.com/simonwheatley">simonwheatley</a> for their contributions.</li>
+<li>Every one that participates on the <a href="http://lists.automattic.com/mailman/listinfo/wp-hackers">WP Hackers</a> mailing list</li>
+<li>And, not least of all, everyone who has contributed to WordPress.</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/Gipetto">Gipetto</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
