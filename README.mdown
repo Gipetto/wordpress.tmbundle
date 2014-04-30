@@ -1,5 +1,11 @@
 # WordPress TextMate Bundle
 
+---
+
+**In case you haven't noticed, this bundle is no longer being updated. If you'd like to take it over please contact me.**
+
+---
+
 **For WordPress Version:** 3.3
 
 ---
