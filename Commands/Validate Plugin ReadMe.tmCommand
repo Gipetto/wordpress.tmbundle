@@ -5,7 +5,7 @@
 	<key>beforeRunningCommand</key>
 	<string>nop</string>
 	<key>command</key>
-	<string>#!/usr/bin/env ruby -wKU
+	<string>#!/usr/bin/env ruby18 -wKU
 require "#{ENV['TM_BUNDLE_SUPPORT']}/validator.rb"
 WPValidator.validate_readme
 </string>
